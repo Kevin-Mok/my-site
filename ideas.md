@@ -1,0 +1,6 @@
+- refactor single/list into baseof
+- i3-like nav. bar
+  - symbols
+  - blog
+  - about?
+  - work

@@ -1,8 +1,8 @@
 ---
 title: "Credits"
 date: 2019-01-31T03:10:25-05:00
-draft: true
-layout: article
+draft: false
+layout: single
 ---
 <span>
   Icons made by <a href="https://www.freepik.com/"

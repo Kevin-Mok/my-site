@@ -49,14 +49,20 @@ div.clearfix {
   }
 }
 
+.article {
+}
+
 article.single section,
 .article-list article {
-  background-color: #f2f0ec;
+  /* background-color: #e6e6fa; */
+  background-color: #cbbeb5;
   color: #2d2d2d;
   padding-left: 8rem;
   padding-right: 8rem;
   padding-top: 1rem;
   padding-bottom: 1rem;
+  /* min-height: 50%; */
+  /* min-height: 30em; */
 }
 
 @media (max-width: 52em) {
@@ -67,15 +73,9 @@ article.single section,
   }
 }
 
-header, footer {
-  /* background-color: #393939; */
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
-
 header {
-  margin-top: 1rem;
-  margin-bottom: 2rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 @media (max-width: 52em) {
@@ -88,7 +88,7 @@ header {
 
 footer {
   margin-top: 2rem;
-  margin-bottom: .5rem;
+  margin-bottom: 1rem;
   text-align: center;
   font-size: 0.9em;
   color: #747369;
@@ -140,7 +140,7 @@ pre, code {
 
 /* Header Layout */
 
-header a.path {
+header a.path,a.path:visited {
   color: #6699cc;
 }
 
@@ -150,7 +150,12 @@ header span.caret {
 
 /* Footer Layout */
 
-footer a {
+footer a,a:visited {
+  color: #747369;
+  /* text-decoration: none; */
+}
+
+.container.copyright a,a:visited {
   color: #747369;
   /* text-decoration: none; */
 }
@@ -187,16 +192,17 @@ footer a {
   }
 }
 
-.homepage h1.site-title {
+h1.site-title {
   text-align: center;
   /* font-size: 3.5em; */
   font-size: 4.8em;
   color: #66cccc;
   margin-top: 0.5em;
+  margin-bottom: 0.2em;
 }
 
 @media (max-width: 52em) {
-  .homepage h1.site-title {
+  h1.site-title {
     font-size: 3em;
   }
 }
@@ -232,6 +238,16 @@ footer a {
 
 .homepage .tag {
   margin-right: 2em;
+}
+
+.nav-bar {
+  margin-left: .5em;
+  margin-bottom: 1em;
+}
+
+.hero-tagline{
+  margin-top: .3em;
+  text-align: center;
 }
 
 /* Post List Layout */
@@ -325,7 +341,7 @@ article.single section.body h4 { color: #f2777a; }
 article.single section.body h5 { color: #515151; }
 article.single section.body h6 { color: #747369; }
 
-article.single section.body a { color: #d27b53; }
+article.single section.body a,a:visited { color: #a06700; }
 
 /* Article Elements */
 
