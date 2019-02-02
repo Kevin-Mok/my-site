@@ -33,9 +33,15 @@ body {
 }
 
 .container {
-  max-width: 52em;
+  max-width: $max-page-width;
   margin-left: auto;
   margin-right: auto;
+
+  .copyright {
+    #{a-tags} {
+      color: #747369;
+    }
+  }
 
   @media (max-width: $max-page-width) {
     width: 100%;
@@ -52,27 +58,32 @@ div {
   }
 }
 
-@mixin side-padding($n) {
+@mixin side-padding-rem($n) {
   padding-left: $n * 1rem;
   padding-right: $n * 1rem;
 }
 
-@mixin vert-padding($n) {
+@mixin vert-padding-rem($n) {
   padding-top: $n * 1rem;
   padding-bottom: $n * 1rem;
+}
+
+@mixin auto-center() {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @mixin article-body() {
   /* background-color: #e6e6fa; */
   background-color: #cbbeb5;
   color: #2d2d2d;
-  @include side-padding(8);
-  @include vert-padding(1);
+  @include side-padding-rem(8);
+  @include vert-padding-rem(1);
   /* min-height: 50%; */
   /* min-height: 30em; */
 
   @media (max-width: $max-page-width) {
-    @include side-padding(2);
+    @include side-padding-rem(2);
   }
 }
 
@@ -90,18 +101,13 @@ article {
   }
 }
 
-// TODO: converted up to here
-
 header {
   margin-top: 1.5rem;
   margin-bottom: 1rem;
-}
 
-@media (max-width: 52em) {
-  header {
+  @media (max-width: $max-page-width) {
     margin-top: 0;
-    padding-left: 2rem;
-    padding-right: 2rem;
+    @include side-padding-rem(2);
   }
 }
 
@@ -114,30 +120,29 @@ footer {
   bottom: 0;
   position: absolute;
   width: 100%;
-}
 
-@media (max-width: 52em) {
-  footer {
+  .container {
+    background-color: #393939;
+    max-width: 62em;
+    @include auto-center();
+    height: 1.8em;
+  }
+
+  @media (max-width: $max-page-width) {
     margin-top: 0;
     margin-bottom: 0;
   }
 }
 
-footer .container {
-  background-color: #393939;
-  max-width: 62em;
-  margin-left: auto;
-  margin-right: auto;
-  height: 1.8em;
-}
-
 /* Typography */
 
-h1, h2, h3, h4, h5, h6 {
-  font-weight: bold;
-  line-height: 1.25;
-  margin-top: 1em;
-  margin-bottom: .5em;
+@for $i from 1 to 6 {
+  h#{$i} {
+    font-weight: bold;
+    line-height: 1.25;
+    margin-top: 1em;
+    margin-bottom: .5em;
+  }
 }
 
 p {
@@ -159,53 +164,61 @@ pre, code {
 
 /* Header Layout */
 
-header a.path,a.path:visited {
-  color: #6699cc;
-}
+header {
+  a {
+    .path .path:visited {
+      color: #6699cc;
+    }
+  }
 
-header span.caret {
-  color: #f2f0ec;
+  span {
+    caret {
+      color: #f2f0ec;
+    }
+  }
 }
 
 /* Footer Layout */
 
-footer a,a:visited {
-  color: #747369;
-  /* text-decoration: none; */
-}
+$a-tags: 'a, a:active, a:visited';
 
-.container.copyright a,a:visited {
-  color: #747369;
-  /* text-decoration: none; */
+footer {
+  #{$a-tags} {
+    color: #747369;
+  }
 }
 
 /* 404 Page Layout */
 
-.page-not-found h1 {
-  text-align: center;
-  font-size: 5em;
-}
+.page-not-found {
+  h1 {
+    text-align: center;
+    font-size: 5em;
+  }
 
-.page-not-found h2 {
-  text-align: center;
-  font-size: 3em;
-  color: #a09f93;
-  margin-bottom: 4rem;
-}
-
-@media (max-width: 52em) {
-  .page-not-found h1 {
+  h2 {
+    text-align: center;
     font-size: 3em;
+    color: #a09f93;
+    margin-bottom: 4rem;
   }
 
-  .page-not-found h2 {
-    font-size: 2em;
+  @media (max-width: $max-page-width) {
+    h1 {
+      font-size: 3em;
+    }
+
+    h2 {
+      font-size: 2em;
+    }
   }
 }
+
+// TODO: converted up to here
 
 /* Homepage Layout */
 
-@media (max-width: 52em) {
+@media (max-width: $max-page-width) {
   .homepage {
     margin-bottom: 2rem;
   }
@@ -220,7 +233,7 @@ h1.site-title {
   margin-bottom: 0.2em;
 }
 
-@media (max-width: 52em) {
+@media (max-width: $max-page-width) {
   h1.site-title {
     font-size: 3em;
   }
@@ -231,7 +244,7 @@ h1.site-title {
   color: #ffcc66;
 }
 
-@media (max-width: 52em) {
+@media (max-width: $max-page-width) {
   .homepage h1.headline {
     padding-left: 2rem;
     padding-right: 2rem;
@@ -319,7 +332,7 @@ article.single .meta .val, article.single .meta .val a {
   color: #cc99cc;
 }
 
-@media (max-width: 52em) {
+@media (max-width: $max-page-width) {
   article.single .meta {
     padding-left: 2rem;
     padding-right: 2rem;
@@ -332,7 +345,7 @@ article.single h1.headline {
   color: #ffcc66;
 }
 
-@media (max-width: 52em) {
+@media (max-width: $max-page-width) {
   article.single h1.headline {
     padding-left: 2rem;
     padding-right: 2rem;
@@ -344,7 +357,7 @@ article.single section.body {
   padding-bottom: 3rem;
 }
 
-@media (max-width: 52em) {
+@media (max-width: $max-page-width) {
   article.single section.body {
     padding-top: 2rem;
     padding-bottom: 1rem;
@@ -394,7 +407,7 @@ article.single figure, article.single div.highlight {
   background-color: #393939;
 }
 
-@media (max-width: 52em) {
+@media (max-width: $max-page-width) {
   article.single figure, article.single div.highlight {
     width: 100%;
     margin-left: 0;

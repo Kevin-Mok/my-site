@@ -1,4 +1,5 @@
 # baseURL = "http://localhost:1313/"
+# baseURL = "/home/kevin/coding/mf-site/public"
 baseURL = "https://kevin-mok.gitlab.io/my-site-hugo/"
 languageCode = "en-us"
 title = "Kevin Mok"

@@ -1,14 +1,15 @@
 # All available Hugo versions are listed here: https://gitlab.com/pages/hugo/container_registry
-image: registry.gitlab.com/pages/hugo:latest
+# image: registry.gitlab.com/pages/hugo:0.53
+image: hatita/docker-hugo-extended
 
 variables:
   GIT_SUBMODULE_STRATEGY: recursive
 
-test:
-  script:
-  - hugo
-  except:
-  - master
+# test:
+  # script:
+  # - hugo
+  # except:
+  # - master
 
 pages:
   script:
@@ -16,5 +17,6 @@ pages:
   artifacts:
     paths:
     - public
-  only:
-  - master
+  # only:
+  # - master
+
