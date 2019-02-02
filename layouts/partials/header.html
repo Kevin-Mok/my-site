@@ -14,8 +14,10 @@
 <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,700" type="text/css"> -->
 <link rel='stylesheet' href='//cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack-subset.css'>
 <!-- <link rel="stylesheet" href="https://meyerweb.com/eric/tools/css/reset/reset.css" type="text/css" media="all" /> -->
-<link rel="stylesheet" href="{{ "css/style.css" | relURL }}" type="text/css">
-<link rel="alternate" href="{{ "index.xml" | relURL }}" type="application/rss+xml" title="{{ .Site.Title }}">
+<!-- <link rel="stylesheet" href="{{ "css/style.css" | relURL }}" type="text/css"> -->
+{{ $main_sass := resources.Get "sass/main.scss" }}
+{{ $main_style := $main_sass | resources.ToCSS }}
+<link rel="stylesheet" href="{{ $main_style.Permalink }}" type="text/css">
 <!-- <title>
   {{ $isHomePage := eq .Title .Site.Title }}
   {{ .Title }}
@@ -24,7 +26,7 @@
   {{ end }}</title> -->
 <title>
   ~{{ .Page.RelPermalink }} · {{ .Site.Title }}
-  </title>
+</title>
 </head>
 <body>
 
