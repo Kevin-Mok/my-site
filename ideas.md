@@ -7,6 +7,9 @@
 - add CSS grid layout
 - credits
  
+# Medium
+- use local Docker image
+
 # Tiny
 - click on name for base URL
 - tux icon
