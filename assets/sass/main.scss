@@ -2,7 +2,15 @@
 
 $max-page-width: 52em;
 
-// rewrite with map?
+$base-red: #f2777a;
+$base-orange: #f99157;
+$base-yellow: #ffcc66;
+$base-green: #99cc99;
+$base-sky-blue: #66cccc;
+$base-blue: #6699cc;
+$base-violet: #cc99cc;
+$base-dark-orange: #d27b53;
+
 .base00 { color: #2d2d2d; }
 .base01 { color: #393939; }
 .base02 { color: #515151; }
@@ -11,16 +19,28 @@ $max-page-width: 52em;
 .base05 { color: #d3d0c8; }
 .base06 { color: #e8e6df; }
 .base07 { color: #f2f0ec; }
-.base08 { color: #f2777a; }
-.base09 { color: #f99157; }
-.base0a { color: #ffcc66; }
-.base0b { color: #99cc99; }
-.base0c { color: #66cccc; }
-.base0d { color: #6699cc; }
-.base0e { color: #cc99cc; }
-.base0f { color: #d27b53; }
+.base08 { color: $base-red; }
+.base09 { color: $base-orange; }
+.base0a { color: $base-yellow; }
+.base0b { color: $base-green; }
+.base0c { color: $base-sky-blue; }
+.base0d { color: $base-blue; }
+.base0e { color: $base-violet; }
+.base0f { color: $base-dark-orange; }
 
 /* General Page Layout */
+
+@mixin a-color($color) {
+  a {
+    color: $color;
+    &:visited {
+      color: $color;
+    }
+    &:active {
+      color: $color;
+    }
+  }
+}
 
 body {
   margin: 0;
@@ -38,9 +58,7 @@ body {
   margin-right: auto;
 
   .copyright {
-    #{a-tags} {
-      color: #747369;
-    }
+    @include a-color(#747369);
   }
 
   @media (max-width: $max-page-width) {
@@ -180,12 +198,8 @@ header {
 
 /* Footer Layout */
 
-$a-tags: 'a, a:active, a:visited';
-
 footer {
-  #{$a-tags} {
-    color: #747369;
-  }
+  @include a-color(#747369);
 }
 
 /* 404 Page Layout */
@@ -275,6 +289,7 @@ h1.site-title {
 .nav-bar {
   margin-left: .5em;
   margin-bottom: 1em;
+  @include a-color($base-sky-blue);
 }
 
 .hero-tagline{
