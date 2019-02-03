@@ -8,8 +8,10 @@
 - credits
  
 # Medium
+- setup Netlify
 
 # Tiny
+- setup custom domain/HTTPS with Netlify
 - click on name for base URL
 - tux icon
  

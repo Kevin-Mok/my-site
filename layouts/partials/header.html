@@ -18,6 +18,7 @@
 {{ $main_sass := resources.Get "sass/main.scss" }}
 {{ $main_style := $main_sass | resources.ToCSS }}
 <link rel="stylesheet" href="{{ $main_style.Permalink }}" type="text/css">
+<!-- <link rel="stylesheet" href="{{ $main_style | relURL }}" type="text/css"> -->
 <!-- <title>
   {{ $isHomePage := eq .Title .Site.Title }}
   {{ .Title }}
@@ -25,7 +26,7 @@
   {{ .Site.Title }}
   {{ end }}</title> -->
 <title>
-  ~{{ .Page.RelPermalink }} · {{ .Site.Title }}
+  {{ .Site.Title }} &nbsp;• &nbsp;~{{ .Page.RelPermalink }}
 </title>
 </head>
 <body>
