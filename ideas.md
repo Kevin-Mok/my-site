@@ -1,17 +1,31 @@
 # Large
-- rewrite CSS in Sass
-  - push to base16 repo
 - resume
   - printable version
+- rewrite CSS in Sass
+  - push to base16 repo
 - loop through URL sections
 - add CSS grid layout
-- credits
+- add media queries for mobile site
+- terminal simulator for site
+  - cd/ls diff. pages
  
 # Medium
-- setup Netlify
+- fav. apps
+- credits
 
 # Tiny
-- setup custom domain/HTTPS with Netlify
+- about/homepage
+  - elevator pitch
+    - student
+    - passionate
+    - typing animation
+  - linux screenshot
+    - fade between two
+  - picture equation of my interests
+    - Linux
+    - terminal
+    - UofT
+- contact page
 - click on name for base URL
 - tux icon
  

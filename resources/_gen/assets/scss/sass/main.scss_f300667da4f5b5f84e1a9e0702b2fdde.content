@@ -1,28 +1,11 @@
 /* Base16 Eighties Colorscheme by Chris Kempson (http://chriskempson.com) */
-.base00 {
-  color: #2d2d2d; }
-
-.base01 {
-  color: #393939; }
-
-.base02 {
-  color: #515151; }
-
-.base03 {
-  color: #747369; }
-
-.base04 {
-  color: #a09f93; }
-
-.base05 {
-  color: #d3d0c8; }
-
-.base06 {
-  color: #e8e6df; }
-
-.base07 {
-  color: #f2f0ec; }
-
+/* .base00 { color: #2d2d2d; }
+.base01 { color: #393939; }
+.base02 { color: #515151; }
+.base03 { color: #747369; }
+.base04 { color: #a09f93; }
+.base06 { color: #e8e6df; }
+.base07 { color: #f2f0ec; } */
 .base08 {
   color: #f2777a; }
 
@@ -55,6 +38,12 @@ body {
   font-size: 100%;
   /* font-family: 'Source Code Pro', monospace; */
   font-family: 'Hack', monospace; }
+  body a {
+    color: #66cccc; }
+    body a:visited {
+      color: #66cccc; }
+    body a:active {
+      color: #66cccc; }
 
 .container {
   max-width: 52em;
@@ -221,16 +210,35 @@ footer a {
   .page-not-found h2 {
     font-size: 2em; } }
 
-.homepage h1 .headline {
-  font-size: 3em;
-  color: #ffcc66; }
-  @media (max-width: 52em) {
-    .homepage h1 .headline {
-      padding-left: 2rem;
-      padding-right: 2rem; } }
+#homepage #about {
+  font-size: 1.25rem; }
+  #homepage #about h1 {
+    margin-top: 1.25rem;
+    font-size: 2rem;
+    color: #ffcc66;
+    text-align: center; }
+  #homepage #about .me-equation {
+    margin-top: 3em;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    /* align horizontal */
+    align-items: center;
+    /* align vertical */ }
+    #homepage #about .me-equation img {
+      width: 8em;
+      border-radius: 2em;
+      display: inline; }
+      #homepage #about .me-equation img#gnu {
+        background-color: #a09f93; }
+    #homepage #about .me-equation p {
+      font-size: 4rem;
+      display: inline;
+      padding-left: 1rem;
+      padding-right: 1rem; }
 
 @media (max-width: 52em) {
-  .homepage {
+  #homepage {
     margin-bottom: 2rem; } }
 
 /* .homepage section.categories,
@@ -253,7 +261,7 @@ h1.site-title {
   text-align: center;
   /* font-size: 3.5em; */
   font-size: 4.8em;
-  color: #66cccc;
+  color: #d3d0c8;
   margin-top: 0.5em;
   margin-bottom: 0.2em; }
 
@@ -267,16 +275,13 @@ h1.site-title {
 .nav-bar {
   margin-left: .5em;
   margin-bottom: 1em; }
-  .nav-bar a {
-    color: #66cccc; }
-    .nav-bar a:visited {
-      color: #66cccc; }
-    .nav-bar a:active {
-      color: #66cccc; }
 
 .hero-tagline {
   margin-top: .3em;
+  font-size: .8rem;
   text-align: center; }
+  .hero-tagline .icon {
+    width: 1.25rem; }
 
 .article-list h1.list-title {
   font-size: 3em;
