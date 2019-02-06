@@ -37,7 +37,10 @@ body {
   line-height: 1.5;
   font-size: 100%;
   /* font-family: 'Source Code Pro', monospace; */
-  font-family: 'Hack', monospace; }
+  font-family: 'Hack', monospace;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; }
   body a {
     color: #66cccc; }
     body a:visited {
@@ -48,7 +51,8 @@ body {
 .container {
   max-width: 52em;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  flex: 1; }
   .container .copyright a {
     color: #747369; }
     .container .copyright a:visited {
@@ -109,10 +113,7 @@ footer {
   margin-bottom: 1rem;
   text-align: center;
   font-size: 0.9em;
-  color: #747369;
-  bottom: 0;
-  position: absolute;
-  width: 100%; }
+  color: #747369; }
   footer .container {
     background-color: #393939;
     max-width: 62em;
@@ -236,6 +237,15 @@ footer a {
       display: inline;
       padding-left: 1rem;
       padding-right: 1rem; }
+    @media (max-width: 600px) {
+      #homepage #about .me-equation {
+        margin-top: 2em;
+        display: block; }
+        #homepage #about .me-equation p {
+          display: block;
+          padding-top: 0.1rem;
+          padding-bottom: 0.1rem;
+          margin-bottom: 0rem; } }
 
 @media (max-width: 52em) {
   #homepage {

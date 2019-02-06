@@ -34,6 +34,7 @@ $base-dark-orange: #d27b53;
 //  mixins {{{ // 
 
 $max-page-width: 52em;
+$phone-width: 600px;
 
 @mixin side-padding-rem($n) {
   padding-left: $n * 1rem;
@@ -88,6 +89,9 @@ body {
   font-size: 100%;
   /* font-family: 'Source Code Pro', monospace; */
   font-family: 'Hack', monospace;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 
   @include a-color($base-sky-blue);
 }
@@ -96,6 +100,7 @@ body {
   max-width: $max-page-width;
   margin-left: auto;
   margin-right: auto;
+  flex: 1;
 
   .copyright {
     @include a-color(#747369);
@@ -146,9 +151,9 @@ footer {
   text-align: center;
   font-size: 0.9em;
   color: #747369;
-  bottom: 0;
-  position: absolute;
-  width: 100%;
+  // bottom: 0;
+  // position: absolute;
+  // width: 100%;
 
   .container {
     background-color: #393939;
@@ -286,7 +291,17 @@ footer {
         font-size: 4rem;
         display: inline;
         @include side-padding-rem(1);
-        // display: table-cell inline;
+      }
+
+      @media (max-width: $phone-width) {
+        margin-top: 2em;
+        display: block;
+
+        p {
+          display: block;
+          @include vert-padding-rem(0.1);
+          margin-bottom: 0rem;
+        }
       }
     }
   }
