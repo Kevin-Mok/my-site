@@ -159,12 +159,16 @@ footer {
     background-color: #393939;
     max-width: 62em;
     @include auto-center();
-    height: 1.8em;
+    @include vert-padding-rem(.1);
   }
 
   @media (max-width: $max-page-width) {
     margin-top: 0;
     margin-bottom: 0;
+  }
+
+  @media (max-width: $phone-width) {
+    font-size: 0.8em;
   }
 }
 
@@ -269,6 +273,8 @@ footer {
         // }
     }
 
+    //  me-equation {{{ // 
+    
     .me-equation {
       margin-top: 3em;
       text-align: center;
@@ -304,11 +310,22 @@ footer {
         }
       }
     }
+    
+    //  }}} me-equation // 
+
+    @media (max-width: $phone-width) {
+      font-size: 1.1em;
+
+      h1 {
+        font-size: 1.75rem;
+      }
+    }
   }
 
   @media (max-width: $max-page-width) {
     margin-bottom: 2rem;
   }
+
 }
 
 /* .homepage section.categories,
@@ -342,11 +359,13 @@ h1.site-title {
   color: $base05;
   margin-top: 0.5em;
   margin-bottom: 0.2em;
-}
 
-@media (max-width: $max-page-width) {
-  h1.site-title {
+  @media (max-width: $max-page-width) {
     font-size: 3em;
+  }
+
+  @media (max-width: $phone-width) {
+    font-size: 2.25em;
   }
 }
 
@@ -357,6 +376,10 @@ h1.site-title {
 .nav-bar {
   margin-left: .5em;
   margin-bottom: 1em;
+
+  @media (max-width: $phone-width) {
+    font-size: .9em;
+  }
 }
 
 .hero-tagline{

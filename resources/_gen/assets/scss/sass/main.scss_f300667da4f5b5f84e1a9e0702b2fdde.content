@@ -119,11 +119,15 @@ footer {
     max-width: 62em;
     margin-left: auto;
     margin-right: auto;
-    height: 1.8em; }
+    padding-top: 0.1rem;
+    padding-bottom: 0.1rem; }
   @media (max-width: 52em) {
     footer {
       margin-top: 0;
       margin-bottom: 0; } }
+  @media (max-width: 600px) {
+    footer {
+      font-size: 0.8em; } }
 
 /* Typography */
 h1 {
@@ -246,6 +250,11 @@ footer a {
           padding-top: 0.1rem;
           padding-bottom: 0.1rem;
           margin-bottom: 0rem; } }
+  @media (max-width: 600px) {
+    #homepage #about {
+      font-size: 1.1em; }
+      #homepage #about h1 {
+        font-size: 1.75rem; } }
 
 @media (max-width: 52em) {
   #homepage {
@@ -274,10 +283,12 @@ h1.site-title {
   color: #d3d0c8;
   margin-top: 0.5em;
   margin-bottom: 0.2em; }
-
-@media (max-width: 52em) {
-  h1.site-title {
-    font-size: 3em; } }
+  @media (max-width: 52em) {
+    h1.site-title {
+      font-size: 3em; } }
+  @media (max-width: 600px) {
+    h1.site-title {
+      font-size: 2.25em; } }
 
 .hero-logo img {
   width: 100%; }
@@ -285,6 +296,9 @@ h1.site-title {
 .nav-bar {
   margin-left: .5em;
   margin-bottom: 1em; }
+  @media (max-width: 600px) {
+    .nav-bar {
+      font-size: .9em; } }
 
 .hero-tagline {
   margin-top: .3em;
