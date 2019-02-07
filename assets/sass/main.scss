@@ -34,7 +34,7 @@ $base-dark-orange: #d27b53;
 //  mixins {{{ // 
 
 $max-page-width: 52em;
-$phone-width: 600px;
+$phone-width: 800px;
 
 @mixin side-padding-rem($n) {
   padding-left: $n * 1rem;
@@ -259,6 +259,8 @@ footer {
 //  homepage  {{{ // 
 
 #homepage {
+  //  about {{{ // 
+  
   #about {
     font-size: 1.25rem;
 
@@ -279,48 +281,131 @@ footer {
       margin-top: 3em;
       text-align: center;
       display: flex;
+      // display: grid;
+      // grid-template-columns: repeat(3, 2fr 1fr) 2fr;
       justify-content: center; /* align horizontal */
       align-items: center; /* align vertical */
 
-      img {
-        width: 8em;
-        border-radius: 2em;
-        display: inline;
+      .equation-part {
+        // width: 33%;
+        display: flex;
+        flex: 1;
+        justify-content: center; /* align horizontal */
+        align-items: center; /* align vertical */
 
-        &#gnu {
-          background-color: $base04;
-          // background-color: $base05;
+        a {
+          text-decoration: none;
         }
-      }
 
-      p {
-        font-size: 4rem;
-        display: inline;
-        @include side-padding-rem(1);
-      }
+        img {
+          // width: 7em;
+          width: 70%;
+          // width: 15vw;
+          // min-width: 25%;
+          // height: 25%;
+          // height: auto;
 
-      @media (max-width: $phone-width) {
-        margin-top: 2em;
-        display: block;
+          // object-fit: contain;
+          // flex-basis: 20%;
+          // flex: 2 2 0;
+          // border-radius: 1.5em;
+          border-radius: 1.1em;
+          display: inline;
+
+          &#gnu {
+            background-color: $base04;
+            // background-color: $base05;
+          }
+        }
 
         p {
-          display: block;
-          @include vert-padding-rem(0.1);
-          margin-bottom: 0rem;
+          // font-size: 3rem;
+          font-size: 3vw;
+          // width: 20%;
+          // flex: 1;
+          // display: inline;
+          display: inline-block;
+          @include side-padding-rem(0.2);
         }
       }
+
+      //  media {{{ // 
+      
+      // @media (max-width: $phone-width) {
+        // margin-top: 2em;
+        // display: block;
+
+        // p {
+          // display: block;
+          // @include vert-padding-rem(0.1);
+          // margin-bottom: 0rem;
+        // }
+      // }
+
+      // @media (max-width: 800px) {
+      @media (max-width: $phone-width) {
+        // flex-direction: column;
+        flex-wrap: wrap;
+        margin-top: 2em;
+        justify-content: space-around; /* align horizontal */
+        // height: 100vh;
+        // height: 50vh;
+        .equation-part {
+          // min-width: 50vw;
+          // display: inline-block;
+          // min-width: 50%;
+          min-width: 33%;
+          // max-height: 25vh;
+          // flex-direction: column;
+          img {
+            // display: block;
+            // width: 50%;
+            flex: 1.5;
+            // flex: 1;
+            // height: 50%;
+            // max-height: 30%;
+            // max-height: 25vh;
+
+            &#hexatar {
+              // max-width: 70%;
+              // max-width: 33%;
+              max-width: 28%;
+              // margin-top: 2rem;
+              margin-top: 1.75rem;
+            }
+          }
+
+          p {
+            // font-size: 3rem;
+            font-size: 6vw;
+            // width: 20%;
+            flex: 1;
+            // @include side-padding-rem(0.2);
+          }
+
+          &#uoft-part {
+            justify-content: flex-end;
+          }
+        }
+      }
+      
+      //  }}} media // 
     }
     
     //  }}} me-equation // 
 
     @media (max-width: $phone-width) {
-      font-size: 1.1em;
+      // font-size: 1.1em;
+      font-size: .9em;
 
       h1 {
-        font-size: 1.75rem;
+        // font-size: 1.75rem;
+        font-size: 1.4rem;
       }
     }
   }
+  
+  //  }}} about // 
 
   @media (max-width: $max-page-width) {
     margin-bottom: 2rem;
@@ -358,14 +443,16 @@ h1.site-title {
   // color: #66cccc;
   color: $base05;
   margin-top: 0.5em;
-  margin-bottom: 0.2em;
+  margin-bottom: 0;
 
   @media (max-width: $max-page-width) {
     font-size: 3em;
   }
 
   @media (max-width: $phone-width) {
-    font-size: 2.25em;
+    // font-size: 3em;
+    // font-size: 2.5em;
+    font-size: 2em;
   }
 }
 
@@ -375,10 +462,13 @@ h1.site-title {
 
 .nav-bar {
   margin-left: .5em;
-  margin-bottom: 1em;
+  // margin-bottom: 1em;
+  // margin-top: .75em;
+  @include vert-padding-rem(1);
 
   @media (max-width: $phone-width) {
-    font-size: .9em;
+    // font-size: .9em;
+    font-size: .8em;
   }
 }
 

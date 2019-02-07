@@ -1,3 +1,25 @@
+# Large
+- add CSS grid layout
+  - add tooltip saying responsive 
+- resume
+  - printable version
+- rewrite CSS in Sass
+  - push to base16 repo
+- loop through URL sections
+- terminal simulator for site
+  - cd/ls diff. pages
+
+# Medium
+- fav. apps
+- credits
+
+# Tiny
+- socials in footer?
+- shrink font sizing for mobile
+- add links to all equation parts
+- contact page
+- click on name for base URL
+ 
 ## Archived
 - about/homepage
   - typing animation
@@ -5,23 +27,3 @@
     - fade between two
 - tux icon
  
-# Tiny
-- shrink font sizing for mobile
-- contact page
-- click on name for base URL
- 
-# Medium
-- fav. apps
-- credits
-
-# Large
-- resume
-  - printable version
-- rewrite CSS in Sass
-  - push to base16 repo
-- loop through URL sections
-- add CSS grid layout
-  - use to make me equation columns for desktop
-    - box layout for mobile
-- terminal simulator for site
-  - cd/ls diff. pages

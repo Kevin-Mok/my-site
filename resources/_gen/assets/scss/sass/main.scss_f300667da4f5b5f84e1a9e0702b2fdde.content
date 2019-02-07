@@ -125,7 +125,7 @@ footer {
     footer {
       margin-top: 0;
       margin-bottom: 0; } }
-  @media (max-width: 600px) {
+  @media (max-width: 800px) {
     footer {
       font-size: 0.8em; } }
 
@@ -230,31 +230,49 @@ footer a {
     /* align horizontal */
     align-items: center;
     /* align vertical */ }
-    #homepage #about .me-equation img {
-      width: 8em;
-      border-radius: 2em;
-      display: inline; }
-      #homepage #about .me-equation img#gnu {
-        background-color: #a09f93; }
-    #homepage #about .me-equation p {
-      font-size: 4rem;
-      display: inline;
-      padding-left: 1rem;
-      padding-right: 1rem; }
-    @media (max-width: 600px) {
+    #homepage #about .me-equation .equation-part {
+      display: flex;
+      flex: 1;
+      justify-content: center;
+      /* align horizontal */
+      align-items: center;
+      /* align vertical */ }
+      #homepage #about .me-equation .equation-part a {
+        text-decoration: none; }
+      #homepage #about .me-equation .equation-part img {
+        width: 70%;
+        border-radius: 1.1em;
+        display: inline; }
+        #homepage #about .me-equation .equation-part img#gnu {
+          background-color: #a09f93; }
+      #homepage #about .me-equation .equation-part p {
+        font-size: 3vw;
+        display: inline-block;
+        padding-left: 0.2rem;
+        padding-right: 0.2rem; }
+    @media (max-width: 800px) {
       #homepage #about .me-equation {
+        flex-wrap: wrap;
         margin-top: 2em;
-        display: block; }
-        #homepage #about .me-equation p {
-          display: block;
-          padding-top: 0.1rem;
-          padding-bottom: 0.1rem;
-          margin-bottom: 0rem; } }
-  @media (max-width: 600px) {
+        justify-content: space-around;
+        /* align horizontal */ }
+        #homepage #about .me-equation .equation-part {
+          min-width: 33%; }
+          #homepage #about .me-equation .equation-part img {
+            flex: 1.5; }
+            #homepage #about .me-equation .equation-part img#hexatar {
+              max-width: 28%;
+              margin-top: 1.75rem; }
+          #homepage #about .me-equation .equation-part p {
+            font-size: 6vw;
+            flex: 1; }
+          #homepage #about .me-equation .equation-part#uoft-part {
+            justify-content: flex-end; } }
+  @media (max-width: 800px) {
     #homepage #about {
-      font-size: 1.1em; }
+      font-size: .9em; }
       #homepage #about h1 {
-        font-size: 1.75rem; } }
+        font-size: 1.4rem; } }
 
 @media (max-width: 52em) {
   #homepage {
@@ -282,23 +300,24 @@ h1.site-title {
   font-size: 4.8em;
   color: #d3d0c8;
   margin-top: 0.5em;
-  margin-bottom: 0.2em; }
+  margin-bottom: 0; }
   @media (max-width: 52em) {
     h1.site-title {
       font-size: 3em; } }
-  @media (max-width: 600px) {
+  @media (max-width: 800px) {
     h1.site-title {
-      font-size: 2.25em; } }
+      font-size: 2em; } }
 
 .hero-logo img {
   width: 100%; }
 
 .nav-bar {
   margin-left: .5em;
-  margin-bottom: 1em; }
-  @media (max-width: 600px) {
+  padding-top: 1rem;
+  padding-bottom: 1rem; }
+  @media (max-width: 800px) {
     .nav-bar {
-      font-size: .9em; } }
+      font-size: .8em; } }
 
 .hero-tagline {
   margin-top: .3em;
