@@ -238,9 +238,11 @@ footer a {
       align-items: center;
       /* align vertical */ }
       #homepage #about .me-equation .equation-part a {
-        text-decoration: none; }
+        text-decoration: none;
+        width: 70%; }
       #homepage #about .me-equation .equation-part img {
         width: 70%;
+        height: 100%;
         border-radius: 1.1em;
         display: inline; }
         #homepage #about .me-equation .equation-part img#gnu {
@@ -301,6 +303,14 @@ h1.site-title {
   color: #d3d0c8;
   margin-top: 0.5em;
   margin-bottom: 0; }
+  h1.site-title a {
+    color: #66cccc; }
+    h1.site-title a:visited {
+      color: #66cccc; }
+    h1.site-title a:active {
+      color: #66cccc; }
+  h1.site-title a {
+    text-decoration: none; }
   @media (max-width: 52em) {
     h1.site-title {
       font-size: 3em; } }

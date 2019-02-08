@@ -1,29 +1,38 @@
 # Large
-- add CSS grid layout
-  - add tooltip saying responsive 
 - resume
   - printable version
+  - list of things done with diff. langs.
+- add CSS grid layout
+  - add tooltip saying responsive 
+- articles (ideas)
+
+- loop through URL sections
+- JS snippets?
 - rewrite CSS in Sass
   - push to base16 repo
-- loop through URL sections
 - terminal simulator for site
   - cd/ls diff. pages
 
 # Medium
-- fav. apps
-- credits
+- pages
+  - fav. apps
+  - contact 
+    - socials in footer?
+  - linux config 
+  - credits
+- SEO
+- site stats
+  - size
+  - load time
 
 # Tiny
-- socials in footer?
-- shrink font sizing for mobile
-- add links to all equation parts
-- contact page
-- click on name for base URL
+- inline fold pairs (CSS)
  
+
+
 ## Archived
 - about/homepage
   - typing animation
   - linux screenshot
     - fade between two
 - tux icon
- 

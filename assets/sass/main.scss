@@ -295,6 +295,7 @@ footer {
 
         a {
           text-decoration: none;
+          width: 70%;
         }
 
         img {
@@ -303,7 +304,9 @@ footer {
           // width: 15vw;
           // min-width: 25%;
           // height: 25%;
+          height: 100%;
           // height: auto;
+          // height: 20vw;
 
           // object-fit: contain;
           // flex-basis: 20%;
@@ -444,6 +447,11 @@ h1.site-title {
   color: $base05;
   margin-top: 0.5em;
   margin-bottom: 0;
+
+  @include a-color($base-sky-blue);
+  a {
+    text-decoration: none;
+  }
 
   @media (max-width: $max-page-width) {
     font-size: 3em;
