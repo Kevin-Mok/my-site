@@ -1,6 +1,5 @@
 # baseURL = "http://localhost:1313/"
-# baseURL = "https://kevin-mok.gitlab.io/my-site-hugo/"
-baseURL = "https://kevinmok.tk/"
+baseURL = "https://kevin-mok.com/"
 # baseURL = "/home/kevin/coding/mf-site/public"
 languageCode = "en-us"
 title = "Kevin Mok's Website"
@@ -9,4 +8,4 @@ enableRobotsTXT = "true"
 
 [params]
   author = "Kevin Mok"
-  description = "Hey, I'm Kevin Mok - a CS (Computer Science) student at the University of Toronto. Come check out my personal website!" 
+  description = "I'm Kevin Mok - a CS (Computer Science) student at the University of Toronto. Come check out my personal website!" 
