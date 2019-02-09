@@ -217,7 +217,7 @@ footer a {
 
 #homepage #about {
   font-size: 1.25rem; }
-  #homepage #about h1 {
+  #homepage #about h2 {
     margin-top: 1.25rem;
     font-size: 2rem;
     color: #ffcc66;
@@ -263,7 +263,7 @@ footer a {
           #homepage #about .me-equation .equation-part img {
             flex: 1.5; }
             #homepage #about .me-equation .equation-part img#hexatar {
-              max-width: 28%;
+              max-width: 20%;
               margin-top: 1.75rem; }
           #homepage #about .me-equation .equation-part p {
             font-size: 6vw;

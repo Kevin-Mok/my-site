@@ -18,12 +18,13 @@
 {{ $main_sass := resources.Get "sass/main.scss" }}
 {{ $main_style := $main_sass | resources.ToCSS }}
 <link rel="stylesheet" href="{{ $main_style.RelPermalink }}" type="text/css">
-<!-- <title>
+<title>
   {{ $isHomePage := eq .Title .Site.Title }}
   {{ .Title }}
-  {{ if eq $isHomePage false }} - 
+  {{ if eq $isHomePage false }} -
   {{ .Site.Title }}
-  {{ end }}</title> -->
+  {{ end }}
+</title>
 
 <!-- <link rel="shortcut icon" type="image/png" href="imgs/icons/gitlab.png" id="favicon"/> -->
 <link rel="apple-touch-icon" sizes="180x180" href="{{ "img/favicon/apple-touch-icon.png" | relURL }}">
@@ -34,9 +35,9 @@
 <meta name="msapplication-TileColor" content="#2b5797">
 <meta name="theme-color" content="#ffffff">
 
-<title>
+<!-- <title>
   {{ .Site.Title }} &nbsp;• &nbsp;~{{ .Page.RelPermalink }}
-</title>
+</title> -->
 </head>
 <body>
 

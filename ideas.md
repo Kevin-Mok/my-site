@@ -14,21 +14,30 @@
   - cd/ls diff. pages
 
 # Medium
+- socials in footer
+  - icons
+  - email
+    - tooltip pop-up with email and clipboard button/link
+    - [Pure CSS Tooltips](https://www.youtube.com/watch?v=hAeQ8CqrGDY)
+    - use position element
+    - [Copying Text to Clipboard in HTML & JavaScript](https://www.youtube.com/watch?v=NHg6jQajaMs)
+    - [Native Browser Copy To Clipboard](https://css-tricks.com/native-browser-copy-clipboard/)
 - pages
   - fav. apps
-  - contact 
-    - socials in footer?
   - linux config 
   - credits
-- SEO
+  - contact?
 - site stats
   - size
   - load time
 
 # Tiny
-- inline fold pairs (CSS)
- 
+- SEO
+  - be more specific with robots.txt when have content
+  - add/redirect aliases
 
+Break> {{{
+> }}}
 
 ## Archived
 - about/homepage

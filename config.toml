@@ -3,5 +3,10 @@
 baseURL = "https://kevinmok.tk/"
 # baseURL = "/home/kevin/coding/mf-site/public"
 languageCode = "en-us"
-title = "Kevin Mok"
+title = "Kevin Mok's Website"
 # theme = "base16"
+enableRobotsTXT = "true"
+
+[params]
+  author = "Kevin Mok"
+  description = "Hey, I'm Kevin Mok - a CS (Computer Science) student at the University of Toronto. Come check out my personal website!" 
