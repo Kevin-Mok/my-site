@@ -1,5 +1,6 @@
 # Large
 - resume
+  - fix title
   - printable version
   - list of things done with diff. langs.
 - add CSS grid layout

@@ -2,7 +2,6 @@
 title: "Config"
 date: 2019-02-07T05:05:11-05:00
 draft: true
-layout: single
 ---
 <!---  Intro {{{ --> 
 # Kevin's Linux Setup

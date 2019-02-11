@@ -1,7 +1,11 @@
-{{ define "main" }}
+{{ partial "header.html" . }}
 
-<main role="main" class="article">
-  {{ partial "article.html" . }}
-</main>
+{{ partial "site-title.html" . }}
 
-{{ end }}
+{{ partial "nav-bar.html" . }}
+
+{{ partial "base16-logo.html" . }}
+
+{{ .Content }}
+
+{{ partial "footer.html" . }}

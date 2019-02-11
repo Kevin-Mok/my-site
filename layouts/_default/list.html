@@ -1,10 +1,11 @@
-{{ define "main" }}
+{{ partial "header.html" . }}
 
-<!-- <main role="main" class="article-list">
-  <h1 class="list-title">{{ .Title }}</h1>
-  {{ range .Data.Pages }}
-    {{ partial "article-list-item.html" . }}
-  {{ end }}
-</main> -->
+{{ partial "site-title.html" . }}
 
-{{ end }}
+{{ partial "nav-bar.html" . }}
+
+{{ partial "base16-logo.html" . }}
+
+{{ .Content }}
+
+{{ partial "footer.html" . }}

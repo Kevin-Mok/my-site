@@ -1,9 +1,13 @@
-{{ define "main" }}
+{{ partial "header.html" . }}
+
+{{ partial "site-title.html" . }}
+
+{{ partial "nav-bar.html" . }}
+
+{{ partial "base16-logo.html" . }}
 
 <div id="homepage">
-
-{{ partial "about.html" . }}
-
+  {{ partial "about.html" . }}
 </div>
 
-{{ end }}
+{{ partial "footer.html" . }}

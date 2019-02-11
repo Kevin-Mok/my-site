@@ -2,11 +2,6 @@
 
 {{ partial "site-title.html" . }}
 
-{{ partial "nav-bar.html" . }}
-
 {{ partial "base16-logo.html" . }}
 
-{{ block "main" . }}
-{{ end }}
-
-{{ partial "footer.html" . }}
+{{ .Content }}

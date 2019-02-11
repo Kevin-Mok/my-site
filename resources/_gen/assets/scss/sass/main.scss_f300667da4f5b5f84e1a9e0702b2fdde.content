@@ -301,8 +301,8 @@ h1.site-title {
   /* font-size: 3.5em; */
   font-size: 4.8em;
   color: #d3d0c8;
-  margin-top: 0.5em;
-  margin-bottom: 0; }
+  margin-top: 1rem;
+  margin-bottom: 0.5rem; }
   h1.site-title a {
     color: #66cccc; }
     h1.site-title a:visited {
@@ -319,12 +319,13 @@ h1.site-title {
       font-size: 2em; } }
 
 .hero-logo img {
+  margin-top: 0.5rem;
   width: 100%; }
 
 .nav-bar {
   margin-left: .5em;
-  padding-top: 1rem;
-  padding-bottom: 1rem; }
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem; }
   .nav-bar .caret {
     color: #f2f0ec;
     margin-right: .75rem; }

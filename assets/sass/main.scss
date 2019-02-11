@@ -417,8 +417,8 @@ h1.site-title {// {{{
   font-size: 4.8em;
   // color: #66cccc;
   color: $base05;
-  margin-top: 0.5em;
-  margin-bottom: 0;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
 
   @include a-color($base-sky-blue);
   a {
@@ -437,6 +437,7 @@ h1.site-title {// {{{
 }// }}}
 
 .hero-logo img {
+  margin-top: 0.5rem;
   width: 100%;
 }
 
@@ -444,7 +445,7 @@ h1.site-title {// {{{
   margin-left: .5em;
   // margin-bottom: 1em;
   // margin-top: .75em;
-  @include vert-padding-rem(1);
+  @include vert-padding-rem(.5);
 
   .caret {
       color: #f2f0ec;
