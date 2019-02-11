@@ -1,0 +1,23 @@
+# baseURL: http://localhost:1313/
+baseURL: https://kevin-mok.com/
+# baseURL: /home/kevin/coding/mf-site/public
+languageCode: en-us
+title: Kevin Mok's Website
+# theme: base16
+enableRobotsTXT: true
+
+params:
+  author: Kevin Mok
+  description: I'm a Computer Science (CS) student at the University of Toronto and an avid Linux/FOSS user. Come check out my personal site! 
+
+menu:
+  main:
+  - name: resume
+    url: /resume
+    weight: 5
+  # - name: credits
+    # url: /credits
+    # weight: 10
+  # - name: config
+    # url: /config
+

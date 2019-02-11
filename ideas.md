@@ -33,8 +33,8 @@
 
 # Tiny
 - SEO
-  - be more specific with robots.txt when have content
   - add/redirect aliases
+  - be more specific with robots.txt when have content
 
 Break> {{{
 > }}}

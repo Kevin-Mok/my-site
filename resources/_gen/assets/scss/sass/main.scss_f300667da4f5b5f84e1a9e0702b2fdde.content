@@ -325,6 +325,13 @@ h1.site-title {
   margin-left: .5em;
   padding-top: 1rem;
   padding-bottom: 1rem; }
+  .nav-bar .caret {
+    color: #f2f0ec;
+    margin-right: .75rem; }
+  .nav-bar .nav-bar-links {
+    display: inline; }
+    .nav-bar .nav-bar-links .nav-bar-link {
+      padding-right: .5em; }
   @media (max-width: 800px) {
     .nav-bar {
       font-size: .8em; } }

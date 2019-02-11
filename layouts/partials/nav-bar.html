@@ -1,0 +1,12 @@
+<div class="container clearfix nav-bar">
+  [ <a href="{{ .Site.BaseURL }}">~</a> /
+  <a href="{{ .Page.Permalink }}">{{ .Page.Dir }}</a>
+  
+   ]
+  <span class="caret"># _</span>
+  <div class="nav-bar-links">
+    {{ range .Site.Menus.main }}
+      <a href="{{ .URL }}" class="nav-bar-link">{{ .Name }}</a> 
+    {{ end }}
+  </div>
+</div>

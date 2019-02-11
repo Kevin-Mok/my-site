@@ -446,6 +446,19 @@ h1.site-title {// {{{
   // margin-top: .75em;
   @include vert-padding-rem(1);
 
+  .caret {
+      color: #f2f0ec;
+      margin-right: .75rem;
+  }
+
+  .nav-bar-links {
+    display: inline;
+
+    .nav-bar-link {
+      padding-right: .5em;
+    }
+  }
+
   @media (max-width: $phone-width) {
     // font-size: .9em;
     font-size: .8em;
