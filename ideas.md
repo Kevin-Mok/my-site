@@ -2,12 +2,14 @@
 - resume
   - fix title
   - printable version
+    - JS to change CSS
   - list of things done with diff. langs.
 - add CSS grid layout
   - add tooltip saying responsive 
 - articles (ideas)
 
 - loop through URL sections
+- ask about most efficient way for custom layout for each section
 - JS snippets?
 - rewrite CSS in Sass
   - push to base16 repo

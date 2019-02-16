@@ -1,8 +1,25 @@
 <div class="container clearfix nav-bar">
-  [ <a href="{{ .Site.BaseURL }}">~</a> /
-  <a href="{{ .Page.Permalink }}">{{ .Page.Dir }}</a>
-  
-   ]
+
+  {{ define "breadcrumbnav" }}
+    {{ if .p1.Parent }}
+      <!-- <p>{{ .p1 }} {{ .p2 }}</p> -->
+      {{ template "breadcrumbnav" (dict "p1" .p1.Parent "p2" .p2 )  }}
+    {{ else if not .p1.IsHome }}
+      {{ template "breadcrumbnav" (dict "p1" .p1.Site.Home "p2" .p2 )  }}
+    {{ end }}
+    <a href="{{ .p1.RelPermalink }}">
+      {{ if .p1.IsHome }}~{{ else }}
+        {{- replace .p1.Title " " "-" | lower -}}
+      {{ end }}</a>
+    {{ if ne .p1 .p2 }}
+      / 
+    {{ end }}
+  {{ end }}
+
+  [
+  {{ template "breadcrumbnav" (dict "p1" . "p2" .) }}
+  ]
+
   <span class="caret"># _</span>
   <div class="nav-bar-links">
     {{ range .Site.Menus.main }}
