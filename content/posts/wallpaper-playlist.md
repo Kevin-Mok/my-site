@@ -3,10 +3,52 @@ title: Wallpaper Playlist for pywal
 date: 2019-02-16T11:42:33-05:00
 draft: false
 ---
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras a neque efficitur, consectetur elit a, porttitor velit. Vestibulum maximus nisl sit amet ligula auctor, eu condimentum turpis sagittis. Sed massa ligula, posuere vel varius quis, consectetur et mauris. In hac habitasse platea dictumst. Nunc volutpat ex eu vestibulum consectetur. Fusce mollis egestas felis, vel tristique nisl semper quis. Morbi id sollicitudin justo. Duis iaculis dolor dictum, elementum quam scelerisque, hendrerit nulla. Pellentesque ac venenatis lorem, et fringilla magna. Pellentesque blandit tristique arcu. Sed mollis leo ligula, eu pretium nisl accumsan ac.
+{{< highlight sh >}}
+#!/bin/bash
 
-Nulla sit amet ultricies tellus. Phasellus quis urna sit amet nisi sagittis eleifend quis eu orci. Aenean non metus luctus, faucibus justo at, viverra risus. Fusce vehicula tincidunt malesuada. In eget posuere tellus, a tristique orci. Aenean a feugiat ex, quis posuere dolor. Etiam gravida id nunc et rutrum. Sed enim erat, sodales ac arcu vitae, bibendum eleifend odio. Etiam a bibendum risus. Curabitur commodo gravida ipsum id condimentum. Duis cursus libero ipsum, a ultricies justo fermentum et.
+shuffle_cache="shuffle.txt"
+regen_flag=0
+dir=""
 
-Maecenas erat ipsum, vulputate vel egestas eget, lobortis convallis eros. Suspendisse porta dolor sed tempus lacinia. In fermentum rutrum enim, ac sodales dui mollis sed. Pellentesque ut consequat quam. Maecenas sollicitudin auctor porttitor. Duis feugiat faucibus mattis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vestibulum molestie, sem sit amet finibus cursus, mi nunc lacinia nunc, eget sollicitudin sem turpis at metus. Sed sit amet magna orci. Praesent consequat nunc maximus turpis consectetur tincidunt. Donec non maximus quam, a fermentum neque. Etiam fringilla mollis eros sed sagittis. Suspendisse malesuada neque non egestas sollicitudin. Donec ullamcorper diam dui, vel ornare massa aliquet eget. Pellentesque pharetra condimentum pretium.
+function usage_msg() {
+	# echo "usage: shuffler [-r] [dir_name]"
+	cat <<-EOF
+	Usage: shuffler [-r] [dir_name]
+    -r: regenerate the shuffle cache
+	EOF
+}
 
-Ut volutpat, orci viverra vulputate congue, elit dui suscipit eros, ac posuere odio purus id mi. Donec imperdiet sem et ligula malesuada venenatis. Donec tincidunt, turpis ac cursus tristique, sem diam blandit justo, at laoreet mauris libero in mauris. Pellentesque at ex lacus. Aliquam facilisis nunc accumsan quam facilisis dapibus. Duis suscipit ex sed mauris fermentum, id mollis risus volutpat. Maecenas et nulla velit. Fusce in nisl eget tortor molestie auctor. Nullam aliquet quam nec elit iaculis tincidunt. Sed malesuada, ligula ac congue suscipit, tortor augue accumsan nisi, ut luctus ipsum metus lobortis lectus. Praesent iaculis varius ex, ac maximus libero lobortis vel. Vivamus at justo non quam eleifend sagittis. Duis porta tincidunt commodo. Sed sed neque vel sem maximus sollicitudin. Pellentesque mattis eleifend sodales. Proin lobortis libero eget mattis facilisis.
+while getopts ":r" opt; do
+  case $opt in
+	r)
+	  echo "-r was triggered!" >&2
+	  regen_flag=1
+	  ;;
+	\?)
+	  echo "Invalid flag: -$OPTARG" >&2
+	  usage_msg
+	  exit 1
+	  ;;
+  esac
+done
+
+shift $((OPTIND-1))
+# if no dir, use pwd
+if [[ "$#" -eq 0 ]]; then
+	dir=$(pwd)
+elif [[ "$#" -gt 1 ]] || [[ ! -d "$1" ]]; then
+	usage_msg
+	exit 1
+else
+	dir="$1"
+fi
+
+# rebuild shuffle cache if regen_flag, doesn't exist or file empty
+if [[ "$regen_flag" -eq 1 ]] || [[ ! -f "$dir"/"$shuffle_cache" ]] || \
+  [[ $(wc -l "$dir"/"$shuffle_cache" | awk '{print $1}') -eq 0 ]]; then
+  find "$dir"/* ! -name "$shuffle_cache" -type f | shuf > \
+  "$dir"/"$shuffle_cache"
+fi
+head -n 1 "$dir"/"$shuffle_cache"
+printf '%s\n\n' "$(sed '1d' "$dir"/"$shuffle_cache")" > "$dir"/"$shuffle_cache"
+{{< /highlight >}}

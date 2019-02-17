@@ -5,6 +5,7 @@ languageCode: en-us
 title: Kevin Mok's Website
 # theme: base16
 enableRobotsTXT: true
+pygmentsUseClassic: true
 
 params:
   author: Kevin Mok

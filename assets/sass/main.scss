@@ -582,7 +582,7 @@ article.single * {
 article.single pre {
   margin-top: 0;
   margin-bottom: 1rem;
-  overflow-x: scroll;
+  // overflow-x: auto;
   border-radius: 3px;
   padding: 2rem;
 }
@@ -598,8 +598,6 @@ article.single figure, article.single div.highlight {
   box-sizing: border-box;
   max-width: 52rem;
   width: 52rem;
-  margin-left: -8rem;
-  margin-right: -8rem;
   margin-bottom: 1rem;
   padding: 1em;
   background-color: #393939;
@@ -748,3 +746,4 @@ pre { background: #2d2d2d; color: #f2f0ec }
 /*# sourceMappingURL=style.css.map */
 
 //  }}} Pygments  // 
+
