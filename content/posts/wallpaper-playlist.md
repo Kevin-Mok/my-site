@@ -3,7 +3,33 @@ title: Wallpaper Playlist for pywal
 date: 2019-02-16T11:42:33-05:00
 draft: false
 ---
+Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
+vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
+no sea takimata sanctus est Lorem ipsum dolor sit amet.
+
+Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
+vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
+no sea takimata sanctus est Lorem ipsum dolor sit amet.
+
+Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
+vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
+no sea takimata sanctus est Lorem ipsum dolor sit amet.
+
+Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
+vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
+no sea takimata sanctus est Lorem ipsum dolor sit amet.
+
+Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
+vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
+no sea takimata sanctus est Lorem ipsum dolor sit amet.
+
 {{< highlight sh >}}
+
 #!/bin/bash
 
 shuffle_cache="shuffle.txt"
@@ -18,6 +44,7 @@ function usage_msg() {
 	EOF
 }
 
+# parse for regen_flag{{{
 while getopts ":r" opt; do
   case $opt in
 	r)
@@ -31,6 +58,9 @@ while getopts ":r" opt; do
 	  ;;
   esac
 done
+#}}}
+
+# set dir {{{ #
 
 shift $((OPTIND-1))
 # if no dir, use pwd
@@ -43,12 +73,16 @@ else
 	dir="$1"
 fi
 
+# }}} set dir #
+
 # rebuild shuffle cache if regen_flag, doesn't exist or file empty
 if [[ "$regen_flag" -eq 1 ]] || [[ ! -f "$dir"/"$shuffle_cache" ]] || \
-  [[ $(wc -l "$dir"/"$shuffle_cache" | awk '{print $1}') -eq 0 ]]; then
-  find "$dir"/* ! -name "$shuffle_cache" -type f | shuf > \
-  "$dir"/"$shuffle_cache"
+  [[ "$(head -n 1 "$dir"/"$shuffle_cache")" = "" ]]; then
+	find "$dir"/* ! -name "$shuffle_cache" -type f | shuf > "$dir"/"$shuffle_cache"
 fi
 head -n 1 "$dir"/"$shuffle_cache"
 printf '%s\n\n' "$(sed '1d' "$dir"/"$shuffle_cache")" > "$dir"/"$shuffle_cache"
+
+# vim: set tabstop=2 shiftwidth=2 expandtab:
+
 {{< /highlight >}}

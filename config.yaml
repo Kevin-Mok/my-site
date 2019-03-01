@@ -13,9 +13,9 @@ params:
 
 menu:
   main:
-  - name: resume
-    url: /resume
-    weight: 5
+  # - name: resume
+    # url: /resume
+    # weight: 5
   - name: posts/
     url: /posts
     weight: 6

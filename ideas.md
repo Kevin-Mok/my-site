@@ -1,5 +1,9 @@
 # Large
 - resume
+  - upload screenshots for spv
+  - date on same line as project
+  - collapsible sections
+    - link to each section beside it
   - fix title
   - printable version
     - JS to change CSS
@@ -38,6 +42,8 @@
 - SEO
   - add/redirect aliases
   - be more specific with robots.txt when have content
+- create different size images for SVG
+  - https://www.sitepoint.com/svg-good-for-website-performance/ 
 
 Break> {{{
 > }}}
