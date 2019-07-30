@@ -407,6 +407,31 @@ footer {// {{{
   margin-right: 2em;
 } */// }}}
 
+#resume {
+  a {
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  h1 {
+    color: $base-orange;
+  }
+
+  h2 {
+    color: $base-yellow;
+    display: inline;
+  }
+
+  p {
+    &.project-date {
+      float: right;
+    }
+  }
+
+}
+
 // TODO: converted up to here
 
 //  hero {{{ // 
@@ -517,23 +542,43 @@ h1.site-title {// {{{
 
 //  article.single {{{ // 
 
-article.single .meta {
-  font-size: 0.9em;
-  text-align: right;
-}
+article.single {
+    .meta {
+      font-size: 0.9em;
+      text-align: right;
+      margin-top: .5rem;
+      margin-bottom: .5rem;
 
-article.single .meta .key {
-  color: #747369;
-}
+      .key {
+        color: #747369;
+      }
 
-article.single .meta .val, article.single .meta .val a {
-  color: #cc99cc;
-}
+      .val {
+        color: #cc99cc;
 
-@media (max-width: $max-page-width) {
-  article.single .meta {
-    padding-left: 2rem;
-    padding-right: 2rem;
+        a {
+          color: #cc99cc;
+        }
+      }
+
+    }
+
+    .body {
+      padding-top: 1rem;
+      padding-bottom: 3rem;
+    }
+
+    @media (max-width: $max-page-width) {
+      .meta {
+        padding-left: 2rem;
+        padding-right: 2rem;
+      }
+
+      .body {
+        padding-top: .5rem;
+        padding-bottom: 1rem;
+      }
+
   }
 }
 
@@ -547,18 +592,6 @@ article.single h1.headline {
   article.single h1.headline {
     padding-left: 2rem;
     padding-right: 2rem;
-  }
-}
-
-article.single section.body {
-  padding-top: 4rem;
-  padding-bottom: 3rem;
-}
-
-@media (max-width: $max-page-width) {
-  article.single section.body {
-    padding-top: 2rem;
-    padding-bottom: 1rem;
   }
 }
 

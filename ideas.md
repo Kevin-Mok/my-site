@@ -1,12 +1,28 @@
 # Large
 - resume
+  - make old proj's displayable
+    - spv
+      - screenshots
+      - setup instructions
+    - see if SoundCloud API still bad (TrapBot)
+    - ADA vid/pics
+    - lc setup
+    - image tagger?
+      - executable
+  - date on same line as project
+  - collapsible sections
+    - link to each section beside it
   - fix title
+  - collapsible sections
+    - more
   - printable version
     - JS to change CSS
   - list of things done with diff. langs.
 - add CSS grid layout
   - add tooltip saying responsive 
 - articles (ideas)
+- screenshots gallery
+  - infinite scroll
 
 - loop through URL sections
 - ask about most efficient way for custom layout for each section
@@ -38,6 +54,8 @@
 - SEO
   - add/redirect aliases
   - be more specific with robots.txt when have content
+- create different size images for SVG
+  - https://www.sitepoint.com/svg-good-for-website-performance/ 
 
 Break> {{{
 > }}}

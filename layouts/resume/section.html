@@ -1,8 +1,15 @@
-{{ partial "header.html" . }}
+{{ partial "base/header.html" . }}
 
-{{ partial "site-title.html" . }}
+{{ partial "base/site-title.html" . }}
 
-{{ partial "base16-logo.html" . }}
+{{ partial "base/base16-logo.html" . }}
 
+<div id="resume">
+  
 {{ .Content }}
 
+</div>
+
+</div>
+</body>
+</html>

@@ -1,8 +1,9 @@
-baseURL: http://localhost:1313/
-# baseURL: https://kevin-mok.com/
+# baseURL: http://localhost:1313/
+baseURL: https://kevin-mok.com/
 # baseURL: /home/kevin/coding/mf-site/public
 languageCode: en-us
-title: Kevin Mok's Website
+# title: Kevin Mok's Website
+title: Kevin Mok
 # theme: base16
 enableRobotsTXT: true
 pygmentsUseClassic: true
@@ -16,9 +17,9 @@ menu:
   - name: resume
     url: /resume
     weight: 5
-  - name: posts/
-    url: /posts
-    weight: 6
+  # - name: posts/
+    # url: /posts
+    # weight: 6
   # - name: credits
     # url: /credits
     # weight: 10
