@@ -13,6 +13,8 @@
   - collapsible sections
     - link to each section beside it
   - fix title
+  - collapsible sections
+    - more
   - printable version
     - JS to change CSS
   - list of things done with diff. langs.
