@@ -1,5 +1,6 @@
-public/*
-/* resources/_gen/* */
+public/
+/* _gen files required by Netlify */
+/* resources/_gen/ */
 themes/base16*
 
 commit-msg.txt

@@ -305,11 +305,20 @@ footer a {
   color: #f99157; }
 
 #resume h2 {
-  color: #ffcc66;
+  color: #66cccc;
   display: inline; }
 
-#resume p.project-date {
-  float: right; }
+#resume .btn {
+  display: inline;
+  background-color: transparent;
+  margin-bottom: 5px; }
+  #resume .btn:focus, #resume .btn:active {
+    outline: none !important;
+    box-shadow: none; }
+
+#resume .date {
+  float: right;
+  color: #747369; }
 
 h1.site-title {
   text-align: center;

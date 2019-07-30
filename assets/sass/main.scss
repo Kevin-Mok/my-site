@@ -2,6 +2,7 @@
 
 //  base colors {{{ // 
 
+$base03: #747369;
 $base04: #a09f93;
 $base05: #d3d0c8; 
 $base-red: #f2777a;
@@ -81,9 +82,11 @@ $phone-width: 800px;
 
 //  general elements {{{ // 
 
+$background-color: #2d2d2d;
+
 body {
   margin: 0;
-  background-color: #2d2d2d;
+  background-color: $background-color;
   color: #f2f0ec;
   line-height: 1.5;
   font-size: 100%;
@@ -407,7 +410,7 @@ footer {// {{{
   margin-right: 2em;
 } */// }}}
 
-#resume {
+#resume {// {{{
   a {
     text-decoration: none;
     &:hover {
@@ -420,17 +423,27 @@ footer {// {{{
   }
 
   h2 {
-    color: $base-yellow;
+    color: $base-sky-blue;
     display: inline;
   }
 
-  p {
-    &.project-date {
-      float: right;
+  .btn {
+    display: inline;
+    background-color: transparent;
+    margin-bottom: 5px;
+
+    &:focus, &:active {
+      outline: none !important;
+      box-shadow: none;
     }
   }
 
-}
+  .date {
+    float: right;
+    color: $base03;
+  }
+
+}// }}}
 
 // TODO: converted up to here
 
