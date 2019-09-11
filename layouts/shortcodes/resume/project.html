@@ -1,17 +1,14 @@
-<div>
-  <!-- 
-  <button class="btn" type="button" data-toggle="collapse"
-    data-target="#{{ .Get "name" | lower | urlize }}-details"
-    aria-expanded="false" aria-controls="{{ .Get "name" | lower | urlize }}-details">
-  -->
+<div class="project">
+  <a class="project-link" href="{{ .Get "url" }}" target="_blank">
+    <img src="{{ "img/link.svg" | relURL }}" alt="link-icon">
+  </a>
   <button class="btn" type="button" data-toggle="collapse"
     data-target="#{{ .Get "name" | lower | urlize }}-details"
     aria-expanded="false" aria-controls="{{ .Get "name" | lower | urlize }}-details">
     <h2 class="project-title">{{ .Get "name" }} ⏷</h2>
-    <!-- {{ .Get "name" }} ⏷ -->
   </button>
   <div class="date">{{ .Get "date" }}</div>
-  <div class="collapse show" id="{{ .Get "name" | lower | urlize }}-details">
+  <div class="collapse" id="{{ .Get "name" | lower | urlize }}-details">
     <div>
       {{ .Inner }}
     </div>

@@ -1,0 +1,3 @@
+- bg colors
+- switch project shortcode
+- rm details top margin

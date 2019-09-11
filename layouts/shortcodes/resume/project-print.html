@@ -1,0 +1,13 @@
+<div class="project">
+  <h2 class="project-title">
+    <a href="{{ .Get "url" }}" target="_blank">
+      {{ .Get "name" }}
+    </a>
+  </h2>
+  <div class="date">{{ .Get "date" }}</div>
+  <div class="collapse show" id="details-{{ .Get "name" | lower | urlize }}">
+    <div>
+      {{ .Inner }}
+    </div>
+  </div>
+</div>

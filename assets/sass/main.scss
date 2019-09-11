@@ -82,10 +82,10 @@ $phone-width: 800px;
 
 //  general elements {{{ // 
 
-// $background-color: #2d2d2d;
-// $color: #f2f0ec;
-$background-color: white;
-$color: black;
+$background-color: #2d2d2d;
+$color: #f2f0ec;
+// $background-color: white;
+// $color: black;
 
 body {
   margin: 0;
@@ -413,7 +413,7 @@ footer {// {{{
   margin-right: 2em;
 } */// }}}
 
-#contact-info {
+#contact-info {// {{{
   @include vert-padding-rem(0.5);
   display: flex;
   align-content: center;
@@ -434,7 +434,7 @@ footer {// {{{
   #website {
     text-align: right;
   }
-}
+}// }}}
 
 #resume {// {{{
   a {
@@ -448,25 +448,44 @@ footer {// {{{
     color: $base-orange;
   }
 
-  h2 {
-    color: $base-sky-blue;
-    display: inline;
-  }
-
-  .btn {
-    display: inline;
-    background-color: transparent;
-    margin-bottom: 5px;
-
-    &:focus, &:active {
-      outline: none !important;
-      box-shadow: none;
-    }
-  }
-
   .date {
     float: right;
     color: $base03;
+  }
+
+  .project {
+    @include vert-padding-rem(.2);
+
+    h2 {
+      color: $base-sky-blue;
+      display: inline;
+    }
+
+    img {
+      height: 1.2em;
+    }
+
+    .project-link {
+      &:hover {
+        text-decoration: none;
+      }
+    }
+
+    .btn {
+      display: inline;
+      background-color: transparent;
+      margin-bottom: 5px;
+      padding-left: 7px;
+
+      &:focus, &:active {
+        outline: none !important;
+        box-shadow: none;
+      }
+    }
+
+    // [id^="details-"] {
+      // margin-top: .5em;
+    // }
   }
 
 }// }}}
