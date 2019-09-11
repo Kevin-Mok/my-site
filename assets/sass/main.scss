@@ -2,6 +2,7 @@
 
 //  base colors {{{ // 
 
+$base03: #747369;
 $base04: #a09f93;
 $base05: #d3d0c8; 
 $base-red: #f2777a;
@@ -81,10 +82,15 @@ $phone-width: 800px;
 
 //  general elements {{{ // 
 
+$background-color: #2d2d2d;
+$color: #f2f0ec;
+// $background-color: white;
+// $color: black;
+
 body {
   margin: 0;
-  background-color: #2d2d2d;
-  color: #f2f0ec;
+  background-color: $background-color;
+  color: $color;
   line-height: 1.5;
   font-size: 100%;
   /* font-family: 'Source Code Pro', monospace; */
@@ -407,7 +413,40 @@ footer {// {{{
   margin-right: 2em;
 } */// }}}
 
-#resume {
+#print-icon {// {{{
+  float: right;
+
+  img {
+    height: 1.75em;
+    position: relative;
+    top: 1em;
+  }
+}// }}}
+
+#contact-info {// {{{
+  @include vert-padding-rem(0.5);
+  display: flex;
+  align-content: center;
+
+  div {
+    flex-grow: 1;
+    color: $base05;
+
+    img {
+      height: 1em;
+    }
+  }
+
+  #email {
+    text-align: center;
+  }
+
+  #website {
+    text-align: right;
+  }
+}// }}}
+
+#resume {// {{{
   a {
     text-decoration: none;
     &:hover {
@@ -419,18 +458,47 @@ footer {// {{{
     color: $base-orange;
   }
 
-  h2 {
-    color: $base-yellow;
-    display: inline;
+  .date {
+    float: right;
+    color: $base03;
   }
 
-  p {
-    &.project-date {
-      float: right;
+  .project {
+    @include vert-padding-rem(.2);
+
+    h2 {
+      color: $base-sky-blue;
+      display: inline;
     }
+
+    img {
+      height: 1.2em;
+    }
+
+    .project-link {
+      &:hover {
+        text-decoration: none;
+      }
+    }
+
+    .btn {
+      display: inline;
+      background-color: transparent;
+      margin-bottom: 5px;
+      padding-left: 7px;
+
+      &:focus, &:active {
+        outline: none !important;
+        box-shadow: none;
+      }
+    }
+
+    // [id^="details-"] {
+      // margin-top: .5em;
+    // }
   }
 
-}
+}// }}}
 
 // TODO: converted up to here
 

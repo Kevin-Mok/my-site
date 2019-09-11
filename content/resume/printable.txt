@@ -1,0 +1,4 @@
+- bg colors
+- site title max width
+- switch project shortcode
+- rm details top margin

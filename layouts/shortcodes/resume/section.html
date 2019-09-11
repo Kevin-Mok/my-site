@@ -1,4 +1,4 @@
 <div id="{{ .Get 0 }}">
 <h1 class="section-header">{{ .Get 0 | title }}</h1>
-  {{ .Inner }}
+  {{ .Inner | markdownify }}
 </div>

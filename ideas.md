@@ -1,31 +1,25 @@
 # Large
 - resume
+  - expand some projects by default
+  - repo link (GitHub icon) beside each section
+    - make links open in new tab
+    - picture/video links?
+  - printable white version
+    - upload PDF
+    - JS to change CSS?
   - make old proj's displayable
     - spv
       - screenshots
       - setup instructions
-    - see if SoundCloud API still bad (TrapBot)
+    - open SoundCloud issue about API
     - ADA vid/pics
-    - lc setup
-    - image tagger?
+    - image tagger
       - executable
-  - date on same line as project
-  - collapsible sections
-    - link to each section beside it
-  - fix title
-  - collapsible sections
-    - more
-  - printable version
-    - JS to change CSS
-  - list of things done with diff. langs.
-- add CSS grid layout
-  - add tooltip saying responsive 
 - articles (ideas)
 - screenshots gallery
   - infinite scroll
 
 - loop through URL sections
-- ask about most efficient way for custom layout for each section
 - JS snippets?
 - rewrite CSS in Sass
   - push to base16 repo
@@ -35,6 +29,8 @@
 # Medium
 - socials in footer
   - icons
+    - GitHub
+    - Fosstodon
   - email
     - tooltip pop-up with email and clipboard button/link
     - [Pure CSS Tooltips](https://www.youtube.com/watch?v=hAeQ8CqrGDY)
@@ -56,9 +52,6 @@
   - be more specific with robots.txt when have content
 - create different size images for SVG
   - https://www.sitepoint.com/svg-good-for-website-performance/ 
-
-Break> {{{
-> }}}
 
 ## Archived
 - about/homepage
