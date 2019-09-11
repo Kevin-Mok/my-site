@@ -2,8 +2,8 @@
 - resume
   - expand some projects by default
   - repo link (GitHub icon) beside each section
-    - picture/video links?
     - make links open in new tab
+    - picture/video links?
   - printable white version
     - upload PDF
     - JS to change CSS?
@@ -29,6 +29,8 @@
 # Medium
 - socials in footer
   - icons
+    - GitHub
+    - Fosstodon
   - email
     - tooltip pop-up with email and clipboard button/link
     - [Pure CSS Tooltips](https://www.youtube.com/watch?v=hAeQ8CqrGDY)

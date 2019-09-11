@@ -1,7 +1,7 @@
 ---
 title: "Resume"
 date: 2019-02-11T07:50:51-05:00
-draft: true
+draft: false
 ---
 {{% resume/section overview %}}<!--- {{{ -->
 
@@ -55,16 +55,33 @@ and experience and jumpstart my career with a solid foundation.
 
 {{% resume/project name="Grocery Finder" url="https://github.com/Kevin-Mok/grocery-finder" date="April 2019" %}}
 
-- Proof of concept for a web app that finds the best supermarket for your needs.
-- Took on role as project leader to prioritize and delegate tasks while
-  also implementing a majority of the core features.
-- Responsive front-end using **Bootstrap**. Uses **Node.js** and **MongoDB** for back-end.
+- Proof of concept for a web app that finds the best supermarket for 
+  your needs based on the total price of your cart items and distance 
+  form you.
+- Responsive front-end using **Bootstrap**. Uses **Node.js** and 
+  **MongoDB** for back-end.
 - Currently deployed on [**Heroku**][Grocery Finder Heroku].
+- Took on role as project leader to prioritize and delegate tasks 
+  while
+  also implementing a majority of the core features.
 
 [Grocery Finder Heroku]: http://www.grocery-finder.ml
 
 {{% /resume/project %}}
 
+<!--- Grocery Finder }}} -->
+
+<!--- TrapBot {{{ -->
+
+{{% resume/project name="TrapBot"
+url="https://github.com/Kevin-Mok/TrapBot" date="March 2018" %}}
+
+- reddit bot that looks for comments with song names and responds with 
+  their respective SoundCloud links.
+- Received positive feedback from users who saw the bot's posts.
+- Uses __Python__ API wrappers for SoundCloud and reddit.
+
+{{% /resume/project %}}
 
 <!--- Grocery Finder }}} -->
 

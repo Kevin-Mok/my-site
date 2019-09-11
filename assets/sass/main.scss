@@ -82,12 +82,15 @@ $phone-width: 800px;
 
 //  general elements {{{ // 
 
-$background-color: #2d2d2d;
+// $background-color: #2d2d2d;
+// $color: #f2f0ec;
+$background-color: white;
+$color: black;
 
 body {
   margin: 0;
   background-color: $background-color;
-  color: #f2f0ec;
+  color: $color;
   line-height: 1.5;
   font-size: 100%;
   /* font-family: 'Source Code Pro', monospace; */
@@ -410,6 +413,29 @@ footer {// {{{
   margin-right: 2em;
 } */// }}}
 
+#contact-info {
+  @include vert-padding-rem(0.5);
+  display: flex;
+  align-content: center;
+
+  div {
+    flex-grow: 1;
+    color: $base05;
+
+    img {
+      height: 1em;
+    }
+  }
+
+  #email {
+    text-align: center;
+  }
+
+  #website {
+    text-align: right;
+  }
+}
+
 #resume {// {{{
   a {
     text-decoration: none;
@@ -463,15 +489,15 @@ h1.site-title {// {{{
     text-decoration: none;
   }
 
-  @media (max-width: $max-page-width) {
-    font-size: 3em;
-  }
-
-  @media (max-width: $phone-width) {
+  // @media (max-width: $max-page-width) {
     // font-size: 3em;
-    // font-size: 2.5em;
-    font-size: 2em;
-  }
+  // }
+
+  // @media (max-width: $phone-width) {
+    // // font-size: 3em;
+    // // font-size: 2.5em;
+    // font-size: 2em;
+  // }
 }// }}}
 
 .hero-logo img {
