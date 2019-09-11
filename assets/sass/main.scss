@@ -413,6 +413,16 @@ footer {// {{{
   margin-right: 2em;
 } */// }}}
 
+#print-icon {// {{{
+  float: right;
+
+  img {
+    height: 1.75em;
+    position: relative;
+    top: 1em;
+  }
+}// }}}
+
 #contact-info {// {{{
   @include vert-padding-rem(0.5);
   display: flex;
@@ -508,15 +518,15 @@ h1.site-title {// {{{
     text-decoration: none;
   }
 
-  // @media (max-width: $max-page-width) {
-    // font-size: 3em;
-  // }
+  @media (max-width: $max-page-width) {
+    font-size: 3em;
+  }
 
-  // @media (max-width: $phone-width) {
-    // // font-size: 3em;
-    // // font-size: 2.5em;
-    // font-size: 2em;
-  // }
+  @media (max-width: $phone-width) {
+    // font-size: 3em;
+    // font-size: 2.5em;
+    font-size: 2em;
+  }
 }// }}}
 
 .hero-logo img {

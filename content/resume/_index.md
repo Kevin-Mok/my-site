@@ -16,7 +16,8 @@ and experience and jumpstart my career with a solid foundation.
 
 <!--- Spotify Graphs {{{ -->
 
-{{% resume/project name="Spotify Visualizer" url="https://github.com/Kevin-Mok/spotify-lib-vis" date="July 2018" %}}
+{{% resume/project name="Spotify Visualizer" 
+url="https://github.com/Kevin-Mok/spotify-lib-vis" date="July 2018" show="true" %}}
 
 - Web app that scans your Spotify library using their API to produce
   [**d3** graphs][d3 graph examples] to visualize the artists, genres and
@@ -33,9 +34,11 @@ and experience and jumpstart my career with a solid foundation.
 
 <!--- ParsaFood {{{ -->
 
-{{% resume/project name="ParsaFood" url="https://github.com/Kevin-Mok/ParsaFood" date="Feb. 2018" %}}
+{{% resume/project name="ParsaFood" 
+url="https://github.com/Kevin-Mok/ParsaFood" date="Feb. 2018" 
+show="true" %}}
 
-- **Android** app that reads ingredient labels and detects any dietary
+- **Android** app that reads ingredient labels and detects any dietary 
   restrictions/allergies. 
 - Made during a 24-hour [food-themed hackathon][Platterz Hackathon event]
   in a group with two other members. Came in 2<sup>nd</sup> place and won
@@ -53,7 +56,9 @@ and experience and jumpstart my career with a solid foundation.
  
 <!--- Grocery Finder {{{ -->
 
-{{% resume/project name="Grocery Finder" url="https://github.com/Kevin-Mok/grocery-finder" date="April 2019" %}}
+{{% resume/project name="Grocery Finder" 
+url="https://github.com/Kevin-Mok/grocery-finder" date="April 2019" 
+show="true" %}}
 
 - Proof of concept for a web app that finds the best supermarket for 
   your needs based on the total price of your cart items and distance 

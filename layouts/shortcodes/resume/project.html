@@ -8,7 +8,7 @@
     <h2 class="project-title">{{ .Get "name" }} ⏷</h2>
   </button>
   <div class="date">{{ .Get "date" }}</div>
-  <div class="collapse" id="{{ .Get "name" | lower | urlize }}-details">
+  <div class="collapse{{ with .Get "show" }} show{{ end }}" id="{{ .Get "name" | lower | urlize }}-details">
     <div>
       {{ .Inner }}
     </div>
