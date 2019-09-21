@@ -20,9 +20,17 @@ menu:
   # - name: posts/
     # url: /posts
     # weight: 6
+  - name: server
+    url: /server
+    weight: 7
+  - name: config
+    url: /config
+    weight: 10
   # - name: credits
     # url: /credits
-    # weight: 10
-  # - name: config
-    # url: /config
+    # weight: 20
+    
+blackfriday:
+  plainIDAnchors: true
+  hrefTargetBlank: true
 
