@@ -62,7 +62,7 @@ show="true" %}}
 
 - Proof of concept for a web app that finds the best supermarket for 
   your needs based on the total price of your cart items and distance 
-  form you.
+  from you.
 - Responsive front-end using **Bootstrap**. Uses **Node.js** and 
   **MongoDB** for back-end.
 - Currently deployed on [**Heroku**][Grocery Finder Heroku].
@@ -97,7 +97,7 @@ url="https://github.com/Kevin-Mok/SuperADABros" date="May 2019" %}}
 
 - Clone of Super Mario Bros 1-1, but Mario is mobility-impaired and
   uses ramps to get through the level.
-- Able to played using only head movement by getting input from a
+- Able to be played using only head movement by getting input from a
   face-tracking script (**OpenCV**).
 - Implemented in [**Godot**][Godot site], an open-source game engine.
 - Made during a 24-hour [accessibility-themed hackathon][PC Hacks event].
