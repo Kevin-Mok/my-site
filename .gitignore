@@ -4,3 +4,4 @@ resources/_gen/
 themes/base16*
 
 commit-msg.txt
+static/server-apps.json

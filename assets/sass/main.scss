@@ -722,7 +722,8 @@ article.single section.body h4 { color: #f2777a; }
 article.single section.body h5 { color: #515151; }
 article.single section.body h6 { color: #747369; }
 
-article.single section.body a,a:visited { color: #a06700; }
+// article.single section.body a,a:visited { color: #a06700; }
+article.single section.body a,a:visited { color: $base-sky-blue; }
 
 /* Article Elements */
 

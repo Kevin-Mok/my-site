@@ -50,17 +50,42 @@ const generateTable = (table, data) => {
   })
 }
 
-const getDurationSince = date => { 
+const getDurationSince = (date, verbose) => { 
   const milli = Math.abs(Date.now() - date)
   let mins = Math.floor(milli/1000/60)
   const days = Math.floor(mins/60/24)
   mins %= 60*24
   const hours = Math.floor(mins/60)
   mins %= 60
-  let durationString = (days > 0) ? `${days}d ` : ''
-  durationString += (hours > 0) ? `${hours} hours, ` : ''
-  durationString += (mins > 0) ? `${mins} minutes` : '0m'
-  return durationString
+
+  let dayString = ''
+  let hourString = ''
+  let minString = ''
+  if (days > 0) {
+    dayString += days
+    if (!verbose) {
+      dayString += 'd '
+    } else {
+      dayString += (days == 1) ? ' day' : ' days'
+      dayString += ', '
+    }
+  }
+  if (hours > 0) {
+    hourString += hours
+    if (!verbose) {
+      hourString += 'h '
+    } else {
+      hourString += (hours == 1) ? ' hour' : ' hours'
+      hourString += ', '
+    }
+  }
+  minString += (mins > 0) ? mins: '0' 
+  if (!verbose) {
+    minString += 'm'
+  } else {
+    minString += (mins == 1) ? ' minute' : ' minutes'
+  }
+  return dayString + hourString + minString
 }
 
 fetch("/server-apps.json")
@@ -70,7 +95,7 @@ fetch("/server-apps.json")
     generateTable(table, json['sites']);
     generateTableHead(table);
     document.querySelector('#last-updated-time').textContent =
-      getDurationSince(new Date(json['updateTime'])) + ' ago.'
+      getDurationSince(new Date(json['updateTime']), false) + ' ago.'
     document.querySelector('#server-uptime-time').textContent = 
-      getDurationSince(new Date(json['upSince'])) + '.'
+      getDurationSince(new Date(json['upSince']), true) + '.'
   });
