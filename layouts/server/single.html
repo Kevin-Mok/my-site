@@ -7,8 +7,14 @@
 {{ partial "base/base16-logo.html" . }}
 
 <main role="main" id="server">
+  {{ partial "base/article.html" . }}
   <table>
   </table>
+  <div id="time-info">
+    <!-- <p id="last-updated">Last updated: <span id="last-updated-time"></span></p> -->
+    <!-- <p id="server-uptime">Server Uptime: <span id="server-uptime-time"></span></p> -->
+    Last updated: <span id="last-updated-time"></span> Server Uptime: <span id="server-uptime-time">
+  </div>
 </main>
 
 {{ partial "base/footer.html" . }}

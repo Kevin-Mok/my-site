@@ -1,74 +1,78 @@
-[
-  {
-    "status": "up",
-    "shortUrl": "kevin-mok.com",
-    "url": "https://kevin-mok.com",
-    "siteTitle": "Kevin Mok",
-    "description": "Personal site (this site).",
-    "repo": "Kevin-Mok/my-site",
-    "repoUrl": "https://git.kevin-mok.com/Kevin-Mok/my-site"
-  },
-  {
-    "status": "up",
-    "shortUrl": "git.kevin-mok.com",
-    "url": "https://git.kevin-mok.com",
-    "siteTitle": "Kevin Mok's Gitea",
-    "description": "Lightweight Git server.",
-    "repo": "go-gitea/gitea",
-    "repoUrl": "https://github.com/go-gitea/gitea"
-  },
-  {
-    "status": "up",
-    "shortUrl": "cal.khkm.tk",
-    "url": "https://cal.khkm.tk",
-    "siteTitle": "BaÃ¯kal server",
-    "description": "CalDAV/CardDAV server.",
-    "repo": "sabre-io/Baikal",
-    "repoUrl": "https://github.com/sabre-io/Baikal"
-  },
-  {
-    "status": "up",
-    "shortUrl": "matrix.ataraxy.tk",
-    "url": "https://matrix.ataraxy.tk/.well-known/matrix/server",
-    "siteTitle": "",
-    "description": "Matrix chat server (only accessible through Riot client).",
-    "repo": "matrix-org/synapse",
-    "repoUrl": "https://github.com/matrix-org/synapse"
-  },
-  {
-    "status": "up",
-    "shortUrl": "mnpd.gq",
-    "url": "https://mnpd.gq/test",
-    "siteTitle": "test",
-    "description": "Minimalist web notepad.",
-    "repo": "pereorga/minimalist-web-notepad",
-    "repoUrl": "https://github.com/pereorga/minimalist-web-notepad"
-  },
-  {
-    "status": "up",
-    "shortUrl": "pste.gq",
-    "url": "https://pste.gq",
-    "siteTitle": "hastebin",
-    "description": "Pastebin.",
-    "repo": "seejohnrun/haste-server",
-    "repoUrl": "https://github.com/seejohnrun/haste-server"
-  },
-  {
-    "status": "up",
-    "shortUrl": "smol.gq",
-    "url": "https://smol.gq",
-    "siteTitle": "Kevin's URL Shortener",
-    "description": "URL shortener.",
-    "repo": "132ikl/liteshort",
-    "repoUrl": "https://github.com/132ikl/liteshort"
-  },
-  {
-    "status": "up",
-    "shortUrl": "twem.tk",
-    "url": "https://twem.tk",
-    "siteTitle": "Twitch Emote Links",
-    "description": "Twitch emotes (for Matrix chat server which doesn't have custom emotes).",
-    "repo": "",
-    "repoUrl": ""
-  }
-]
+{
+  "sites": [
+    {
+      "shortUrl": "kevin-mok.com",
+      "url": "https://kevin-mok.com",
+      "siteTitle": " Kevin Mok ",
+      "description": "Personal site (this site).",
+      "repo": "Kevin-Mok/my-site",
+      "repoUrl": "https://git.kevin-mok.com/Kevin-Mok/my-site",
+      "status": "up"
+    },
+    {
+      "shortUrl": "git.kevin-mok.com",
+      "url": "https://git.kevin-mok.com",
+      "siteTitle": "Kevin Mok's Gitea",
+      "description": "Lightweight Git server.",
+      "repo": "go-gitea/gitea",
+      "repoUrl": "https://github.com/go-gitea/gitea",
+      "status": "up"
+    },
+    {
+      "shortUrl": "cal.khkm.tk",
+      "url": "https://cal.khkm.tk",
+      "siteTitle": "Ba&#xEF;kal server",
+      "description": "CalDAV/CardDAV server.",
+      "repo": "sabre-io/Baikal",
+      "repoUrl": "https://github.com/sabre-io/Baikal",
+      "status": "up"
+    },
+    {
+      "shortUrl": "matrix.ataraxy.tk",
+      "url": "https://matrix.ataraxy.tk/.well-known/matrix/server",
+      "siteTitle": "",
+      "description": "Matrix chat server. Only accessible through Riot client.",
+      "repo": "matrix-org/synapse",
+      "repoUrl": "https://github.com/matrix-org/synapse",
+      "status": "up"
+    },
+    {
+      "shortUrl": "mnpd.gq",
+      "url": "https://mnpd.gq/test",
+      "siteTitle": "test",
+      "description": "Minimalistic live web notepad.",
+      "repo": "pereorga/minimalist-web-notepad",
+      "repoUrl": "https://github.com/pereorga/minimalist-web-notepad",
+      "status": "up"
+    },
+    {
+      "shortUrl": "pste.gq",
+      "url": "https://pste.gq",
+      "siteTitle": "hastebin",
+      "description": "Pastebin.",
+      "repo": "seejohnrun/haste-server",
+      "repoUrl": "https://github.com/seejohnrun/haste-server",
+      "status": "up"
+    },
+    {
+      "shortUrl": "smol.gq",
+      "url": "https://smol.gq",
+      "siteTitle": "Kevin&apos;s URL Shortener",
+      "description": "URL shortener.",
+      "repo": "132ikl/liteshort",
+      "repoUrl": "https://github.com/132ikl/liteshort",
+      "status": "up"
+    },
+    {
+      "shortUrl": "taskd.khkm.tk",
+      "url": "taskd.khkm.tk:53589",
+      "siteTitle": "",
+      "description": "Taskwarrior (task manager) server. No web interface.",
+      "repo": "GothenburgBitFactory/taskserver",
+      "repoUrl": "https://github.com/GothenburgBitFactory/taskserver",
+      "status": "up"
+    }
+  ],
+  "updateTime": 1569204723194,
+  "upSince": "2019-09-22 19:30:10"
+}

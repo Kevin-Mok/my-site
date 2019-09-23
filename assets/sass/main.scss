@@ -501,9 +501,17 @@ footer {// {{{
 }// }}}
 
 #server {// {{{
-  table {
-    margin-top: 1.75em;
+  .body {
+    @include vert-padding-rem(.5);
   }
+
+  h1 {
+    margin-bottom: .25em;
+  }
+
+  // table {
+    // margin-top: 1.75em;
+  // }
 
   th, td {
     @include vert-padding-rem(.4);
@@ -519,6 +527,11 @@ footer {// {{{
 
   td {
     font-size: .9em;
+
+  }
+
+  .description {
+    font-size: .85em;
   }
 
   .status {
@@ -527,6 +540,13 @@ footer {// {{{
     img {
       height: 2em;
     }
+  }
+
+  #time-info {
+    padding-top: 1em;
+    font-size: .75em;
+    font-style: italic;
+    color: $base03;
   }
 }// }}}
 

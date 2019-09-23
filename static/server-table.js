@@ -8,7 +8,7 @@ const headerKeys = {
 }
 const keyOrder = ["status", "url", "description", "repo"]
 
-function generateTableHead(table) {
+const generateTableHead = table => {
   let thead = table.createTHead();
   let row = thead.insertRow();
   keyOrder.forEach(key => {
@@ -18,7 +18,7 @@ function generateTableHead(table) {
   })
 }
 
-function generateTable(table, data) {
+const generateTable = (table, data) => {
   data.forEach(elem => {
     let row = table.insertRow();
     keyOrder.forEach(key => {
@@ -50,13 +50,27 @@ function generateTable(table, data) {
   })
 }
 
-// fetch("http://localhost:1313/server-apps.json")
+const getDurationSince = date => { 
+  const milli = Math.abs(Date.now() - date)
+  let mins = Math.floor(milli/1000/60)
+  const days = Math.floor(mins/60/24)
+  mins %= 60*24
+  const hours = Math.floor(mins/60)
+  mins %= 60
+  let durationString = (days > 0) ? `${days}d ` : ''
+  durationString += (hours > 0) ? `${hours} hours, ` : ''
+  durationString += (mins > 0) ? `${mins} minutes` : '0m'
+  return durationString
+}
+
 fetch("/server-apps.json")
   .then(response => response.json())
   .then(json => {
-    // console.log(json)
     let table = document.querySelector("table");
-    generateTable(table, json);
+    generateTable(table, json['sites']);
     generateTableHead(table);
+    document.querySelector('#last-updated-time').textContent =
+      getDurationSince(new Date(json['updateTime'])) + ' ago.'
+    document.querySelector('#server-uptime-time').textContent = 
+      getDurationSince(new Date(json['upSince'])) + '.'
   });
-

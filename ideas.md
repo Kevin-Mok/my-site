@@ -1,12 +1,5 @@
 # Large
 - resume
-  - expand some projects by default
-  - repo link (GitHub icon) beside each section
-    - make links open in new tab
-    - picture/video links?
-  - printable white version
-    - upload PDF
-    - JS to change CSS?
   - make old proj's displayable
     - spv
       - screenshots
@@ -27,21 +20,20 @@
   - cd/ls diff. pages
 
 # Medium
-- socials in footer
+- contact page
   - icons
+    - Gitea
     - GitHub
+    - email
+      - copy button
+        - [Copying Text to Clipboard in HTML & JavaScript](https://www.youtube.com/watch?v=NHg6jQajaMs)
+        - [Native Browser Copy To Clipboard](https://css-tricks.com/native-browser-copy-clipboard/)
     - Fosstodon
-  - email
-    - tooltip pop-up with email and clipboard button/link
-    - [Pure CSS Tooltips](https://www.youtube.com/watch?v=hAeQ8CqrGDY)
-    - use position element
-    - [Copying Text to Clipboard in HTML & JavaScript](https://www.youtube.com/watch?v=NHg6jQajaMs)
-    - [Native Browser Copy To Clipboard](https://css-tricks.com/native-browser-copy-clipboard/)
 - pages
   - fav. apps
   - linux config 
+    - neofetch on all devices
   - credits
-  - contact?
 - site stats
   - size
   - load time
