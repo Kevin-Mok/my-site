@@ -47,6 +47,11 @@ $phone-width: 800px;
   padding-bottom: $n * 1rem;
 }
 
+@mixin vert-margin-em($n) {
+  margin-top: $n * 1em;
+  margin-bottom: $n * 1em;
+}
+
 @mixin auto-center() {
   margin-left: auto;
   margin-right: auto;
@@ -108,10 +113,6 @@ body {
   margin-right: auto;
   flex: 1;
 
-  .copyright {
-    @include a-color(#747369);
-  }
-
   @media (max-width: $max-page-width) {
     width: 100%;
   }
@@ -166,6 +167,26 @@ footer {
     max-width: 62em;
     @include auto-center();
     @include vert-padding-rem(.1);
+  }
+
+  $vertical-margin: .2em;
+
+  #copyright {
+    position: relative;
+    top: 2px;
+    @include a-color(#747369);
+  }
+
+  #social-icons {
+    position: relative;
+    padding-left: 3px;
+
+    img {
+      height: 1.5em;
+      @include vert-margin-em(.2);
+      padding-left: .5em;
+      opacity: .6;
+    }
   }
 
   @media (max-width: $max-page-width) {
@@ -708,6 +729,7 @@ article.single h1.headline {
 
 @media (max-width: $max-page-width) {
   article.single h1.headline {
+    font-size: 2em;
     padding-left: 2rem;
     padding-right: 2rem;
   }

@@ -5,10 +5,10 @@ draft: false
 ---
 {{% resume/section overview %}}<!--- {{{ -->
 
-I am a 3<sup>rd</sup> year CS student and enthusiast of all things Linux
-and FOSS. I am looking for an internship to fully dedicate myself to that
-will test my abilities, provide the opportunity to gain valuable knowledge
-and experience and jumpstart my career with a solid foundation.
+3<sup>rd</sup> year CS student. Enthusiast of all things
+Linux and FOSS. Seeking 16-month internship for my PEY
+co-op program. Looking to gain industry-relevant experience in 
+full-stack web dev, DevOps or system administration.
 
 {{% /resume/section %}}<!--- }}} -->
 

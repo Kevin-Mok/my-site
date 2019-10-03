@@ -7,11 +7,35 @@
 <footer>
   <div class="container">
     <!-- <span class="copyright">&copy; {{ .Site.LastChange.Year }} {{ .Site.Title }} - <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a></span> -->
-    <span class="copyright">
-      &copy; {{ now.Year }} {{ .Site.Title }} · <a rel="license"
-        href="http://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> · 
-      <a href="{{ "credits" | relURL }}">Credits</a>
-    </span>
+    <div class="row justify-content-center">
+      <span id="copyright" class="col-xs-6">
+        &copy; {{ now.Year }} {{ .Site.Title }} · 
+        <!-- <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> ·  -->
+        <!-- <a href="{{ "credits" | relURL }}">Credits</a> ·  -->
+      </span>
+      <span id="social-icons" class="col-xs-4">
+        <a href="https://github.com/Kevin-Mok" target="_blank">
+          <img src="{{ "img/social/github.svg" | relURL }}"
+          alt="github-logo">
+        </a>
+        <a href="https://www.linkedin.com/in/kevin-kh-mok" target="_blank">
+          <img src="{{ "img/social/linkedin.svg" | relURL }}" alt="linkedin-logo">
+        </a>
+        <a href="https://git.kevin-mok.com/" target="_blank">
+          <img src="{{ "img/social/gitea.svg" | relURL }}" alt="gitea-logo">
+        </a>
+        <a href="mailto:me@kevin-mok.com" target="_blank">
+          <img src="{{ "img/social/email.svg" | relURL }}"
+          alt="envelope">
+        </a>
+        <a href="https://fosstodon.org/web/accounts/93113" target="_blank">
+          <img src="{{ "img/social/mastodon.svg" | relURL }}"
+          alt="mastodon-logo">
+        </a>
+      </span>
+      <span id="social-icons" class="col-xs-2">
+      </span>
+    </div>
   </div>
 
 </footer>

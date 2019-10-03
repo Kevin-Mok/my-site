@@ -5,7 +5,7 @@ draft: false
 layout: single
 js: ["server-table"]
 ---
-Here is a list of apps that I am running a my [DigitalOcean 
+Here is a list of apps that I am running on my [DigitalOcean 
 droplet][do-droplet]. Their [statuses] are updated every hour using a 
 [Node.js script][update-script] and a [systemd service]/[timer].
 
