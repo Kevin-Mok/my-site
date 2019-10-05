@@ -114,6 +114,6 @@ url="https://github.com/Kevin-Mok/SuperADABros" date="May 2019" %}}
 
 {{% resume/section education %}}<!--- {{{ -->
 
-- **University of Toronto**: Computer Science Specialist <div class="date">2017-2021</div>
+{{% resume/education name="University of Toronto" title="Computer Science Specialist" date="2017-2021" %}}
 
 {{% /resume/section %}}<!--- }}} -->

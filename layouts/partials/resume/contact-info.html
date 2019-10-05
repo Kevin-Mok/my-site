@@ -1,15 +1,39 @@
-<div id="contact-info">
-  <div id="phone-number">
-    <img src="{{ "img/resume/smartphone.svg" | relURL }}"
-    alt="smartphone-icon">:
-    <a href="tel:647-685-2500" target="_blank">647-685-2500</a>
+<div id="contact-info" class="container">
+  <div class="row row-top justify-content-center">
+    <div id="phone-number" class="col text-left">
+      <a href="tel:647-685-2500" target="_blank">
+        <img src="{{ "img/resume/smartphone.svg" | relURL }}"
+          alt="smartphone-icon">
+        <span class="url-info">
+          647-685-2500
+        </span>
+      </a>
+    </div>
+    <div id="linkedin" class="col text-right">
+      <a href="https://www.linkedin.com/in/Kev-Mok">
+        <span class="url-info">
+          Kev-Mok
+        </span>
+        <img src="{{ "img/social/linkedin.svg" | relURL }}" alt="linkedin-icon">
+      </a>
+    </div>
   </div>
-  <div id="email">
-    <img src="{{ "img/resume/envelope.svg" | relURL }}" alt="envelope-icon">:
-    <a href="mailto:me@kevin-mok.com">me@kevin-mok.com</a>
-  </div>
-  <div id="website">
-    <img src="{{ "img/resume/link.svg" | relURL }}" alt="link-icon">:
-    <a href="https://kevin-mok.com/">kevin-mok.com</a>
+  <div class="row justify-content-center">
+    <div id="email" class="col col-left">
+      <a href="mailto:me@kevin-mok.com">
+        <img src="{{ "img/resume/envelope.svg" | relURL }}" alt="envelope-icon">
+        <span class="url-info">
+          me@kevin-mok.com
+        </span>
+      </a>
+    </div>
+    <div id="website" class="col text-right">
+      <a href="https://kevin-mok.com/">
+        <span class="url-info">
+          kevin-mok.com
+        </span>
+        <img src="{{ "img/resume/link.svg" | relURL }}" alt="link-icon">
+      </a>
+    </div>
   </div>
 </div>

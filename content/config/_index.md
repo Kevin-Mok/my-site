@@ -6,7 +6,7 @@ layout: single
 ---
 <!---  Intro {{{ --> 
 
-![desktop-screenshot](https://i.imgur.com/Fpsr8Fc.png)
+![desktop-screenshot](https://img.khkm.tk/uploads/big/b2bd45e8f436d389ecb787b5c61c951a.png)
 *Screenshot from my dual-monitor setup.*
 
 This [repository][lc-repo] contains the dotfiles to increase my workflow 
@@ -34,8 +34,10 @@ efficiency. They are also for my Linux [rice][ricing_explanation].
 <!---  Setup {{{ --> 
 
 ## Setup
-I use
-[Stow](http://brandon.invergo.net/news/2012-05-26-using-gnu-stow-to-manage-your-dotfiles.html)
-to symbolically link the configs/dotfiles.
+I use [chezmoi] to manage varying configs for different machines with 
+a single branch.                                                         
+
+[chezmoi]: https://github.com/twpayne/chezmoi
+
 
 <!---  }}} Setup --> 
