@@ -552,6 +552,15 @@ header {// {{{
       margin-top: .75rem;
     }
   }// }}}
+  h4 {// {{{
+    color: $base-yellow;
+    margin-top: .5rem;
+
+    @media (max-width: $phone-width) {
+      font-size: 1.2em;
+      margin-top: .75rem;
+    }
+  }// }}}
 
   .date {// {{{
     padding-top: .8em;
@@ -614,13 +623,18 @@ header {// {{{
     }
   }// }}}
 
-  #education {// {{{
-    .institution {
-      font-weight: bold;
-      font-size: 1.1em;
-      margin-bottom: 5px;
-    }
+  .institution {
+    color: $base-yellow;
+    font-weight: bold;
+    font-size: 1.1em;
+    margin-bottom: 5px;
+  }
 
+  .title {
+    font-style: italic;
+  }
+
+  #education {// {{{
     .date {
       padding-top: 0;
     }

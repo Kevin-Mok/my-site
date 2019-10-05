@@ -1,6 +1,6 @@
 <div class="project">
   <div class="row project-header">
-    <div class="col-10 col-md-8 text-left">
+    <div class="col-8 text-left">
       <a class="project-link" href="{{ .Get "url" }}" target="_blank">
         <img src="{{ "img/resume/link.svg" | relURL }}" alt="link-icon">
       </a>
@@ -14,9 +14,10 @@
         </h2>
       </button>
     </div>
-    <div class="col-2 col-md-4 text-right date">{{ .Get "date" }}</div>
+    <div class="col-4 text-right date">{{ .Get "date" }}</div>
   </div>
   <div class="collapse{{ with .Get "show" }} show{{ end }}" id="{{ .Get "name" | lower | urlize }}-details">
+  <!-- <div class="show" id="{{ .Get "name" | lower | urlize }}-details"> -->
     <div>
       {{ .Inner }}
     </div>
