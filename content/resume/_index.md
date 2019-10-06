@@ -15,8 +15,8 @@ full-stack web dev, DevOps or system administration.
 {{% resume/section skills %}}<!--- {{{ -->
 
 #### Languages
-- **Bash**, C, **CSS**, C++, **Fish**, Godot, **HTML5**, **Python**, 
-  Java, **Javascript (ES6)**, **Sass**
+- **Bash**, C, **CSS**, C++, **Fish** (shell), Godot, **HTML5**, 
+  **Python**, Java, **Javascript** (ES6), **Sass**
 
 #### Frameworks
 - **Bootstrap**, **Django**, **Node.js**, **PostgreSQL**
@@ -39,14 +39,15 @@ full-stack web dev, DevOps or system administration.
 url="https://github.com/Kevin-Mok/spotify-lib-vis" date="June 2018 — July 2018" 
 show="true" %}}
 
-- Scan tracks from user's library using Spotify API and organize data into 
-  database.
+- Scans tracks from user's library using Spotify API and organize data 
+  into database.
 - Created and tested various __PostgreSQL__ schemas to increase efficiency for 
   use cases.
-- Produce bubble chart and (stacked) bar chart in [**d3** graphs][d3 graph examples]
-  to visualize the artists, genres and features of tracks in library.
-- Implement functionality to keep track of user's listening history. Set up 
-  `cron` job on my local machine to keep track of my own.
+- Produced bubble chart and (stacked) bar chart using [**d3**]
+[d3 graph examples] to visualize the artists, genres and features of 
+tracks in library.
+- Implemented functionality to keep track of user's listening history.  
+  - Set up `cron` job on my local machine to keep track of my own.
 - Uses __Django__ for backend.
 
 [d3 graph examples]: https://github.com/d3/d3/wiki/Gallery
@@ -61,14 +62,15 @@ show="true" %}}
 url="https://github.com/Kevin-Mok/grocery-finder" date="Feb. 2019 — Apr. 2019" 
 show="true" %}}
 
-- PoC for web app that finds the ideal supermarket based on your cart.
+- Proof of concept for web app that finds the ideal supermarket based 
+  on your cart.
 - Designed responsive front-end layout using **Bootstrap**.
 - Implemented REST API functionality on backend using **Node.js** and 
   **MongoDB**.
 - Setup deployment on [**Heroku**][Grocery Finder Heroku].
 - Led team of 4 as project leader to prioritize and delegate tasks while
   also implementing a majority of the core features.
-- Performed code review for team member's pull requests.
+- Performed code review for team members' pull requests.
 
 [Grocery Finder Heroku]: http://www.grocery-finder.ml
 
@@ -117,7 +119,7 @@ url="https://github.com/Kevin-Mok/TrapBot" date="March 2018" %}}
 <!--- DigitalOcean {{{ -->
 
 {{% resume/project name="Personal Server"
-url="https://kevin-mok.com/server/" date="Aug. 2019—present" %}}
+url="https://kevin-mok.com/server/" date="Aug. 2019 — present" %}}
 
 - Deployed various web apps with backends such as Node, PHP and Python using 
   **NGINX** on a **Debian** server.
@@ -158,7 +160,8 @@ url="https://github.com/Kevin-Mok/SuperADABros" date="May 2019" %}}
 
 {{% resume/section "Work Experience" %}}<!--- {{{ -->
 
-{{% resume/education name="Philpott Children's Tennis" title="Head Instructor" date="2013—2015" %}}
+{{% resume/education name="Philpott Children's Tennis" 
+title="Head Instructor" date="2013 — 2015" %}}
 - Ran 8-week summer camp for inner-city youth with assistant coach.
 - Prepared daily lesson plans for 4 different age groups of children 
   with varying skill levels and needs.
@@ -168,7 +171,8 @@ url="https://github.com/Kevin-Mok/SuperADABros" date="May 2019" %}}
 
 {{% resume/section education %}}<!--- {{{ -->
 
-{{% resume/education name="University of Toronto" title="Computer Science Specialist" date="2017-2021" %}}
+{{% resume/education name="University of Toronto"
+title="Computer Science Specialist" date="2017 — 2021" %}}
 
 {{% /resume/section %}}<!--- }}} -->
 
