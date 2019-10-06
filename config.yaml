@@ -26,6 +26,9 @@ menu:
   - name: config
     url: /config
     weight: 10
+  - name: card
+    url: /card
+    weight: 15
   # - name: credits
     # url: /credits
     # weight: 20

@@ -39,16 +39,14 @@ full-stack web dev, DevOps or system administration.
 url="https://github.com/Kevin-Mok/spotify-lib-vis" date="June 2018 — July 2018" 
 show="true" %}}
 
-- Scans tracks from user's library using Spotify API and organize data 
-  into database.
-- Created and tested various __PostgreSQL__ schemas to increase efficiency for 
-  use cases.
+- Implemented base functionality of scanning tracks and listening 
+  history from user's library using Spotify API and organized data 
+  into **PostgreSQL** database with **Django** backend.
+- Created and tested various relational database schemas to maximize 
+  efficiency for use cases.
 - Produced bubble chart and (stacked) bar chart using [**d3**]
 [d3 graph examples] to visualize the artists, genres and features of 
 tracks in library.
-- Implemented functionality to keep track of user's listening history.  
-  - Set up `cron` job on my local machine to keep track of my own.
-- Uses __Django__ for backend.
 
 [d3 graph examples]: https://github.com/d3/d3/wiki/Gallery
 
@@ -62,8 +60,7 @@ tracks in library.
 url="https://github.com/Kevin-Mok/grocery-finder" date="Feb. 2019 — Apr. 2019" 
 show="true" %}}
 
-- Proof of concept for web app that finds the ideal supermarket based 
-  on your cart.
+- Proof of concept for web app that finds the ideal supermarket based on your cart.
 - Designed responsive front-end layout using **Bootstrap**.
 - Implemented REST API functionality on backend using **Node.js** and 
   **MongoDB**.

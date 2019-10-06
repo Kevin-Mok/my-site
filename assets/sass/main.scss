@@ -2,10 +2,14 @@
 
 //  base colors {{{ // 
 
+$base00: #2d2d2d;
+$base01: #393939;
 $base02: #515151;
 $base03: #747369;
 $base04: #a09f93;
 $base05: #d3d0c8; 
+$base06: #e8e6df;
+$base07: #f2f0ec;
 $base-red: #f2777a;
 $base-orange: #f99157;
 $base-yellow: #ffcc66;
@@ -15,13 +19,6 @@ $base-blue: #6699cc;
 $base-violet: #cc99cc;
 $base-dark-orange: #d27b53;
 
-/* .base00 { color: #2d2d2d; }
-.base01 { color: #393939; }
-.base02 { color: #515151; }
-.base03 { color: #747369; }
-.base04 { color: #a09f93; }
-.base06 { color: #e8e6df; }
-.base07 { color: #f2f0ec; } */
 .base08 { color: $base-red; }
 .base09 { color: $base-orange; }
 .base0a { color: $base-yellow; }
@@ -696,6 +693,139 @@ header {// {{{
     color: $base03;
   }
 }// }}}
+
+#card {
+  @include vert-margin-rem(2);
+  align-items: center;
+  justify-content: center;
+  font-family: 'Oxygen Mono', monospace;
+
+  .container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .row {
+    padding-top: 6rem;
+    padding-bottom: 8rem;
+    
+    @media (max-width: $phone-width) {
+      padding-top: 5rem;
+      padding-bottom: 6rem;
+    }
+  }
+  // $card-bg: #e8e6df;
+  $card-bg: $base07;
+  #presentational-container {
+    margin-top: 3em;
+    margin-bottom: 1em;
+    max-width: $max-page-width;
+    box-shadow: 2px 2px 10px 5px black;
+    // card bg
+    // background-color: #fff;
+    // background-color: #e5e5e5;
+    background-color: $card-bg;
+  }
+  #email-full {
+    font-size: 50px;
+    @media (max-width: $phone-width) {
+      font-size: 40px;
+    }
+    @include vert-margin-rem(2);
+    height: 7em;
+
+    img {
+      height: .5em;
+      position: absolute;
+      left: -.8em;
+      bottom: -.15em;
+    }
+
+    p { 
+      position: relative;
+      // color: grey;
+      color: #151515;
+      // color: #133337;
+
+      div {
+        display: inline;
+      }
+
+      .social {
+        // display: none;
+        display: inline;
+        white-space: nowrap;
+
+        .link-text {
+          position: relative;
+          width: 100%;
+        }
+
+        $border-thickness: 8px;
+        .link {
+          position: absolute;
+          border-color: black;
+          border-style: solid;
+          border-width: 0 $border-thickness $border-thickness $border-thickness;
+          height: .45em;
+          width: 100%;
+          left: 0;
+          img {
+            position: absolute;
+            left: -1em;
+          }
+
+          &.link-top {
+            border-width: $border-thickness $border-thickness 0 $border-thickness;
+
+            img {
+              position: absolute;
+              top: -.2em;
+            }
+          }
+
+          &:hover {
+            opacity: .6;
+          }
+        }
+
+        $line-spacing: .65em;
+        #mastodon {
+          top: -$line-spacing * 1.1;
+          border-color: #3088d4;
+        }
+        .linkedin {
+          bottom: -$line-spacing * 1.1;
+          border-color: #0077b7;
+
+          &.linkedin-middle {
+            border-style: dotted;
+            border-width: 0 0 3.5px 0;
+          }
+        }
+        #github {
+          bottom: -$line-spacing * 2.7;
+        }
+        #site {
+          bottom: -$line-spacing * 4.25;
+          border-color: #ff7058;
+        }
+        #email {
+          top: -$line-spacing * 2.65;
+          border-color: #d1d0bf;
+        }
+      }
+
+      .spacing {
+        opacity: 0;
+      }
+      .social {
+        position: absolute;
+        // left: 5.5rem;
+        left: 0rem;
+      }
+    }
+  }
+}
 
 // TODO: converted up to here
 
