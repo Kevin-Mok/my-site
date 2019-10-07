@@ -35,6 +35,7 @@ $base-dark-orange: #d27b53;
 // $max-page-width: 52em;
 $max-page-width: 45em;
 $phone-width: 800px;
+$vert-phone-width: 500px;
 
 @mixin side-padding-rem($n) {// {{{
   padding-left: $n * 1rem;
@@ -694,28 +695,30 @@ header {// {{{
   }
 }// }}}
 
-#card {
+#card {// {{{
   @include vert-margin-rem(2);
   align-items: center;
   justify-content: center;
   font-family: 'Oxygen Mono', monospace;
 
-  .container {
+  .container {// {{{
     padding-left: 0;
     padding-right: 0;
-  }
-  .row {
-    padding-top: 6rem;
-    padding-bottom: 8rem;
-    
-    @media (max-width: $phone-width) {
-      padding-top: 5rem;
-      padding-bottom: 6rem;
+
+    .row {
+      padding-top: 6rem;
+      padding-bottom: 8rem;
+      
+      @media (max-width: $phone-width) {
+        padding-top: 5rem;
+        padding-bottom: 6rem;
+      }
     }
-  }
+  }// }}}
+
   // $card-bg: #e8e6df;
   $card-bg: $base07;
-  #presentational-container {
+  #presentational-container {// {{{
     margin-top: 3em;
     margin-bottom: 1em;
     max-width: $max-page-width;
@@ -724,12 +727,17 @@ header {// {{{
     // background-color: #fff;
     // background-color: #e5e5e5;
     background-color: $card-bg;
-  }
-  #email-full {
+  }// }}}
+
+  #email-full {// {{{
     font-size: 50px;
     @media (max-width: $phone-width) {
       font-size: 40px;
     }
+    @media (max-width: $vert-phone-width) {
+      font-size: 33px;
+    }
+
     @include vert-margin-rem(2);
     height: 7em;
 
@@ -740,7 +748,7 @@ header {// {{{
       bottom: -.15em;
     }
 
-    p { 
+    p { // {{{
       position: relative;
       // color: grey;
       color: #151515;
@@ -750,10 +758,24 @@ header {// {{{
         display: inline;
       }
 
-      .social {
+      .social {// {{{
         // display: none;
         display: inline;
         white-space: nowrap;
+        position: absolute;
+        // left: 5.5rem;
+        left: 0rem;
+
+        .safari {
+          display: none;
+        }
+
+        @supports (-webkit-backdrop-filter: blur(1px)) {
+          left: .65rem;
+          .safari {
+            display: inline;
+          }
+        }
 
         .link-text {
           position: relative;
@@ -761,6 +783,9 @@ header {// {{{
         }
 
         $border-thickness: 8px;
+        @media (max-width: $vert-phone-width) {
+          $border-thickness: 5px;
+        }
         .link {
           position: absolute;
           border-color: black;
@@ -813,19 +838,14 @@ header {// {{{
           top: -$line-spacing * 2.65;
           border-color: #d1d0bf;
         }
-      }
+      }// }}}
 
       .spacing {
         opacity: 0;
       }
-      .social {
-        position: absolute;
-        // left: 5.5rem;
-        left: 0rem;
-      }
-    }
-  }
-}
+    }// }}}
+  }// }}}
+}// }}}
 
 // TODO: converted up to here
 
