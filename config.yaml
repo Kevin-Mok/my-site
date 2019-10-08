@@ -16,7 +16,7 @@ menu:
   main:
   - name: resume
     url: /resume
-    weight: 5
+    weight: 1
   # - name: posts/
     # url: /posts
     # weight: 6
@@ -29,6 +29,9 @@ menu:
   - name: card
     url: /card
     weight: 15
+  - name: letter
+    url: /letter
+    weight: 17
   # - name: credits
     # url: /credits
     # weight: 20
@@ -36,4 +39,6 @@ menu:
 blackfriday:
   plainIDAnchors: true
   hrefTargetBlank: true
+
+disableKinds: ["RSS"]
 

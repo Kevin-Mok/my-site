@@ -474,22 +474,24 @@ header {// {{{
   float: right;
 
   img {
-    height: 1.75em;
-    position: relative;
+    height: 2em !important;
+    position: absolute;
     top: 1em;
   }
 }// }}}
 
 #contact-info {// {{{
   @include side-margin-em(0);
+  @include side-padding-rem(0);
   // @include vert-padding-rem(0.5);
   @include a-color($base-sky-blue);
-  // min-width: $max-page-width;
-  @media (min-width: 1200px) {
-      .container{
-        min-width: $max-page-width;
-      }
-  }
+  width: 100%;
+  min-width: $max-page-width;
+  // @media (min-width: 1200px) {
+      // .container{
+        // min-width: $max-page-width;
+      // }
+  // }
 
   font-size: .9em;
 
@@ -643,6 +645,30 @@ header {// {{{
     // font-size: 1em;
   }
 
+  &.letter {
+    margin-top: 2em;
+
+    img {
+      height: 4.5em;
+    }
+
+    h2 {
+      color: $base-red;
+      margin-top: 0em;
+    }
+
+    p {
+      margin-bottom: 1.5em;
+    }
+    
+    .no-line-spacing {
+      line-height: .5em;
+      margin-bottom: 2.15em;
+      p {
+        margin-bottom: 1em;
+      }
+    }
+  }
 }// }}}
 
 #server {// {{{
@@ -845,6 +871,16 @@ header {// {{{
       }
     }// }}}
   }// }}}
+}// }}}
+
+#letter-home {// {{{
+
+  #letter-instr {
+    text-align: center;
+    margin-top: 1.5em;
+    // margin-top: 25vh;
+    font-size: 1.4em;
+  }
 }// }}}
 
 // TODO: converted up to here

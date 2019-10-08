@@ -1,0 +1,7 @@
+[submodule "content/letter"]
+	path = content/letter
+	url = ssh://git@git.kevin-mok.com:399/Kevin-Mok/cover-letters.git
+	branch = master
+[submodule "static/pdf"]
+	path = static/pdf
+	url = ssh://git@git.kevin-mok.com:399/Kevin-Mok/resume-pdf.git

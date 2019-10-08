@@ -1,0 +1,22 @@
+{{ partial "base/header.html" . }}
+
+{{ partial "base/site-title.html" . }}
+
+{{ partial "base/nav-bar.html" . }}
+
+{{ partial "base/base16-logo.html" . }}
+
+<main role="main" id="letter-home">
+  <!-- <h1 class="list-title">{{ .Title }}</h1> -->
+  <h4 id="letter-instr">Please enter the full URL that I provided
+    for your personalized cover letter. :)</h4>
+
+  <div id="resume" class="letter">
+  {{ .Content }}
+  </div>
+</main>
+
+{{ partial "base/footer.html" . }}
+</div>
+</body>
+</html>

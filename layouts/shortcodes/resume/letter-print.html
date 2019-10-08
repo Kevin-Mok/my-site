@@ -1,0 +1,7 @@
+<div id="print-icon">
+  {{ $code := .Get "code"  }}
+  {{ $pdfName := print "pdf/kevin-mok-cover-letter-" $code ".pdf"  }}
+  <a href="{{ $pdfName | relURL }}" target="_blank">
+    <img src="{{ "img/resume/printer.svg" | relURL }}" alt="printer-icon">
+  </a>
+</div>
