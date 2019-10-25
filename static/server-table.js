@@ -38,6 +38,9 @@ const generateTable = (table, data) => {
           aElem.textContent = elem['shortUrl']
           cell.appendChild(aElem)
           break
+        case 'description':
+          cell.innerHTML = elem[key]
+          break
         case 'repo':
           aElem.href = elem['repoUrl']
           aElem.textContent = elem[key]

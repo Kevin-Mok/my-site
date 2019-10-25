@@ -88,6 +88,15 @@ $vert-phone-width: 500px;
   }
 }// }}}
 
+@mixin a-no-underline() {// {{{
+  a {
+    text-decoration: none;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}// }}}
+
 //  }}} mixins // 
 
 //  general elements {{{ // 
@@ -205,12 +214,17 @@ footer {
         position: relative;
         padding-right: $side-padding;
         // padding-right: .9em;
+        @include a-no-underline();
 
         img {
           height: 1.5em;
           @include vert-margin-rem(.2);
           padding-left: .5em;
           opacity: .6;
+
+          &:hover {
+            opacity: 1;
+          }
         }
       }
     }
@@ -486,7 +500,6 @@ header {// {{{
   // @include vert-padding-rem(0.5);
   @include a-color($base-sky-blue);
   width: 100%;
-  min-width: $max-page-width;
   // @media (min-width: 1200px) {
       // .container{
         // min-width: $max-page-width;
@@ -666,6 +679,9 @@ header {// {{{
       margin-bottom: 2.15em;
       p {
         margin-bottom: 1em;
+      }
+      strong {
+        line-height: 1.25em;
       }
     }
   }

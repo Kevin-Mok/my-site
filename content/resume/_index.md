@@ -3,19 +3,10 @@ title: "Resume"
 date: 2019-02-11T07:50:51-05:00
 draft: false
 ---
-{{% resume/section overview %}}<!--- {{{ -->
-
-3<sup>rd</sup> year CS student. Enthusiast of all things
-Linux and FOSS. Seeking 16-month internship for my PEY
-co-op program. Looking to gain industry-relevant experience in 
-full-stack web dev, DevOps or system administration.
-
-{{% /resume/section %}}<!--- }}} -->
-
 {{% resume/section skills %}}<!--- {{{ -->
 
 #### Languages
-- **Bash**, C, **CSS**, C++, **Fish** (shell), Godot, **HTML5**, 
+- **Bash**, **C**, **CSS**, C++, **Fish** (shell), Godot, **HTML5**, 
   **Python**, Java, **Javascript** (ES6), **Sass**
 
 #### Frameworks
@@ -26,8 +17,8 @@ full-stack web dev, DevOps or system administration.
 
 #### Tools
 - **Arch Linux**, Android Studio, **Debian**, **Command Line**, 
-  **Git**, IntelliJ IDEA, **Pycharm**, **NGINX**, **SFTP**, **SSH**, 
-  **Vim**
+  **Git**, IntelliJ IDEA, **Pycharm**, **NGINX**, npm/yarn, **SFTP**, 
+  **SSH**, **Vim**
 
 {{% /resume/section %}}<!--- }}} -->
 
