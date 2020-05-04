@@ -9,7 +9,6 @@
         aria-expanded="false" aria-controls="{{ .Get "name" | lower | urlize }}-details">
         <h2 class="project-title">
           {{ .Get "name" }}
-          <!-- <img class="down-triangle" src="{{ "img/resume/down-triangle.svg" | relURL }}" alt="link-icon"> -->
           <img class="down-triangle" src="{{ "img/resume/down-triangle.png" | relURL }}" alt="link-icon">
         </h2>
       </button>
@@ -17,9 +16,8 @@
     <div class="col-4 text-right date">{{ .Get "date" }}</div>
   </div>
   <div class="collapse{{ with .Get "show" }} show{{ end }}" id="{{ .Get "name" | lower | urlize }}-details">
-  <!-- <div class="show" id="{{ .Get "name" | lower | urlize }}-details"> -->
     <div>
       {{ .Inner }}
-    </div>
+</div>
   </div>
 </div>

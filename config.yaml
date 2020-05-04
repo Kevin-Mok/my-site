@@ -36,9 +36,13 @@ menu:
     # url: /credits
     # weight: 20
     
-blackfriday:
-  plainIDAnchors: true
-  hrefTargetBlank: true
+# blackfriday:
+  # plainIDAnchors: true
+  # hrefTargetBlank: true
 
 disableKinds: ["RSS"]
 
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
