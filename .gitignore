@@ -4,4 +4,5 @@ resources/_gen/
 themes/base16*
 
 commit-msg.txt
+.hugo_build.lock
 static/server-apps.json
