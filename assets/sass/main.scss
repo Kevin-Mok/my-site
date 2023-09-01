@@ -105,8 +105,8 @@ body {
   color: $color;
   line-height: 1.5;
   // font-size: 100%;
-  // font-size: 15px;
-  font-size: 20px;
+  font-size: 12px;
+  // font-size: 20px;
   /* font-family: 'Source Code Pro', monospace; */
   font-family: 'Hack', monospace;
   display: flex;
@@ -505,7 +505,8 @@ header {// {{{
     }
   }// }}}
 
-  font-size: .9em;
+  // font-size: .9em;
+  font-size: .8em;
 
   .row {
     // flex-grow: 1;
@@ -550,6 +551,7 @@ header {// {{{
   h1 {// {{{
     color: $base-orange;
     margin-top: 1.3rem;
+    font-size: 1.2em;
 
     // @media (max-width: $phone-width) {
       // margin-top: .75rem;
@@ -558,6 +560,7 @@ header {// {{{
   h2 {// {{{
     color: $base-orange;
     margin-top: .5rem;
+    font-size: 1em;
 
     // @media (max-width: $phone-width) {
       // font-size: 1.2em;
@@ -567,6 +570,7 @@ header {// {{{
   h4 {// {{{
     color: $base-yellow;
     margin-top: .5rem;
+    font-size: 1.2em;
 
     // @media (max-width: $phone-width) {
       // font-size: 1.2em;
@@ -744,7 +748,8 @@ header {// {{{
 
 h1.site-title {// {{{
   text-align: center;
-  font-size: 4.2em;
+  // font-size: 4.2em;
+  font-size: 3.2em;
   // color: #66cccc;
   color: $base05;
   // margin-top: 1rem;

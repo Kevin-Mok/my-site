@@ -107,22 +107,6 @@ https://www.eventbrite.com/e/platterz-hackathon-tickets-42682237722
 
 <!--- ParsaFood }}} -->
  
-<!--- TrapBot {{{ -->
-
-{{% resume/project name="TrapBot"
-url="https://github.com/Kevin-Mok/TrapBot" date="March 2018" %}}
-
-- Use reddit API wrapper in **Python** to scan music subreddits for user 
-  comments containing common track listing formats.
-- Match detected track name and artists to track on SoundCloud using another 
-  Python API wrapper.
-- Respond to original poster's comment with formatted list of tracks found.
-- Received positive comment from users who replied to the bot's posts.
-
-{{% /resume/project %}}
-
-<!--- Grocery Finder }}} -->
-
 <!--- DigitalOcean {{{ -->
 
 {{% resume/project name="Personal Server"
@@ -142,33 +126,12 @@ url="https://kevin-mok.com/server/" date="Aug. 2019 — present" %}}
 
 <!--- DigitalOcean Droplet }}} -->
 
-<!--- Super ADA Bros. {{{ -->
-
-{{% resume/project name="Super ADA Bros"
-url="https://github.com/Kevin-Mok/SuperADABros" date="May 2019" %}}
-
-- Designed clone of Super Mario Bros 1-1, but Mario is mobility-impaired and
-  uses ramps to get through the level.
-- Uses **OpenCV** to track player's head movement which is then translated to 
-  in-game movement. [Video Demo]
-- Implemented in [**Godot**][Godot site], an open-source game engine.
-- Made during a 24-hour [accessibility-themed hackathon][PC Hacks event].
-
-[PC Hacks event]: https://pchacks19.devpost.com/
-[Godot site]: https://godotengine.org
-[Video Demo]: https://youtu.be/vRdENLGrBqM
-
-{{% /resume/project %}}
-
-
-<!--- Grocery Finder }}} -->
-
 {{% /resume/section %}}<!--- }}} -->
 
 {{% resume/section education %}}<!--- {{{ -->
 
 {{% resume/education name="University of Toronto"
-title="Computer Science Specialist" date="2017 — 2021" %}}
+title="Computer Science Specialist — 3.84 GPA (CS)" date="2018 — 2023" %}}
 
 {{% /resume/section %}}<!--- }}} -->
 
