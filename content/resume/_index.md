@@ -3,6 +3,25 @@ title: "Resume"
 date: 2019-02-11T07:50:51-05:00
 draft: false
 ---
+{{% resume/section "Work Experience" %}}<!--- {{{ -->
+
+{{% resume/education name="Red Hat" 
+title="Cloud Engineer Intern" date="2020 — 2021" %}}
+- Reduced deployment time by **66%** by implementing ability to 
+  deploy locally-compiled binaries onto **Kubernetes**/**OpenShift**
+  using only command-line. 
+- Implemented ability for Kubernetes operator to fetch data 
+  from a deployed service and update config with data.
+- Automated the promotion and release process 
+  as part of the **Jenkins** release pipeline.
+- Wrote documentation on how to get started with the project to onboard new 
+  developers and mentored the incoming intern.
+- Presented a talk based on my experience called "8 Things I 
+  Learned About Software Engineering" to an audience of 75+ 
+  in a conference for internship seekers.
+
+{{% /resume/section %}}<!--- }}} -->
+
 {{% resume/section skills %}}<!--- {{{ -->
 
 #### Languages
@@ -143,17 +162,6 @@ url="https://github.com/Kevin-Mok/SuperADABros" date="May 2019" %}}
 
 
 <!--- Grocery Finder }}} -->
-
-{{% /resume/section %}}<!--- }}} -->
-
-{{% resume/section "Work Experience" %}}<!--- {{{ -->
-
-{{% resume/education name="Philpott Children's Tennis" 
-title="Head Instructor" date="2013 — 2015" %}}
-- Ran 8-week summer camp for inner-city youth with assistant coach.
-- Prepared daily lesson plans for 4 different age groups of children 
-  with varying skill levels and needs.
-- Supervised and ensured the safety and enjoyment of up to 20 children at once.
 
 {{% /resume/section %}}<!--- }}} -->
 
