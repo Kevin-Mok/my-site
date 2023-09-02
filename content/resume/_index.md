@@ -22,67 +22,52 @@ title="Cloud Engineer Intern" date="May 2020 — Aug 2021" %}}
 
 {{% /resume/section %}}<!--- }}} -->
 
-{{% resume/section skills %}}<!--- {{{ -->
-
-- **Javascript**, **Python**, Go, Bash, Solidity, C, **Django**, Node.js, PostgreSQL, **Linux**, **Git**, **Command Line**
-
-{{% /resume/section %}}<!--- }}} -->
-
 {{% resume/section projects %}}<!--- {{{ -->
 
-<!--- Spotify Graphs {{{ -->
+<!--- Astronofty {{{ -->
 
-{{% resume/project name="Spotify Graphs" 
-url="https://github.com/Kevin-Mok/spotify-lib-vis" date="June 2018 — July 2018" 
+{{% resume/project name="Astronofty" 
+url="https://github.com/Kevin-Mok/astronofty" date="Jan 2023" 
 show="true" %}}
 
-- Implemented base functionality of scanning tracks and listening 
-  history from user's library using Spotify API and organized data 
-  into **PostgreSQL** database with **Django** backend.
-- Created and tested various relational database schemas to maximize 
-  efficiency for use cases.
-- Produced bubble chart and (stacked) bar chart using [**d3**]
-[d3 graph examples] to visualize the artists, genres and features of 
-tracks in library.
-
-[d3 graph examples]: https://github.com/d3/d3/wiki/Gallery
+- Created for a 36 hour hackathon (UofTHacks X) where it **came 2nd overall**.
+- Created and deployed a smart contract with **Solidity** on 
+  the Ethereum blockchain to create/buy/sell NFT's 
+  using MetaMask.
+- Wrote a **React** hook to fetch and show listed NFT's, NFT details and owned NFT's.
+- Used API to synchronously upload images and metadata to IPFS.
 
 {{% /resume/project %}}
 
-<!--- Spotify Graphs }}} -->
+<!--- Astronofty }}} -->
 
-<!--- Grocery Finder {{{ -->
+<!--- Rarity Surf {{{ -->
 
-{{% resume/project name="Grocery Finder" 
-url="https://github.com/Kevin-Mok/grocery-finder" date="Feb. 2019 — Apr. 2019" 
-show="true" %}}
+{{% resume/project name="Rarity Surf" 
+date="Oct 2021" show="true" %}}
 
-- Proof of concept for web app that finds the ideal supermarket based on your cart.
-- Designed responsive front-end layout using **Bootstrap**.
-- Implemented REST API functionality on backend using **Node.js** and 
-  **MongoDB**.
-- Setup deployment on [**Heroku**][Grocery Finder Heroku].
-- Led team of 4 as project leader to prioritize and delegate tasks while
-  also implementing a majority of the core features.
-- Performed code review for team members' pull requests.
-
-[Grocery Finder Heroku]: http://www.grocery-finder.ml
+- Web app to give rarity rankings to NFT's within minutes of their metadata being revealed and check which are listed (based on rarity and price filters) on the OpenSea marketplace using their API.
+- Reverse engineered the ranking algorithm to match the 
+  leading rarity ranking site's rankings (scraped using 
+  Selenium) with a **discrepancy of <0.25%**. 
+- Used app to frontrun purchases of **top 5%** rarity NFT's 
+  against competing buyers.
+- Wrote **Django** backend to fetch metadata from IPFS, store rarity rankings in PostgreSQL and serve rarity data using GraphQL.
+- Wrote **React** frontend with hooks to dynamically load rarity data. Styled with Tailwind.
 
 {{% /resume/project %}}
 
-<!--- Grocery Finder }}} -->
+<!--- Rarity Surf }}} -->
 
- 
 <!--- DigitalOcean {{{ -->
 
 {{% resume/project name="Personal Server"
-url="https://kevin-mok.com/server/" date="Aug. 2019 — present" %}}
+url="https://kevin-mok.com/server/" date="Aug. 2019 — present" show="true" %}}
 
-- Deployed various web apps with backends such as Node, PHP and Python using 
-  **NGINX** on a **Debian** server.
-- Monitor system resources and perform system maintenance using tmux.
-- Wrote [**Node.js** script][server script] and [**systemd** service][systemd service]/[timer]
-  to check and display the uptime of my pages every hour.
+- Deployed various web apps with backends using NGINX on a Debian/**Linux** server.
+- Wrote a [**JavaScript** script][server script] and [systemd service][systemd service]/[timer]
+  to display the uptime of my pages every hour.
+- Monitored system resources and performed system maintenance using tmux.
 
 [server script]: https://git.kevin-mok.com/Kevin-Mok/server-pages/src/branch/master/server-status.js
 [systemd service]: https://git.kevin-mok.com/Kevin-Mok/server-pages/src/branch/master/server-pages.service
@@ -91,6 +76,12 @@ url="https://kevin-mok.com/server/" date="Aug. 2019 — present" %}}
 {{% /resume/project %}}
 
 <!--- DigitalOcean Droplet }}} -->
+
+{{% /resume/section %}}<!--- }}} -->
+
+{{% resume/section skills %}}<!--- {{{ -->
+
+- **JavaScript**, **React**,**Python**, Go, Bash, Solidity, C, **Django**, Node.js, PostgreSQL, **Linux**, **Git**, **Command Line**
 
 {{% /resume/section %}}<!--- }}} -->
 

@@ -1,3 +1,64 @@
+<!--- Spotify Graphs {{{ -->
+
+{{% resume/project name="Spotify Graphs" 
+url="https://github.com/Kevin-Mok/spotify-lib-vis" date="June 2018 — July 2018" 
+show="true" %}}
+
+- Implemented base functionality of scanning tracks and listening 
+  history from user's library using Spotify API and organized data 
+  into **PostgreSQL** database with **Django** backend.
+- Created and tested various relational database schemas to maximize 
+  efficiency for use cases.
+- Produced bubble chart and (stacked) bar chart using [**d3**]
+[d3 graph examples] to visualize the artists, genres and features of 
+tracks in library.
+
+[d3 graph examples]: https://github.com/d3/d3/wiki/Gallery
+
+{{% /resume/project %}}
+
+<!--- Spotify Graphs }}} -->
+
+<!--- Grocery Finder {{{ -->
+
+{{% resume/project name="Grocery Finder" 
+url="https://github.com/Kevin-Mok/grocery-finder" date="Feb. 2019 — Apr. 2019" 
+show="true" %}}
+
+- Proof of concept for web app that finds the ideal supermarket based on your cart.
+- Designed responsive front-end layout using **Bootstrap**.
+- Implemented REST API functionality on backend using **Node.js** and 
+  **MongoDB**.
+- Setup deployment on [**Heroku**][Grocery Finder Heroku].
+- Led team of 4 as project leader to prioritize and delegate tasks while
+  also implementing a majority of the core features.
+- Performed code review for team members' pull requests.
+
+[Grocery Finder Heroku]: http://www.grocery-finder.ml
+
+{{% /resume/project %}}
+
+<!--- Grocery Finder }}} -->
+
+<!--- DigitalOcean {{{ -->
+
+{{% resume/project name="Personal Server"
+url="https://kevin-mok.com/server/" date="Aug. 2019 — present" %}}
+
+- Deployed various web apps with backends such as Node, PHP and Python using 
+  **NGINX** on a **Debian** server.
+- Monitor system resources and perform system maintenance using tmux.
+- Wrote [**Node.js** script][server script] and [**systemd** service][systemd service]/[timer]
+  to check and display the uptime of my pages every hour.
+
+[server script]: https://git.kevin-mok.com/Kevin-Mok/server-pages/src/branch/master/server-status.js
+[systemd service]: https://git.kevin-mok.com/Kevin-Mok/server-pages/src/branch/master/server-pages.service
+[timer]: https://git.kevin-mok.com/Kevin-Mok/server-pages/src/branch/master/server-pages.timer
+
+{{% /resume/project %}}
+
+<!--- DigitalOcean Droplet }}} -->
+
 <!--- ParsaFood {{{ -->
 
 {{% resume/project name="ParsaFood" 
