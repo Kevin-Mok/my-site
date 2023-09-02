@@ -12,6 +12,8 @@ title="Cloud Engineer Intern" date="May 2020 — Aug 2021" %}}
   using only command-line. 
 - Implemented ability for Kubernetes operator to fetch data 
   from a deployed service and update config with data.
+- Refactored probes to have default values assigned based on 
+  deployed YAML while also fixing reconciliation issues.
 - Automated the promotion and release process 
   as part of the **Jenkins** release pipeline.
 - Wrote documentation on how to get started with the project to onboard new 
