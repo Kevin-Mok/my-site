@@ -1,0 +1,21 @@
+<!--- ParsaFood {{{ -->
+
+{{% resume/project name="ParsaFood" 
+url="https://github.com/Kevin-Mok/ParsaFood" date="Feb. 2018" 
+show="true" %}}
+
+- **Android** app that reads ingredient labels and detects any dietary 
+  restrictions/allergies. 
+- Designed user interface and linked various functionality together.
+- Made during a 24-hour [food-themed hackathon][Platterz Hackathon event]
+  in a group with two other members. Came in 2<sup>nd</sup> place and won
+  an [Oculus Rift][Oculus Rift Amazon].
+
+[Parsafood repo]: https://github.com/Kevin-Mok/ParsaFood
+[Platterz Hackathon event]: 
+https://www.eventbrite.com/e/platterz-hackathon-tickets-42682237722
+[Oculus Rift Amazon]: https://www.amazon.ca/Oculus-Rift-Windows-VR-Headset/dp/B00VF0IXEY/ref=sr_1_1_sspa?ie=UTF8&qid=1520422949&sr=8-1-spons&keywords=oculus+rift&psc=1
+
+{{% /resume/project %}}
+
+<!--- ParsaFood }}} -->

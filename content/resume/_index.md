@@ -6,7 +6,7 @@ draft: false
 {{% resume/section "Work Experience" %}}<!--- {{{ -->
 
 {{% resume/education name="Red Hat" 
-title="Cloud Engineer Intern" date="2020 — 2021" %}}
+title="Cloud Engineer Intern" date="May 2020 — Aug 2021" %}}
 - Reduced deployment time by **66%** by implementing ability to 
   deploy locally-compiled binaries onto **Kubernetes**/**OpenShift**
   using only command-line. 
@@ -24,20 +24,7 @@ title="Cloud Engineer Intern" date="2020 — 2021" %}}
 
 {{% resume/section skills %}}<!--- {{{ -->
 
-#### Languages
-- **Bash**, **C**, **CSS**, C++, **Fish** (shell), Godot, **HTML5**, 
-  **Python**, Java, **Javascript** (ES6), **Sass**
-
-#### Frameworks
-- **Bootstrap**, **Django**, **Node.js**, **PostgreSQL**
-
-#### Services
-- **DigitalOcean**, **Linux**, Heroku, **REST/Web API's**
-
-#### Tools
-- **Arch Linux**, Android Studio, **Debian**, **Command Line**, 
-  **Git**, IntelliJ IDEA, **Pycharm**, **NGINX**, npm/yarn, **SFTP**, 
-  **SSH**, **Vim**
+- **Javascript**, **Python**, Go, Bash, Solidity, C, **Django**, Node.js, PostgreSQL, **Linux**, **Git**, **Command Line**
 
 {{% /resume/section %}}<!--- }}} -->
 
@@ -85,27 +72,6 @@ show="true" %}}
 
 <!--- Grocery Finder }}} -->
 
-<!--- ParsaFood {{{ -->
-
-{{% resume/project name="ParsaFood" 
-url="https://github.com/Kevin-Mok/ParsaFood" date="Feb. 2018" 
-show="true" %}}
-
-- **Android** app that reads ingredient labels and detects any dietary 
-  restrictions/allergies. 
-- Designed user interface and linked various functionality together.
-- Made during a 24-hour [food-themed hackathon][Platterz Hackathon event]
-  in a group with two other members. Came in 2<sup>nd</sup> place and won
-  an [Oculus Rift][Oculus Rift Amazon].
-
-[Parsafood repo]: https://github.com/Kevin-Mok/ParsaFood
-[Platterz Hackathon event]: 
-https://www.eventbrite.com/e/platterz-hackathon-tickets-42682237722
-[Oculus Rift Amazon]: https://www.amazon.ca/Oculus-Rift-Windows-VR-Headset/dp/B00VF0IXEY/ref=sr_1_1_sspa?ie=UTF8&qid=1520422949&sr=8-1-spons&keywords=oculus+rift&psc=1
-
-{{% /resume/project %}}
-
-<!--- ParsaFood }}} -->
  
 <!--- DigitalOcean {{{ -->
 
