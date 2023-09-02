@@ -6,7 +6,7 @@ draft: false
 {{% resume/section "Work Experience" %}}<!--- {{{ -->
 
 {{% resume/education name="Red Hat" 
-title="Cloud Engineer Intern" date="2020 — 2021" %}}
+title="Cloud Engineer Intern" date="May 2020 — Aug 2021" %}}
 - Reduced deployment time by **66%** by implementing ability to 
   deploy locally-compiled binaries onto **Kubernetes**/**OpenShift**
   using only command-line. 
@@ -22,117 +22,52 @@ title="Cloud Engineer Intern" date="2020 — 2021" %}}
 
 {{% /resume/section %}}<!--- }}} -->
 
-{{% resume/section skills %}}<!--- {{{ -->
-
-#### Languages
-- **Bash**, **C**, **CSS**, C++, **Fish** (shell), Godot, **HTML5**, 
-  **Python**, Java, **Javascript** (ES6), **Sass**
-
-#### Frameworks
-- **Bootstrap**, **Django**, **Node.js**, **PostgreSQL**
-
-#### Services
-- **DigitalOcean**, **Linux**, Heroku, **REST/Web API's**
-
-#### Tools
-- **Arch Linux**, Android Studio, **Debian**, **Command Line**, 
-  **Git**, IntelliJ IDEA, **Pycharm**, **NGINX**, npm/yarn, **SFTP**, 
-  **SSH**, **Vim**
-
-{{% /resume/section %}}<!--- }}} -->
-
 {{% resume/section projects %}}<!--- {{{ -->
 
-<!--- Spotify Graphs {{{ -->
+<!--- Astronofty {{{ -->
 
-{{% resume/project name="Spotify Graphs" 
-url="https://github.com/Kevin-Mok/spotify-lib-vis" date="June 2018 — July 2018" 
+{{% resume/project name="Astronofty" 
+url="https://github.com/Kevin-Mok/astronofty" date="Jan 2023" 
 show="true" %}}
 
-- Implemented base functionality of scanning tracks and listening 
-  history from user's library using Spotify API and organized data 
-  into **PostgreSQL** database with **Django** backend.
-- Created and tested various relational database schemas to maximize 
-  efficiency for use cases.
-- Produced bubble chart and (stacked) bar chart using [**d3**]
-[d3 graph examples] to visualize the artists, genres and features of 
-tracks in library.
-
-[d3 graph examples]: https://github.com/d3/d3/wiki/Gallery
+- Created for a 36 hour hackathon (UofTHacks X) where it **came 2nd overall**.
+- Created and deployed a smart contract with **Solidity** on 
+  the Ethereum blockchain to create/buy/sell NFT's 
+  using MetaMask.
+- Wrote a **React** hook to fetch and show listed NFT's, NFT details and owned NFT's.
+- Used API to synchronously upload images and metadata to IPFS.
 
 {{% /resume/project %}}
 
-<!--- Spotify Graphs }}} -->
+<!--- Astronofty }}} -->
 
-<!--- Grocery Finder {{{ -->
+<!--- Rarity Surf {{{ -->
 
-{{% resume/project name="Grocery Finder" 
-url="https://github.com/Kevin-Mok/grocery-finder" date="Feb. 2019 — Apr. 2019" 
-show="true" %}}
+{{% resume/project name="Rarity Surf" 
+date="Oct 2021" show="true" %}}
 
-- Proof of concept for web app that finds the ideal supermarket based on your cart.
-- Designed responsive front-end layout using **Bootstrap**.
-- Implemented REST API functionality on backend using **Node.js** and 
-  **MongoDB**.
-- Setup deployment on [**Heroku**][Grocery Finder Heroku].
-- Led team of 4 as project leader to prioritize and delegate tasks while
-  also implementing a majority of the core features.
-- Performed code review for team members' pull requests.
-
-[Grocery Finder Heroku]: http://www.grocery-finder.ml
+- Web app to give rarity rankings to NFT's within minutes of their metadata being revealed and check which are listed (based on rarity and price filters) on the OpenSea marketplace using their API.
+- Reverse engineered the ranking algorithm to match the 
+  leading rarity ranking site's rankings (scraped using 
+  Selenium) with a **discrepancy of <0.25%**. 
+- Used app to frontrun purchases of **top 5%** rarity NFT's 
+  against competing buyers.
+- Wrote **Django** backend to fetch metadata from IPFS, store rarity rankings in PostgreSQL and serve rarity data using GraphQL.
+- Wrote **React** frontend with hooks to dynamically load rarity data. Styled with Tailwind.
 
 {{% /resume/project %}}
 
-<!--- Grocery Finder }}} -->
-
-<!--- ParsaFood {{{ -->
-
-{{% resume/project name="ParsaFood" 
-url="https://github.com/Kevin-Mok/ParsaFood" date="Feb. 2018" 
-show="true" %}}
-
-- **Android** app that reads ingredient labels and detects any dietary 
-  restrictions/allergies. 
-- Designed user interface and linked various functionality together.
-- Made during a 24-hour [food-themed hackathon][Platterz Hackathon event]
-  in a group with two other members. Came in 2<sup>nd</sup> place and won
-  an [Oculus Rift][Oculus Rift Amazon].
-
-[Parsafood repo]: https://github.com/Kevin-Mok/ParsaFood
-[Platterz Hackathon event]: 
-https://www.eventbrite.com/e/platterz-hackathon-tickets-42682237722
-[Oculus Rift Amazon]: https://www.amazon.ca/Oculus-Rift-Windows-VR-Headset/dp/B00VF0IXEY/ref=sr_1_1_sspa?ie=UTF8&qid=1520422949&sr=8-1-spons&keywords=oculus+rift&psc=1
-
-{{% /resume/project %}}
-
-<!--- ParsaFood }}} -->
- 
-<!--- TrapBot {{{ -->
-
-{{% resume/project name="TrapBot"
-url="https://github.com/Kevin-Mok/TrapBot" date="March 2018" %}}
-
-- Use reddit API wrapper in **Python** to scan music subreddits for user 
-  comments containing common track listing formats.
-- Match detected track name and artists to track on SoundCloud using another 
-  Python API wrapper.
-- Respond to original poster's comment with formatted list of tracks found.
-- Received positive comment from users who replied to the bot's posts.
-
-{{% /resume/project %}}
-
-<!--- Grocery Finder }}} -->
+<!--- Rarity Surf }}} -->
 
 <!--- DigitalOcean {{{ -->
 
 {{% resume/project name="Personal Server"
-url="https://kevin-mok.com/server/" date="Aug. 2019 — present" %}}
+url="https://kevin-mok.com/server/" date="Aug. 2019 — present" show="true" %}}
 
-- Deployed various web apps with backends such as Node, PHP and Python using 
-  **NGINX** on a **Debian** server.
-- Monitor system resources and perform system maintenance using tmux.
-- Wrote [**Node.js** script][server script] and [**systemd** service][systemd service]/[timer]
-  to check and display the uptime of my pages every hour.
+- Deployed various web apps with backends using NGINX on a Debian/**Linux** server.
+- Wrote a [**JavaScript** script][server script] and [systemd service][systemd service]/[timer]
+  to display the uptime of my pages every hour.
+- Monitored system resources and performed system maintenance using tmux.
 
 [server script]: https://git.kevin-mok.com/Kevin-Mok/server-pages/src/branch/master/server-status.js
 [systemd service]: https://git.kevin-mok.com/Kevin-Mok/server-pages/src/branch/master/server-pages.service
@@ -142,33 +77,18 @@ url="https://kevin-mok.com/server/" date="Aug. 2019 — present" %}}
 
 <!--- DigitalOcean Droplet }}} -->
 
-<!--- Super ADA Bros. {{{ -->
+{{% /resume/section %}}<!--- }}} -->
 
-{{% resume/project name="Super ADA Bros"
-url="https://github.com/Kevin-Mok/SuperADABros" date="May 2019" %}}
+{{% resume/section skills %}}<!--- {{{ -->
 
-- Designed clone of Super Mario Bros 1-1, but Mario is mobility-impaired and
-  uses ramps to get through the level.
-- Uses **OpenCV** to track player's head movement which is then translated to 
-  in-game movement. [Video Demo]
-- Implemented in [**Godot**][Godot site], an open-source game engine.
-- Made during a 24-hour [accessibility-themed hackathon][PC Hacks event].
-
-[PC Hacks event]: https://pchacks19.devpost.com/
-[Godot site]: https://godotengine.org
-[Video Demo]: https://youtu.be/vRdENLGrBqM
-
-{{% /resume/project %}}
-
-
-<!--- Grocery Finder }}} -->
+- **JavaScript**, **React**,**Python**, Go, Bash, Solidity, C, **Django**, Node.js, PostgreSQL, **Linux**, **Git**, **Command Line**
 
 {{% /resume/section %}}<!--- }}} -->
 
 {{% resume/section education %}}<!--- {{{ -->
 
 {{% resume/education name="University of Toronto"
-title="Computer Science Specialist" date="2017 — 2021" %}}
+title="Computer Science Specialist — 3.84 GPA (CS)" date="2018 — 2023" %}}
 
 {{% /resume/section %}}<!--- }}} -->
 
