@@ -550,7 +550,8 @@ header {// {{{
 
   h1 {// {{{
     color: $base-orange;
-    margin-top: 1.3rem;
+    // margin-top: 1.3rem;
+    margin-top: 1rem;
     font-size: 1.2em;
 
     // @media (max-width: $phone-width) {
@@ -587,6 +588,10 @@ header {// {{{
     // }
   }// }}}
 
+  ul {
+    margin-bottom: 5px;
+  }
+
   #projects {// {{{
     // // h1 {
       // // margin-bottom: 3px;
@@ -605,7 +610,8 @@ header {// {{{
       }
 
       .project-header {
-        margin-bottom: .6em;
+        // margin-bottom: .6em;
+        margin-bottom: .1em;
       }
 
       .project-link {

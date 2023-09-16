@@ -6,7 +6,7 @@ draft: false
 {{% resume/section "Work Experience" %}}<!--- {{{ -->
 
 {{% resume/education name="Red Hat" 
-title="Cloud Engineer Intern" date="May 2020 — Aug 2021" %}}
+title="Cloud/Software Engineer Intern" date="May 2020 — Aug 2021" %}}
 - Reduced deployment time by **66%** by implementing ability to 
   deploy locally-compiled binaries onto **Kubernetes**/**OpenShift**
   using only command-line. 
@@ -91,6 +91,12 @@ url="https://kevin-mok.com/server/" date="Aug. 2019 — present" show="true" %}}
 
 {{% resume/education name="University of Toronto"
 title="Computer Science Specialist — 3.84 GPA (CS)" date="2018 — 2023" %}}
+
+{{% /resume/section %}}<!--- }}} -->
+
+{{% resume/section "References" %}}<!--- {{{ -->
+
+{{% resume/references title="See my LinkedIn (Kev-Mok) for references from my Red Hat managers/mentee and a startup client." %}}
 
 {{% /resume/section %}}<!--- }}} -->
 
