@@ -83,7 +83,7 @@ url="https://kevin-mok.com/server/" date="Aug. 2019 — present" show="true" %}}
 
 {{% resume/section skills %}}<!--- {{{ -->
 
-- **JavaScript**, **React**,**Python**, Go, Bash, Solidity, C, **Django**, Node.js, PostgreSQL, **Linux**, **Git**, **Command Line**
+**JavaScript**, **React**, **Python**, Go, Bash, Solidity, C, **Django**, Node.js, PostgreSQL, **Linux**, **Git**, **Command Line**
 
 {{% /resume/section %}}<!--- }}} -->
 
@@ -96,7 +96,7 @@ title="Computer Science Specialist — 3.84 GPA (CS)" date="2018 — 2023" %}}
 
 {{% resume/section "References" %}}<!--- {{{ -->
 
-{{% resume/references title="See my LinkedIn (Kev-Mok) for references from my Red Hat managers/mentee and a startup client." %}}
+{{% resume/references title="See my LinkedIn for references from my Red Hat managers/mentee and a startup client." %}}
 
 {{% /resume/section %}}<!--- }}} -->
 
