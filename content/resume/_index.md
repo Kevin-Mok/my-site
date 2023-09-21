@@ -12,15 +12,13 @@ title="Cloud/Software Engineer Intern" date="May 2020 — Aug 2021" %}}
   using only command-line. 
 - Implemented ability for Kubernetes operator to fetch data 
   from a deployed service and update config with data.
+- Added startup probes to handle starting legacy application containers that require additional startup time.
 - Refactored probes to have default values assigned based on 
   deployed YAML while also fixing reconciliation issues.
 - Automated the promotion and release process 
   as part of the **Jenkins** release pipeline.
 - Wrote documentation on how to get started with the project to onboard new 
   developers and mentored the incoming intern.
-- Presented a talk based on my experience called "8 Things I 
-  Learned About Software Engineering" to an audience of 75+ 
-  in a conference for internship seekers.
 
 {{% /resume/section %}}<!--- }}} -->
 
@@ -83,7 +81,7 @@ url="https://kevin-mok.com/server/" date="Aug. 2019 — present" show="true" %}}
 
 {{% resume/section skills %}}<!--- {{{ -->
 
-**JavaScript**, **React**, **Python**, Go, Bash, Solidity, C, **Django**, Node.js, PostgreSQL, **Linux**, **Git**, **Command Line**
+Kubernetes, **JavaScript**, **React**, **Python**, Go, Bash, Solidity, C, **Django**, Node.js, Jenkins, PostgreSQL, **Linux**, **Git**, **Command Line**
 
 {{% /resume/section %}}<!--- }}} -->
 
@@ -96,7 +94,7 @@ title="Computer Science Specialist — 3.84 GPA (CS)" date="2018 — 2023" %}}
 
 {{% resume/section "References" %}}<!--- {{{ -->
 
-{{% resume/references title="See my LinkedIn for references from my Red Hat managers/mentee and a startup client." %}}
+{{% resume/references %}}
 
 {{% /resume/section %}}<!--- }}} -->
 
