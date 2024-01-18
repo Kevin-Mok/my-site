@@ -107,6 +107,7 @@ body {
   // font-size: 100%;
   font-size: 15px;
   // font-size: 20px;
+  // font-size: 22px;
   /* font-family: 'Source Code Pro', monospace; */
   font-family: 'Hack', monospace;
   display: flex;
@@ -542,7 +543,8 @@ header {// {{{
 
 #resume {// {{{
   a {// {{{
-    text-decoration: none;
+    // text-decoration: none;
+    text-decoration: underline;
     &:hover {
       text-decoration: underline;
     }
@@ -615,6 +617,9 @@ header {// {{{
       }
 
       .project-link {
+        &:link {
+          text-decoration: none;
+        }
         &:hover {
           text-decoration: none;
         }

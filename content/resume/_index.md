@@ -30,7 +30,7 @@ title="Cloud/Software Engineer Intern" date="May 2020 — Aug 2021" %}}
 {{% resume/project name="Custom Kernel Module"
 url="https://kevin-mok.com/server/" date="Jan. 2022" show="true" %}}
 
-- Wrote and installed a custom Linux kernel module in **C**.
+- Wrote and installed a [custom Linux kernel module](https://github.com/Kevin-Mok/interceptor-kernel/blob/master/a1/interceptor.c) in **C**.
 - Intercepted pre-existing system calls using 
   custom kernel module by sending commands to 
   userspace.
@@ -46,11 +46,12 @@ url="https://kevin-mok.com/server/" date="Jan. 2022" show="true" %}}
 {{% resume/project name="Personal Server"
 url="https://kevin-mok.com/server/" date="Aug. 2019 — present" show="true" %}}
 
-- Deployed various web apps with backends using NGINX on a Debian/**Linux** server.
+- Deployed [various web apps] with backends using NGINX on a Debian/**Linux** server.
 - Wrote a [**JavaScript** script][server script] and [systemd service][systemd service]/[timer]
   to display the uptime of my pages every hour.
 - Monitored system resources and performed system maintenance using tmux.
 
+[various web apps]: https://kevin-mok.com/server/
 [server script]: https://git.kevin-mok.com/Kevin-Mok/server-pages/src/branch/master/server-status.js
 [systemd service]: https://git.kevin-mok.com/Kevin-Mok/server-pages/src/branch/master/server-pages.service
 [timer]: https://git.kevin-mok.com/Kevin-Mok/server-pages/src/branch/master/server-pages.timer
@@ -88,7 +89,7 @@ Kubernetes, **JavaScript**, **React**, **Python**, Go, Bash, Solidity, C, **Djan
 {{% resume/section education %}}<!--- {{{ -->
 
 {{% resume/education name="University of Toronto"
-title="Computer Science Specialist — 3.84 GPA (CS), Graduated with High Distinction" date="2018 — 2023" %}}
+title="Computer Science Specialist — 3.84 GPA (CS). Graduated with High Distinction." date="2018 — 2023" %}}
 
 {{% /resume/section %}}<!--- }}} -->
 
