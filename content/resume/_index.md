@@ -24,40 +24,22 @@ title="Cloud/Software Engineer Intern" date="May 2020 — Aug 2021" %}}
 
 {{% resume/section projects %}}<!--- {{{ -->
 
-<!--- Astronofty {{{ -->
 
-{{% resume/project name="Astronofty" 
-url="https://github.com/Kevin-Mok/astronofty" date="Jan 2023" 
-show="true" %}}
+<!--- CSC369 {{{ -->
 
-- Created for a 36 hour hackathon (UofTHacks X) where it **came 2nd overall**.
-- Created and deployed a smart contract with **Solidity** on 
-  the Ethereum blockchain to create/buy/sell NFT's 
-  using MetaMask.
-- Wrote a **React** hook to fetch and show listed NFT's, NFT details and owned NFT's.
-- Used API to synchronously upload images and metadata to IPFS.
+{{% resume/project name="Custom Kernel Module"
+url="https://kevin-mok.com/server/" date="Jan. 2022" show="true" %}}
 
-{{% /resume/project %}}
-
-<!--- Astronofty }}} -->
-
-<!--- Rarity Surf {{{ -->
-
-{{% resume/project name="Rarity Surf" 
-date="Oct 2021" show="true" %}}
-
-- Web app to give rarity rankings to NFT's within minutes of their metadata being revealed and check which are listed (based on rarity and price filters) on the OpenSea marketplace using their API.
-- Reverse engineered the ranking algorithm to match the 
-  leading rarity ranking site's rankings (scraped using 
-  Selenium) with a **discrepancy of <0.25%**. 
-- Used app to frontrun purchases of **top 5%** rarity NFT's 
-  against competing buyers.
-- Wrote **Django** backend to fetch metadata from IPFS, store rarity rankings in PostgreSQL and serve rarity data using GraphQL.
-- Wrote **React** frontend with hooks to dynamically load rarity data. Styled with Tailwind.
+- Wrote and installed a custom Linux kernel module in **C**.
+- Intercepted pre-existing system calls using 
+  custom kernel module by sending commands to 
+  userspace.
+- Monitored specific process ID's in my system 
+  call to intercept their system calls.
 
 {{% /resume/project %}}
 
-<!--- Rarity Surf }}} -->
+<!--- CSC369 }}} -->
 
 <!--- DigitalOcean {{{ -->
 
@@ -77,6 +59,24 @@ url="https://kevin-mok.com/server/" date="Aug. 2019 — present" show="true" %}}
 
 <!--- DigitalOcean Droplet }}} -->
 
+<!--- Rarity Surf {{{ -->
+
+{{% resume/project name="Rarity Surf" 
+date="Oct 2021" show="true" %}}
+
+- Web app to give rarity rankings to NFT's within minutes of their metadata being revealed and check which are listed (based on rarity and price filters) on the OpenSea marketplace using their API.
+- Reverse engineered the ranking algorithm to match the 
+  leading rarity ranking site's rankings (scraped using 
+  Selenium) with a **discrepancy of <0.25%**. 
+- Used app to frontrun purchases of **top 5%** rarity NFT's 
+  against competing buyers.
+- Wrote **Django (Python)** backend to fetch metadata from IPFS, store rarity rankings in PostgreSQL and serve rarity data using GraphQL.
+- Wrote **React** frontend with hooks to dynamically load rarity data. Styled with Tailwind.
+
+{{% /resume/project %}}
+
+<!--- Rarity Surf }}} -->
+
 {{% /resume/section %}}<!--- }}} -->
 
 {{% resume/section skills %}}<!--- {{{ -->
@@ -88,7 +88,7 @@ Kubernetes, **JavaScript**, **React**, **Python**, Go, Bash, Solidity, C, **Djan
 {{% resume/section education %}}<!--- {{{ -->
 
 {{% resume/education name="University of Toronto"
-title="Computer Science Specialist — 3.84 GPA (CS)" date="2018 — 2023" %}}
+title="Computer Science Specialist — 3.84 GPA (CS), Graduated with High Distinction" date="2018 — 2023" %}}
 
 {{% /resume/section %}}<!--- }}} -->
 
