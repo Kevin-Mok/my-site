@@ -1,5 +1,5 @@
-baseURL: http://localhost:1313/
-# baseURL: https://kevin-mok.com/
+# baseURL: http://localhost:1313/
+baseURL: https://kevin-mok.com/
 # baseURL: /home/kevin/coding/mf-site/public
 languageCode: en-us
 # title: Kevin Mok's Website
