@@ -1,0 +1,9 @@
+• Working on the Kogito (cloud-native, open-source business automation technology) Cloud Engineering team.
+• Implemented ability for Kogito operator to fetch exposed protobuf files from a deployed service and update ConfigMap with data (*Kubernetes*, *Go*, KOGITO-3376).
+• Reduced deployment time by 66% by implementing ability to deploy locally-compiled Kogito binaries onto OpenShift using only Kogito CLI (*Go*, KOGITO-2113). 
+• Added startup probes to handle starting legacy application containers that require additional startup time 
+(*Go*, KOGITO-4322).
+• Refactored Kogito probes to have default values assigned based on deployed YAML/runtime while also fixing reconciliation issues (*Kubernetes*, *Go*, KOGITO-4898).
+• Automated the promotion and release process for Kogito runtimes as part of the release pipeline (*Jenkins*, KOGITO-1653). Wrote unit tests in the Spock framework. 
+• Wrote documentation to onboard new Kogito operator developers and reduce friction needed for them to start contributing (*Kubernetes/minikube/OpenShift*, KOGITO-5127). Was completed as part of mentoring incoming intern to expedite initial onboarding process.
+• Presented a talk based on my experience called "8 Things I Learned About Software Engineering" to an audience of 75+ in a conference for internship seekers.
