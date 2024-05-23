@@ -24,34 +24,22 @@ title="Cloud/Software Engineer Intern" date="May 2020 — Aug 2021" %}}
 
 {{% resume/section projects %}}<!--- {{{ -->
 
+<!--- AWS {{{ -->
 
-<!--- CSC369 {{{ -->
+{{% resume/project name="AWS Server/Kubernetes"
+url="https://kevin-mok.com/server/" date="May 2024" show="true" %}}
 
-{{% resume/project name="Custom Kernel Module"
-url="https://kevin-mok.com/server/" date="Jan. 2022" show="true" %}}
-
-- Wrote and installed a [custom Linux kernel module](https://github.com/Kevin-Mok/interceptor-kernel/blob/master/a1/interceptor.c) in **C**.
-- Intercepted pre-existing system calls using 
-  custom kernel module by sending commands to 
-  userspace.
-- Monitored specific process ID's in my system 
-  call to intercept their system calls.
-
-{{% /resume/project %}}
-
-<!--- CSC369 }}} -->
-
-<!--- DigitalOcean {{{ -->
-
-{{% resume/project name="Personal Server"
-url="https://kevin-mok.com/server/" date="Aug. 2019 — present" show="true" %}}
-
-- Deployed [various web apps] with backends using NGINX on a Debian/**Linux** server.
+- Deployed [various web apps](https://kevin-mok.com/server/) using **Docker** (Compose) and on an 
+  **AWS EC2** Debian/**Linux** server.
+- Created **Kubernetes** [manifest files](https://github.com/Kevin-Mok) to quickly recreate my server setup 
+  (with persistent storage/restarts and open ports).
+- Used Amazon Route 53's DNS and **NGINX** to route 
+  subdomains to each web application.
+- Used AWS security groups to allow inbound HTTPS traffic.
+- Used Amazon EBS snapshots to regularly back up server.
 - Wrote a [**JavaScript** script][server script] and [systemd service][systemd service]/[timer]
   to display the uptime of my pages every hour.
-- Monitored system resources and performed system maintenance using tmux.
 
-[various web apps]: https://kevin-mok.com/server/
 [server script]: https://git.kevin-mok.com/Kevin-Mok/server-pages/src/branch/master/server-status.js
 [systemd service]: https://git.kevin-mok.com/Kevin-Mok/server-pages/src/branch/master/server-pages.service
 [timer]: https://git.kevin-mok.com/Kevin-Mok/server-pages/src/branch/master/server-pages.timer
@@ -82,7 +70,7 @@ date="Oct 2021" show="true" %}}
 
 {{% resume/section skills %}}<!--- {{{ -->
 
-Kubernetes, **JavaScript**, **React**, **Python**, Go, Bash, Solidity, C, **Django**, Node.js, Jenkins, PostgreSQL, **Linux**, **Git**, **Command Line**
+AWS, Kubernetes, Docker (Compose), **JavaScript**, **React**, **Python**, Go, Bash, Solidity, C, **Django**, Node.js, Jenkins, PostgreSQL, **Linux**, **Git**, **Command Line**
 
 {{% /resume/section %}}<!--- }}} -->
 

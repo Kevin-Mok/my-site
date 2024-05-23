@@ -1,3 +1,19 @@
+<!--- CSC369 {{{ -->
+
+{{% resume/project name="Custom Kernel Module"
+url="https://kevin-mok.com/server/" date="Jan. 2022" show="true" %}}
+
+- Wrote and installed a [custom Linux kernel module](https://github.com/Kevin-Mok/interceptor-kernel/blob/master/a1/interceptor.c) in **C**.
+- Intercepted pre-existing system calls using 
+  custom kernel module by sending commands to 
+  userspace.
+- Monitored specific process ID's in my system 
+  call to intercept their system calls.
+
+{{% /resume/project %}}
+
+<!--- CSC369 }}} -->
+
 <!--- Spotify Graphs {{{ -->
 
 {{% resume/project name="Spotify Graphs" 
