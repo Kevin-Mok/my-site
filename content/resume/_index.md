@@ -46,7 +46,7 @@ url="https://kevin-mok.com/server/" date="May 2024" show="true" %}}
 
 {{% /resume/project %}}
 
-<!--- DigitalOcean Droplet }}} -->
+<!--- AWS }}} -->
 
 <!--- Rarity Surf {{{ -->
 
@@ -65,6 +65,23 @@ date="Oct 2021" show="true" %}}
 {{% /resume/project %}}
 
 <!--- Rarity Surf }}} -->
+
+<!--- Astronofty {{{ -->
+
+{{% resume/project name="Astronofty" 
+url="https://github.com/Kevin-Mok/astronofty" date="Jan 2023" 
+show="true" %}}
+
+- Created for a 36 hour hackathon (UofTHacks X) where it [**came 2nd overall**](https://devpost.com/software/astronofty).
+- Created and deployed a smart contract with **Solidity** on 
+  the Ethereum blockchain to create/buy/sell NFT's 
+  using MetaMask.
+- Wrote a **React** hook to fetch and show listed NFT's, NFT details and owned NFT's.
+- Used API to synchronously upload images and metadata to IPFS.
+
+{{% /resume/project %}}
+
+<!--- Astronofty }}} -->
 
 {{% /resume/section %}}<!--- }}} -->
 
