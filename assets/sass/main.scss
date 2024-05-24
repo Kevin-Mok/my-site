@@ -654,6 +654,22 @@ header {// {{{
     }
   }// }}}
 
+  .company {
+    color: #fe4646;
+    font-weight: bold;
+    font-size: 1.1em;
+    margin-bottom: 5px;
+  }
+
+  .position {
+    // color: black;
+    color: $base-sky-blue;
+    font-weight: bold;
+    // font-style: italic;
+    font-size: 1em;
+    margin-bottom: 5px;
+  }
+
   .institution {
     color: $base-yellow;
     font-weight: bold;
