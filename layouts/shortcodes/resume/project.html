@@ -1,17 +1,9 @@
 <div class="project">
   <div class="row project-header">
     <div class="col-8 text-left">
-      <a class="project-link" href="{{ .Get "url" }}" target="_blank">
-        <img src="{{ "img/resume/link.svg" | relURL }}" alt="link-icon">
-      </a>
-      <button class="btn" type="button" data-toggle="collapse"
-        data-target="#{{ .Get "name" | lower | urlize }}-details"
-        aria-expanded="false" aria-controls="{{ .Get "name" | lower | urlize }}-details">
         <h2 class="project-title">
           {{ .Get "name" }}
-          <img class="down-triangle" src="{{ "img/resume/down-triangle.png" | relURL }}" alt="link-icon">
         </h2>
-      </button>
     </div>
     <div class="col-4 text-right date">{{ .Get "date" }}</div>
   </div>
