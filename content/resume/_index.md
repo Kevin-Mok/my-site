@@ -9,7 +9,7 @@ draft: false
 title="Cloud/Software Engineer Intern" date="May 2020 — Aug 2021" %}}
 - Reduced deployment time by **66%** by [implementing ability](https://github.com/apache/incubator-kie-kogito-operator/commit/175a6356c5474f2360ccb8ae835e0b9b2d653cf1) to 
   deploy locally-compiled binaries onto **Kubernetes**/**OpenShift**
-  using only command-line. 
+  using only command-line (Golang used for this and below). 
 - Implemented ability for Kubernetes operator to fetch data 
   from a deployed service and update config with data.
 - Added startup probes to handle starting legacy application containers that require additional startup time.
@@ -29,7 +29,7 @@ title="Cloud/Software Engineer Intern" date="May 2020 — Aug 2021" %}}
 {{% resume/project name="AWS Server/Kubernetes"
 url="https://kevin-mok.com/server/" date="May 2024" show="true" %}}
 
-- Deployed [various web apps](https://kevin-mok.com/server/) using **Docker** (Compose) and on an 
+- Deployed [various web apps](https://kevin-mok.com/server/) using **Docker** (Compose) on an 
   **AWS EC2** Debian/**Linux** server.
 - Created **Kubernetes** [manifest files](https://github.com/Kevin-Mok/aws-minicube) to quickly recreate my server setup 
   with persistent storage/restarts and open ports.
@@ -87,7 +87,8 @@ show="true" %}}
 
 {{% resume/section skills %}}<!--- {{{ -->
 
-AWS, Kubernetes, Docker (Compose), **JavaScript**, **React**, **Python**, Go, Bash, Solidity, C, **Django**, Node.js, Jenkins, PostgreSQL, **Linux**, **Git**, **Command Line**
+AWS, Kubernetes, Docker (Compose), **JavaScript**, **React**, **Python**, Go, Bash, Solidity, C, **Django**, Node.js, Jenkins, PostgreSQL, 
+MongoDB, **Linux**, **Git**, **Command Line**
 
 {{% /resume/section %}}<!--- }}} -->
 
