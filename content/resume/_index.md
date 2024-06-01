@@ -26,7 +26,7 @@ title="Cloud/Software Engineer Intern" date="May 2020 — Aug 2021" %}}
 
 <!--- AWS {{{ -->
 
-{{% resume/project name="AWS Server/Kubernetes"
+{{% resume/project name="AWS/Kubernetes/Terraform"
 url="https://kevin-mok.com/server/" date="May 2024" show="true" %}}
 
 - Deployed [various web apps](https://kevin-mok.com/server/) using **Docker** (Compose) on an 
