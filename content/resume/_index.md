@@ -26,13 +26,15 @@ title="Cloud/Software Engineer Intern" date="May 2020 — Aug 2021" %}}
 
 <!--- AWS {{{ -->
 
-{{% resume/project name="AWS Server/Kubernetes"
+{{% resume/project name="AWS/Kubernetes/Terraform"
 url="https://kevin-mok.com/server/" date="May 2024" show="true" %}}
 
 - Deployed [various web apps](https://kevin-mok.com/server/) using **Docker** (Compose) on an 
   **AWS EC2** Debian/**Linux** server.
 - Created **Kubernetes** [manifest files](https://github.com/Kevin-Mok/aws-minicube) to quickly recreate my server setup 
   with persistent storage/restarts and open ports.
+- Created **Terraform** [files](https://github.com/Kevin-Mok/terraform-deploys/tree/main) 
+  to deploy an AWS EC2 instance and Docker containers.
 - Used Amazon Route 53's DNS and **NGINX** to route 
   subdomains to each web application.
 - Used AWS security groups to allow inbound HTTPS traffic.
@@ -87,7 +89,7 @@ show="true" %}}
 
 {{% resume/section skills %}}<!--- {{{ -->
 
-AWS, Kubernetes, Docker (Compose), **JavaScript**, **React**, **Python**, Go, Bash, Solidity, C, **Django**, Node.js, Jenkins, PostgreSQL, 
+AWS, Kubernetes, Terraform, Docker (Compose), **JavaScript**, **React**, **Python**, Go, Bash, Solidity, C, **Django**, Node.js, Jenkins, PostgreSQL, 
 MongoDB, **Linux**, **Git**, **Command Line**
 
 {{% /resume/section %}}<!--- }}} -->
