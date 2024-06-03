@@ -39,7 +39,7 @@ url="https://kevin-mok.com/server/" date="May 2024" show="true" %}}
   subdomains to each web application.
 - Used AWS security groups to allow inbound HTTPS traffic.
 - Used Amazon EBS snapshots to regularly back up server.
-- Wrote a [**JavaScript** script][server script] and [systemd service][systemd service]/[timer]
+- Wrote a **JavaScript** [server script] and [systemd service][systemd service]/[timer]
   to display the uptime of my pages every hour.
 
 [server script]: https://git.kevin-mok.com/Kevin-Mok/server-pages/src/branch/master/server-status.js

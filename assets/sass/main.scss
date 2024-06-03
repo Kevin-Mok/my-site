@@ -530,6 +530,7 @@ header {// {{{
   }
 
   .url-info {
+    font-size: 1em;
     margin-left: 5px;
     // position: relative;
     // left: -8px;
@@ -545,6 +546,9 @@ header {// {{{
 #resume {// {{{
   a {// {{{
     // text-decoration: none;
+    // color: $base-blue;
+    color: #4287cd;
+    // color: blue;
     text-decoration: underline;
     &:hover {
       text-decoration: underline;
@@ -629,6 +633,10 @@ header {// {{{
         margin-bottom: 5px;
       }
 
+      .project-title {
+        color: $base-blue;
+      }
+
       .project-link {
         &:link {
           text-decoration: none;
@@ -675,7 +683,8 @@ header {// {{{
 
   .position {
     // color: black;
-    color: $base-sky-blue;
+    // color: $base-sky-blue;
+    color: $base-blue;
     font-weight: bold;
     // font-style: italic;
     font-size: 1.1em;
@@ -684,7 +693,8 @@ header {// {{{
   }
 
   .institution {
-    color: $base-yellow;
+    // color: $base-yellow;
+    color: $base-dark-orange;
     font-weight: bold;
     font-size: 1.1em;
     margin-bottom: 5px;
