@@ -15,8 +15,9 @@ title="Cloud/Software Engineer Intern" date="May 2020 — Aug 2021" %}}
 - Added startup probes to handle starting legacy application containers that require additional startup time.
 - Refactored probes to [have default values](https://github.com/apache/incubator-kie-kogito-operator/commit/af4977af228ec8648be28779259d4552246b656f) assigned based on 
   deployed YAML while also fixing reconciliation issues.
-- Automated the promotion and release process 
-  as part of the **Jenkins** [release pipeline](https://github.com/apache/incubator-kie-kogito-pipelines/commit/4c83f1aecdea2c1ba2796b79839a90d4083dce88).
+- Rewrote the **Jenkins** nightly pipeline to run [in a GitHub 
+  PR](https://github.com/apache/incubator-kie-kogito-pipelines/commit/4c83f1aecdea2c1ba2796b79839a90d4083dce88) 
+  using a trigger keyword.
 - Wrote [documentation](https://github.com/apache/incubator-kie-kogito-operator/blob/1534c03d1d26bec08a16608a775782bf8b305de9/docs/GUIDE_FOR_KOGITO_DEVS.md) on how to get started with the project to onboard new 
   developers and mentored the incoming intern.
 
