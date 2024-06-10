@@ -26,9 +26,9 @@ menu:
   - name: config
     url: /config
     weight: 10
-  - name: card
-    url: /card
-    weight: 15
+  # - name: card
+    # url: /card
+    # weight: 15
   # - name: letter
     # url: /letter
     # weight: 17

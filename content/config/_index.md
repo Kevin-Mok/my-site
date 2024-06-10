@@ -6,7 +6,7 @@ layout: single
 ---
 <!---  Intro {{{ --> 
 
-![desktop-screenshot](https://img.khkm.tk/uploads/big/b2bd45e8f436d389ecb787b5c61c951a.png)
+![desktop-screenshot](/img/config/desktop-screenshot.png)
 *Screenshot from my dual-monitor setup.*
 
 This [repository][lc-repo] contains the dotfiles to increase my workflow 
