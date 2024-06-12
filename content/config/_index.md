@@ -18,17 +18,17 @@ efficiency. They are also for my Linux [rice][ricing_explanation].
 
 <!---  Main Programs {{{ --> 
 ## Main Programs
-* **OS**: [Arch Linux](https://www.archlinux.org/) ([packages](txt/nzxt-pkgs.txt))
+* **OS**: [Arch Linux](https://www.archlinux.org/) ([packages](https://git.kevin-mok.com/Kevin-Mok/linux-config/src/branch/master/txt/arch-2-pkgs.txt))
     ```
     $ systemd-analyze
     Startup finished in 2.341s (kernel) + 1.085s (userspace) = 3.426s 
     graphical.target reached after 1.085s in userspace
     ```
-* **Terminal**: [rxvt-unicode-pixbuf](https://www.wikiwand.com/en/Rxvt) 
-* **Shell**: [Zsh](http://zsh.sourceforge.net/) + [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)
-* **Window Manager**: [i3-gaps](https://github.com/Airblader/i3)
-* **Editor**: [Neovim](https://github.com/neovim/neovim) ([plugins](dotfiles/.vimrc#L51))
-* **File Manager**: [ranger](https://ranger.github.io/)
+* **Terminal**: [kitty](https://sw.kovidgoyal.net/kitty/) 
+* **Shell**: [fish](https://fishshell.com/)
+* **Window Manager**: [i3-gaps](https://i3wm.org/)
+* **Editor**: [neovim](https://neovim.io/) ([plugins](https://git.kevin-mok.com/Kevin-Mok/linux-config/src/branch/master/dot_vimrc.tmpl#L147-L359))
+* **File Manager**: [ranger](https://github.com/ranger/ranger?tab=readme-ov-file#ranger-193)/[PCManFM](https://en.wikipedia.org/wiki/PCMan_File_Manager)
 <!---  }}} Basic Info --> 
 
 <!---  Setup {{{ --> 
