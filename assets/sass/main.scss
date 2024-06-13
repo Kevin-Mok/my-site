@@ -172,7 +172,8 @@ footer {
   margin-top: 2rem;
   $vertical-margin: .2em;
   text-align: center;
-  font-size: 0.8em;
+  // font-size: 0.8em;
+  font-size: .85em;
   color: #747369;
   // bottom: 0;
   // position: absolute;
@@ -212,7 +213,8 @@ footer {
         // padding-right: .9em;
 
         img {
-          height: 1.5em;
+          // height: 1.5em;
+          height: 3em;
           @include vert-margin-rem(.2);
           padding-left: .5em;
           opacity: .6;
@@ -370,7 +372,7 @@ header {// {{{
           display: inline;
 
           &#gnu {
-            background-color: $base04;
+            // background-color: $base04;
             // background-color: $base05;
           }
         }
