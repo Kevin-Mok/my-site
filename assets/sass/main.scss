@@ -110,7 +110,11 @@ body {
   // font-size: 20px;
   // font-size: 22px;
   /* font-family: 'Source Code Pro', monospace; */
-  font-family: 'Hack', monospace;
+  // font-family: 'Hack', monospace;
+  // body {
+  // font-family: 'Times New Roman', serif;
+  font-family: "Computer Modern Serif";
+  // }
   display: flex;
   flex-direction: column;
   min-height: 100vh;
