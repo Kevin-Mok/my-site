@@ -500,7 +500,7 @@ header {// {{{
 #contact-info {// {{{
   @include side-margin-em(0);
   // @include vert-padding-rem(0.5);
-  @include a-color($base-sky-blue);
+  // @include a-color($base-sky-blue);
   // min-width: $max-page-width;
   @media (min-width: 1200px) {
       .container{
@@ -646,6 +646,7 @@ header {// {{{
       .project-title {
         // color: $base-blue;
         color: black;
+        display: inline;
       }
 
       .project-link {
@@ -704,6 +705,11 @@ header {// {{{
     font-size: 1em;
     // margin-bottom: 5px;
     margin-bottom: 15px;
+  }
+
+  .languages {
+    // font-style: italic;
+    // font-size: .9em;
   }
 
   .institution {
@@ -996,7 +1002,8 @@ article.single section.body h5 { color: #515151; }
 article.single section.body h6 { color: #747369; }
 
 // article.single section.body a,a:visited { color: #a06700; }
-article.single section.body a,a:visited { color: $base-sky-blue; }
+// article.single section.body a,a:visited { color: $base-sky-blue; }
+// article.single section.body a,a:visited { color: $base-sky-blue; }
 
 /* Article Elements */
 

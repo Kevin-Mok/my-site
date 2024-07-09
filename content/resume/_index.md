@@ -6,7 +6,7 @@ draft: false
 {{% resume/section "Work Experience" %}}<!--- {{{ -->
 
 {{% resume/work-experience name="Red Hat" 
-title="Cloud/Software Engineer Intern" date="May 2020 — Aug 2021" %}}
+title="Cloud/Software Engineer Intern" languages="GoLang, Kubernetes, Jenkins" date="May 2020 — Aug 2021" %}}
 - Reduced deployment time by **66%** by [implementing ability](https://github.com/apache/incubator-kie-kogito-operator/commit/175a6356c5474f2360ccb8ae835e0b9b2d653cf1) to 
   deploy locally-compiled binaries onto **Kubernetes**/**OpenShift**
   using only command-line (**GoLang** used for this and below). 
@@ -27,8 +27,8 @@ title="Cloud/Software Engineer Intern" date="May 2020 — Aug 2021" %}}
 
 <!--- AWS {{{ -->
 
-{{% resume/project name="AWS/Kubernetes/Terraform"
-url="https://kevin-mok.com/server/" date="May 2024" show="true" %}}
+{{% resume/project name="AWS Server"
+url="https://kevin-mok.com/server/" languages="AWS, Kubernetes, Terraform, Docker" date="May 2024" show="true" %}}
 
 - Deployed [various web apps](https://kevin-mok.com/server/) using **Docker** (Compose) on an 
   **AWS EC2** Debian/**Linux** server.
@@ -53,7 +53,7 @@ url="https://kevin-mok.com/server/" date="May 2024" show="true" %}}
 
 <!--- Rarity Surf {{{ -->
 
-{{% resume/project name="Rarity Surf" 
+{{% resume/project name="Rarity Surf" languages="Python, Django, React"  
 date="Oct 2021" show="true" %}}
 
 - Web app to give rarity rankings to NFT's within minutes of their metadata being revealed and check which are listed (based on rarity and price filters) on the OpenSea marketplace using their API.
@@ -72,7 +72,7 @@ date="Oct 2021" show="true" %}}
 <!--- Astronofty {{{ -->
 
 {{% resume/project name="Astronofty" 
-url="https://github.com/Kevin-Mok/astronofty" date="Jan 2023" 
+url="https://github.com/Kevin-Mok/astronofty" languages="React, Solidity" date="Jan 2023" 
 show="true" %}}
 
 - Created for a 36 hour hackathon (UofTHacks X) where it [**came 2nd overall**](https://devpost.com/software/astronofty).
