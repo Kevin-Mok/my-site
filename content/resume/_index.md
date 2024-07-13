@@ -9,7 +9,7 @@ draft: false
 title="Cloud/Software Engineer Intern" languages="Kubernetes, GoLang, Jenkins" date="May 2020 — Aug 2021" %}}
 - Reduced deployment time by **66%** by [implementing ability](https://github.com/apache/incubator-kie-kogito-operator/commit/175a6356c5474f2360ccb8ae835e0b9b2d653cf1) to 
   deploy locally-compiled binaries onto **Kubernetes**/**OpenShift**
-  using only command-line (**GoLang** used for this and below). 
+  using only command-line (**Kubernetes/GoLang** used for this and three below). 
 - Implemented ability for Kubernetes operator to fetch data 
   from a deployed service and update config with data to 
   deprecate reliance on startup script.
@@ -19,7 +19,7 @@ title="Cloud/Software Engineer Intern" languages="Kubernetes, GoLang, Jenkins" d
 - Rewrote the **Jenkins** nightly pipeline to run [in a GitHub 
   PR](https://github.com/apache/incubator-kie-kogito-pipelines/commit/4c83f1aecdea2c1ba2796b79839a90d4083dce88) 
   using a trigger keyword to test all submitted PR's.
-- Wrote [documentation](https://github.com/apache/incubator-kie-kogito-operator/blob/1534c03d1d26bec08a16608a775782bf8b305de9/docs/GUIDE_FOR_KOGITO_DEVS.md) on how to get started with the project to onboard new 
+- Took initiative to write [documentation](https://github.com/apache/incubator-kie-kogito-operator/blob/1534c03d1d26bec08a16608a775782bf8b305de9/docs/GUIDE_FOR_KOGITO_DEVS.md) on how to get started with the project to onboard new 
   developers and mentored the incoming intern.
 
 {{% /resume/section %}}<!--- }}} -->
@@ -39,6 +39,7 @@ url="https://kevin-mok.com/server/" languages="AWS, Kubernetes, Terraform, Docke
   to deploy an AWS EC2 instance and Docker containers.
 - Used Amazon Route 53's DNS and **NGINX** to route 
   subdomains to each web application.
+- Used AWS security groups to allow inbound HTTPS traffic.
 - Wrote a **JavaScript** [server script] and [systemd service][systemd service]/[timer]
   to display the uptime of my pages every hour.
 
@@ -52,7 +53,8 @@ url="https://kevin-mok.com/server/" languages="AWS, Kubernetes, Terraform, Docke
 
 <!--- Rarity Surf {{{ -->
 
-{{% resume/project name="Rarity Surf" languages="Python, Django, React"  
+{{% resume/project name="Rarity Surf" 
+languages="Python, Django, React, GraphQL"  
 date="Oct 2021" show="true" %}}
 
 - Web app to give rarity rankings to NFT's within minutes of their metadata being revealed and check which are listed (based on rarity and price filters) on the OpenSea marketplace using their API.
@@ -76,8 +78,7 @@ show="true" %}}
 
 - Created for a 36 hour hackathon (UofTHacks X) where it [**came 2nd overall**](https://devpost.com/software/astronofty).
 - Created and deployed a smart contract with **Solidity** on 
-  the Ethereum blockchain to create/buy/sell NFT's 
-  using MetaMask.
+  the Ethereum blockchain to create/buy/sell NFT's.
 - Wrote a **React** hook to fetch and show listed NFT's, NFT details and owned NFT's.
 - Used API to synchronously upload images and metadata to IPFS.
 
