@@ -59,12 +59,12 @@ date="Oct 2021" show="true" %}}
 
 - Web app to give rarity rankings to NFT's within minutes of their metadata being revealed and check which are listed (based on rarity and price filters) on the OpenSea marketplace using their API.
 - Reverse engineered the ranking algorithm to match the 
-  leading rarity ranking site's rankings (scraped using 
+  leading rarity ranking site's rankings ([scraped](https://github.com/Kevin-Mok/rarity-surf/blob/django/rarity_check/project/scrape.py) using 
   Selenium) with a **discrepancy of <0.25%**. 
 - Used app to frontrun purchases of **top 5%** rarity NFT's 
   against competing buyers.
-- Wrote **Django (Python)** backend to fetch metadata from IPFS, store rarity rankings in PostgreSQL and serve rarity data using GraphQL.
-- Wrote **React** frontend with hooks to dynamically load rarity data. Styled with Tailwind.
+- Wrote **Django (Python)** [backend](https://github.com/Kevin-Mok/rarity-surf) to fetch metadata from IPFS, store rarity rankings in PostgreSQL and serve rarity data using GraphQL.
+- Wrote **React** [frontend](https://github.com/Kevin-Mok/rarity-surf-frontend) with hooks to dynamically load rarity data. Styled with Tailwind.
 
 {{% /resume/project %}}
 
