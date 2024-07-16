@@ -16,7 +16,7 @@ title="Cloud/Software Engineer Intern" languages="Kubernetes, GoLang, Jenkins" d
 - Added startup probes to handle starting legacy application containers that require additional startup time.
 - Refactored probes to [have default values](https://github.com/apache/incubator-kie-kogito-operator/commit/af4977af228ec8648be28779259d4552246b656f) assigned based on 
   deployed YAML while also fixing reconciliation issues.
-- Rewrote the **Jenkins** [nightly pipeline](https://github.com/apache/incubator-kie-kogito-pipelines/commit/4c83f1aecdea2c1ba2796b79839a90d4083dce88) to run in a GitHub 
+- Rewrote the **Jenkins (Groovy)** [nightly pipeline](https://github.com/apache/incubator-kie-kogito-pipelines/commit/4c83f1aecdea2c1ba2796b79839a90d4083dce88) to run in a GitHub 
   PR using a trigger keyword to test all the team's submitted PR's 
   before merging to the main branch.
 - Took initiative to write [file](https://github.com/apache/incubator-kie-kogito-pipelines/commit/4c83f1aecdea2c1ba2796b79839a90d4083dce88#diff-7d2c018dafbccec859077d19bf1ade53ec9c7649f235528ce89f5632b109f7e6) 
@@ -58,11 +58,11 @@ url="https://kevin-mok.com/server/" languages="AWS, Kubernetes, Terraform, Docke
 languages="Python, Django, React, GraphQL"  
 date="Oct 2021" show="true" %}}
 
-- Web app to give rarity rankings to NFT's within minutes of their metadata being revealed and check which are listed (based on rarity and price filters) on the OpenSea marketplace using their API.
+- Web app to give rarity rankings to NFT's and check which are listed on the OpenSea marketplace using their API.
 - Reverse engineered the ranking algorithm to match the 
   leading rarity ranking site's rankings ([scraped](https://github.com/Kevin-Mok/rarity-surf/blob/django/rarity_check/project/scrape.py) using 
   Selenium) with a **discrepancy of <0.25%**. 
-- Used app to frontrun purchases of **top 5%** rarity NFT's 
+- Used app to frontrun purchases of **top 0.5%** rarity NFT's 
   against competing buyers.
 - Wrote **Django (Python)** [backend](https://github.com/Kevin-Mok/rarity-surf) to fetch metadata from IPFS, store rarity rankings in PostgreSQL and serve rarity data using GraphQL.
 - Wrote **React** [frontend](https://github.com/Kevin-Mok/rarity-surf-frontend) with hooks to dynamically load rarity data. Styled with Tailwind.
@@ -92,7 +92,7 @@ show="true" %}}
 
 {{% resume/section skills %}}<!--- {{{ -->
 
-AWS, Kubernetes, Terraform, Docker (Compose), Jenkins, Groovy, **JavaScript**, **React**, **Python**, Go(Lang), Bash, Solidity, C, **Django**, Node.js, PostgreSQL, MongoDB, **Linux**, **Git**, **Command Line**
+AWS, Kubernetes, Terraform, Docker (Compose), Jenkins, Groovy, Go(Lang), Bash, **Linux**, **JavaScript**, **React**, **Python**, **Django**, Node.js, PostgreSQL, MongoDB, Solidity, C, **Git**, **Command Line**
 
 {{% /resume/section %}}<!--- }}} -->
 
