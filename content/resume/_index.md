@@ -19,6 +19,9 @@ title="Cloud/Software Engineer Intern" languages="Kubernetes, GoLang, Jenkins" d
 - Rewrote the **Jenkins** [nightly pipeline](https://github.com/apache/incubator-kie-kogito-pipelines/commit/4c83f1aecdea2c1ba2796b79839a90d4083dce88) to run in a GitHub 
   PR using a trigger keyword to test all the team's submitted PR's 
   before merging to the main branch.
+- Took initiative to write [file](https://github.com/apache/incubator-kie-kogito-pipelines/commit/4c83f1aecdea2c1ba2796b79839a90d4083dce88#diff-7d2c018dafbccec859077d19bf1ade53ec9c7649f235528ce89f5632b109f7e6) 
+  to define the GitHub parameters for the above pipeline so that it 
+  can be recreated easily.
 - Took initiative to write [documentation](https://github.com/apache/incubator-kie-kogito-operator/blob/1534c03d1d26bec08a16608a775782bf8b305de9/docs/GUIDE_FOR_KOGITO_DEVS.md) on how to get started with the project to onboard new 
   developers and mentored the incoming intern.
 
@@ -39,7 +42,6 @@ url="https://kevin-mok.com/server/" languages="AWS, Kubernetes, Terraform, Docke
   to deploy an AWS EC2 instance and Docker containers.
 - Used Amazon Route 53's DNS and **NGINX** to route 
   subdomains to each web application.
-- Used AWS security groups to allow inbound HTTPS traffic.
 - Wrote a **JavaScript** [server script] and [systemd service][systemd service]/[timer]
   to display the uptime of my pages every hour.
 
@@ -50,7 +52,6 @@ url="https://kevin-mok.com/server/" languages="AWS, Kubernetes, Terraform, Docke
 {{% /resume/project %}}
 
 <!--- AWS }}} -->
-
 <!--- Rarity Surf {{{ -->
 
 {{% resume/project name="Rarity Surf" 
@@ -86,12 +87,12 @@ show="true" %}}
 
 <!--- Astronofty }}} -->
 
+
 {{% /resume/section %}}<!--- }}} -->
 
 {{% resume/section skills %}}<!--- {{{ -->
 
-AWS, Kubernetes, Terraform, Docker (Compose), **JavaScript**, **React**, **Python**, Go(Lang), Bash, Solidity, C, **Django**, Node.js, Jenkins, PostgreSQL, 
-MongoDB, **Linux**, **Git**, **Command Line**
+AWS, Kubernetes, Terraform, Docker (Compose), Jenkins, Groovy, **JavaScript**, **React**, **Python**, Go(Lang), Bash, Solidity, C, **Django**, Node.js, PostgreSQL, MongoDB, **Linux**, **Git**, **Command Line**
 
 {{% /resume/section %}}<!--- }}} -->
 
