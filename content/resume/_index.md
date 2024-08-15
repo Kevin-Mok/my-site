@@ -80,8 +80,7 @@ show="true" %}}
 - Created for a 36 hour hackathon (UofTHacks X) where it [**came 2nd overall**](https://devpost.com/software/astronofty).
 - Created and deployed a smart contract with **Solidity** on 
   the Ethereum blockchain to create/buy/sell NFT's.
-- Wrote a **React** hook to fetch and show listed NFT's, NFT details and owned NFT's.
-- Used API to synchronously upload images and metadata to IPFS.
+- Wrote **React** [components](https://github.com/Kevin-Mok/astronofty/tree/main/src/components) to synchronously upload images and metadata to IPFS and fetch and show NFT's.
 
 {{% /resume/project %}}
 
