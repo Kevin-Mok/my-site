@@ -29,29 +29,6 @@ title="Cloud/Software Engineer Intern" languages="Kubernetes, GoLang, Jenkins" d
 
 {{% resume/section projects %}}<!--- {{{ -->
 
-<!--- AWS {{{ -->
-
-{{% resume/project name="AWS Server"
-url="https://kevin-mok.com/server/" languages="AWS, Kubernetes, Terraform, Docker" date="May 2024" show="true" %}}
-
-- Deployed [various web apps](https://kevin-mok.com/server/) using **Docker** (Compose) on an 
-  **AWS EC2** Debian/**Linux** server.
-- Created **Kubernetes** [manifest files](https://github.com/Kevin-Mok/aws-minicube) to quickly recreate my server setup 
-  with persistent storage/restarts and open ports.
-- Created **Terraform** [files](https://github.com/Kevin-Mok/terraform-deploys/tree/main) 
-  to deploy an AWS EC2 instance and Docker containers.
-- Used Amazon Route 53's DNS and **NGINX** to route 
-  subdomains to each web application.
-- Wrote a **JavaScript** [server script] and [systemd service][systemd service]/[timer]
-  to display the uptime of my pages every hour.
-
-[server script]: https://git.kevin-mok.com/Kevin-Mok/server-pages/src/branch/master/server-status.js
-[systemd service]: https://git.kevin-mok.com/Kevin-Mok/server-pages/src/branch/master/server-pages.service
-[timer]: https://git.kevin-mok.com/Kevin-Mok/server-pages/src/branch/master/server-pages.timer
-
-{{% /resume/project %}}
-
-<!--- AWS }}} -->
 <!--- Rarity Surf {{{ -->
 
 {{% resume/project name="Rarity Surf" 
@@ -86,19 +63,42 @@ show="true" %}}
 
 <!--- Astronofty }}} -->
 
+<!--- AWS {{{ -->
+
+{{% resume/project name="AWS Server"
+url="https://kevin-mok.com/server/" languages="AWS, Kubernetes, Terraform, Docker" date="May 2024" show="true" %}}
+
+- Deployed [various web apps](https://kevin-mok.com/server/) using **Docker** (Compose) on an 
+  **AWS EC2** Debian/**Linux** server.
+- Created **Kubernetes** [manifest files](https://github.com/Kevin-Mok/aws-minicube) to quickly recreate my server setup 
+  with persistent storage/restarts and open ports.
+- Created **Terraform** [files](https://github.com/Kevin-Mok/terraform-deploys/tree/main) 
+  to deploy an AWS EC2 instance and Docker containers.
+- Used Amazon Route 53's DNS and **NGINX** to route 
+  subdomains to each web application.
+- Wrote a **JavaScript** [server script] and [systemd service][systemd service]/[timer]
+  to display the uptime of my pages every hour.
+
+[server script]: https://git.kevin-mok.com/Kevin-Mok/server-pages/src/branch/master/server-status.js
+[systemd service]: https://git.kevin-mok.com/Kevin-Mok/server-pages/src/branch/master/server-pages.service
+[timer]: https://git.kevin-mok.com/Kevin-Mok/server-pages/src/branch/master/server-pages.timer
+
+{{% /resume/project %}}
+
+<!--- AWS }}} -->
 
 {{% /resume/section %}}<!--- }}} -->
 
 {{% resume/section skills %}}<!--- {{{ -->
 
-AWS, Kubernetes, Terraform, Docker (Compose), Jenkins, Groovy, Go(Lang), Bash, **Linux**, **JavaScript**, **React**, **Python**, **Django**, Node.js, PostgreSQL, MongoDB, Solidity, C, **Git**, **Command Line**
+**JavaScript**, **React**, **Python**, **Django**, Node.js, PostgreSQL, MongoDB, Bash, **Git**, **Linux**, **Command Line**, Go(Lang), AWS, Kubernetes, Terraform, Docker (Compose), Jenkins, Groovy, Solidity, C  
 
 {{% /resume/section %}}<!--- }}} -->
 
 {{% resume/section education %}}<!--- {{{ -->
 
 {{% resume/education name="University of Toronto"
-title="Computer Science Specialist — 3.84 GPA (CS). Graduated with High Distinction." date="2018 — 2023" %}}
+title="Computer Science Specialist — 3.84 GPA (CS). Graduated with High Distinction." date="2019 — 2024" %}}
 
 {{% /resume/section %}}<!--- }}} -->
 
