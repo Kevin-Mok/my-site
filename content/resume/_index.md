@@ -19,6 +19,7 @@ title="Cloud/Software Engineer Intern" languages="Kubernetes, GoLang, Jenkins" d
 - Rewrote the **Jenkins (Groovy)** [nightly pipeline](https://github.com/apache/incubator-kie-kogito-pipelines/commit/4c83f1aecdea2c1ba2796b79839a90d4083dce88) to run in a GitHub 
   PR using a trigger keyword to test all the team's submitted PR's 
   before merging to the main branch.
+- Took on tasks and contributed ideas in **Agile sprint** planning meetings in a team of 12 people.  
 - Took initiative to write [file](https://github.com/apache/incubator-kie-kogito-pipelines/commit/4c83f1aecdea2c1ba2796b79839a90d4083dce88#diff-7d2c018dafbccec859077d19bf1ade53ec9c7649f235528ce89f5632b109f7e6) 
   to define the GitHub parameters for the above pipeline so that it 
   can be recreated easily.

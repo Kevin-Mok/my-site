@@ -1,35 +1,17 @@
-<!--- CSC369 {{{ -->
-
-{{% resume/project name="Custom Kernel Module"
-url="https://kevin-mok.com/server/" date="Jan. 2022" show="true" %}}
-
-- Wrote and installed a [custom Linux kernel module](https://github.com/Kevin-Mok/interceptor-kernel/blob/master/a1/interceptor.c) in **C**.
-- Intercepted pre-existing system calls using 
-  custom kernel module by sending commands to 
-  userspace.
-- Monitored specific process ID's in my system 
-  call to intercept their system calls.
-
-{{% /resume/project %}}
-
-<!--- CSC369 }}} -->
-
-<!--- Spotify Graphs {{{ -->
+<!--- {{{ Spotify Graphs -->
 
 {{% resume/project name="Spotify Graphs" 
-url="https://github.com/Kevin-Mok/spotify-lib-vis" date="June 2018 — July 2018" 
+url="https://github.com/Kevin-Mok/spotify-lib-vis" date="June 2020 " 
+languages="Python, Django, PostgreSQL"  
 show="true" %}}
 
-- Implemented base functionality of scanning tracks and listening 
-  history from user's library using Spotify API and organized data 
-  into **PostgreSQL** database with **Django** backend.
+- Web app to visualize user's library and listening 
+  history from Spotify.
+- [Fetched and organized](https://github.com/Kevin-Mok/spotify-lib-vis/blob/master/api/utils.py) user data from Spotify API into PostgreSQL database with **Django (Python)** backend.
 - Created and tested various relational database schemas to maximize 
   efficiency for use cases.
-- Produced bubble chart and (stacked) bar chart using [**d3**]
-[d3 graph examples] to visualize the artists, genres and features of 
-tracks in library.
-
-[d3 graph examples]: https://github.com/d3/d3/wiki/Gallery
+- Generated various charts to visualize the artists and genres 
+  of tracks in library.
 
 {{% /resume/project %}}
 
@@ -56,24 +38,21 @@ show="true" %}}
 
 <!--- Grocery Finder }}} -->
 
-<!--- DigitalOcean {{{ -->
+<!--- CSC369 {{{ -->
 
-{{% resume/project name="Personal Server"
-url="https://kevin-mok.com/server/" date="Aug. 2019 — present" %}}
+{{% resume/project name="Custom Kernel Module"
+url="https://kevin-mok.com/server/" date="Jan. 2022" show="true" %}}
 
-- Deployed various web apps with backends such as Node, PHP and Python using 
-  **NGINX** on a **Debian** server.
-- Monitor system resources and perform system maintenance using tmux.
-- Wrote [**Node.js** script][server script] and [**systemd** service][systemd service]/[timer]
-  to check and display the uptime of my pages every hour.
-
-[server script]: https://git.kevin-mok.com/Kevin-Mok/server-pages/src/branch/master/server-status.js
-[systemd service]: https://git.kevin-mok.com/Kevin-Mok/server-pages/src/branch/master/server-pages.service
-[timer]: https://git.kevin-mok.com/Kevin-Mok/server-pages/src/branch/master/server-pages.timer
+- Wrote and installed a [custom Linux kernel module](https://github.com/Kevin-Mok/interceptor-kernel/blob/master/a1/interceptor.c) in **C**.
+- Intercepted pre-existing system calls using 
+  custom kernel module by sending commands to 
+  userspace.
+- Monitored specific process ID's in my system 
+  call to intercept their system calls.
 
 {{% /resume/project %}}
 
-<!--- DigitalOcean Droplet }}} -->
+<!--- CSC369 }}} -->
 
 <!--- ParsaFood {{{ -->
 
@@ -96,3 +75,23 @@ https://www.eventbrite.com/e/platterz-hackathon-tickets-42682237722
 {{% /resume/project %}}
 
 <!--- ParsaFood }}} -->
+
+<!--- DigitalOcean {{{ -->
+
+{{% resume/project name="Personal Server"
+url="https://kevin-mok.com/server/" date="Aug. 2019 — present" %}}
+
+- Deployed various web apps with backends such as Node, PHP and Python using 
+  **NGINX** on a **Debian** server.
+- Monitor system resources and perform system maintenance using tmux.
+- Wrote [**Node.js** script][server script] and [**systemd** service][systemd service]/[timer]
+  to check and display the uptime of my pages every hour.
+
+[server script]: https://git.kevin-mok.com/Kevin-Mok/server-pages/src/branch/master/server-status.js
+[systemd service]: https://git.kevin-mok.com/Kevin-Mok/server-pages/src/branch/master/server-pages.service
+[timer]: https://git.kevin-mok.com/Kevin-Mok/server-pages/src/branch/master/server-pages.timer
+
+{{% /resume/project %}}
+
+<!--- DigitalOcean Droplet }}} -->
+
