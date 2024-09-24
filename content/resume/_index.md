@@ -33,7 +33,7 @@ title="Cloud/Software Engineer Intern" languages="Kubernetes, GoLang, Jenkins" d
 <!--- Rarity Surf {{{ -->
 
 {{% resume/project name="Rarity Surf" 
-languages="Python, Django, React, GraphQL"  
+languages="Python, JavaScript, React, Django"  
 date="Oct 2021" show="true" %}}
 
 - Web app to give rarity rankings to NFT's and check which are listed on the OpenSea marketplace using their API.
@@ -52,7 +52,7 @@ date="Oct 2021" show="true" %}}
 <!--- Astronofty {{{ -->
 
 {{% resume/project name="Astronofty" 
-url="https://github.com/Kevin-Mok/astronofty" languages="React, Solidity" date="Jan 2023" 
+url="https://github.com/Kevin-Mok/astronofty" languages="JavaScript, React, Solidity" date="Jan 2023" 
 show="true" %}}
 
 - Created for a 36 hour hackathon (UofTHacks X) where it [**came 2nd overall**](https://devpost.com/software/astronofty).
@@ -67,7 +67,7 @@ show="true" %}}
 <!--- AWS {{{ -->
 
 {{% resume/project name="AWS Server"
-url="https://kevin-mok.com/server/" languages="AWS, Kubernetes, Terraform, Docker" date="May 2024" show="true" %}}
+url="https://kevin-mok.com/server/" languages="AWS, Kubernetes, Docker, Terraform" date="May 2024" show="true" %}}
 
 - Deployed [various web apps](https://kevin-mok.com/server/) using **Docker** (Compose) on an 
   **AWS EC2** Debian/**Linux** server.
