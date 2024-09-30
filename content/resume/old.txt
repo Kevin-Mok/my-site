@@ -21,6 +21,25 @@
 
 <!--- }}} Red Hat -->
 
+<!--- Rarity Surf {{{ -->
+
+{{% resume/project name="Rarity Surf" 
+languages="Python, JavaScript, React, Django"  
+date="Oct 2021" show="true" %}}
+
+- Web app to give rarity rankings to NFT's and check which are listed on the OpenSea marketplace using their API.
+- Reverse engineered the ranking algorithm to match the 
+  leading rarity ranking site's rankings ([scraped](https://github.com/Kevin-Mok/rarity-surf/blob/django/rarity_check/project/scrape.py) using 
+  Selenium) with a **discrepancy of <0.25%**. 
+- Used app to frontrun purchases of **top 0.5%** rarity NFT's 
+  against competing buyers.
+- Wrote **Django (Python)** [backend](https://github.com/Kevin-Mok/rarity-surf) to fetch metadata from IPFS, store rarity rankings in PostgreSQL and serve rarity data using GraphQL.
+- Wrote **React** [frontend](https://github.com/Kevin-Mok/rarity-surf-frontend) with hooks to dynamically load rarity data. Styled with Tailwind.
+
+{{% /resume/project %}}
+
+<!--- Rarity Surf }}} -->
+
 <!--- Astronofty {{{ -->
 
 {{% resume/project name="Astronofty" 
@@ -36,6 +55,29 @@ show="true" %}}
 
 <!--- Astronofty }}} -->
 
+<!--- AWS {{{ -->
+
+{{% resume/project name="AWS Server"
+url="https://kevin-mok.com/server/" languages="AWS, Kubernetes, Docker, Terraform" date="May 2024" show="true" %}}
+
+- Deployed [various web apps](https://kevin-mok.com/server/) using **Docker** (Compose) on an 
+  **AWS EC2** Debian/**Linux** server.
+- Created **Kubernetes** [manifest files](https://github.com/Kevin-Mok/aws-minicube) to quickly recreate my server setup 
+  with persistent storage/restarts and open ports.
+- Created **Terraform** [files](https://github.com/Kevin-Mok/terraform-deploys/tree/main) 
+  to deploy an AWS EC2 instance and Docker containers.
+- Used Amazon Route 53's DNS and **NGINX** to route 
+  subdomains to each web application.
+- Wrote a **JavaScript** [server script] and [systemd service][systemd service]/[timer]
+  to display the uptime of my pages every hour.
+
+[server script]: https://git.kevin-mok.com/Kevin-Mok/server-pages/src/branch/master/server-status.js
+[systemd service]: https://git.kevin-mok.com/Kevin-Mok/server-pages/src/branch/master/server-pages.service
+[timer]: https://git.kevin-mok.com/Kevin-Mok/server-pages/src/branch/master/server-pages.timer
+
+{{% /resume/project %}}
+
+<!--- AWS }}} -->
 <!--- {{{ Spotify Graphs -->
 
 {{% resume/project name="Spotify Graphs" 

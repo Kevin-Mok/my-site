@@ -7,3 +7,10 @@
 6. Took on tasks and contributed ideas in Agile sprint planning meetings in a team of 12 people.
 7. Took initiative to write file to define the GitHub parameters for the above pipeline so that it can be recreated easily.
 8. Took initiative to write documentation on how to get started with the project to onboard new developers and mentored the incoming intern.
+
+# Rarity Surf
+1. Web app to give rarity rankings to NFT’s and check which are listed on the OpenSea marketplace using their API.
+2. Reverse engineered the ranking algorithm to match the leading rarity ranking site’s rankings (scraped using Selenium) with a discrepancy of <0.25%.
+3. Used app to frontrun purchases of top 0.5% rarity NFT’s against competing buyers.
+4. Wrote Django (Python) backend to fetch metadata from IPFS, store rarity rankings in PostgreSQL and serve rarity data using GraphQL.
+5. Wrote React frontend with hooks to dynamically load rarity data. Styled with Tailwind.

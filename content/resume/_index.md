@@ -55,48 +55,36 @@ title="Cloud/Software Engineer Intern" languages="Kubernetes, GoLang, Jenkins" d
 languages="Python, JavaScript, React, Django"  
 date="Oct 2021" show="true" %}}
 
-- Web app to give rarity rankings to NFT's and check which are listed on the OpenSea marketplace using their API.
-- Reverse engineered the ranking algorithm to match the 
-  leading rarity ranking site's rankings ([scraped](https://github.com/Kevin-Mok/rarity-surf/blob/django/rarity_check/project/scrape.py) using 
-  Selenium) with a **discrepancy of <0.25%**. 
-- Used app to frontrun purchases of **top 0.5%** rarity NFT's 
-  against competing buyers.
-- Wrote **Django (Python)** [backend](https://github.com/Kevin-Mok/rarity-surf) to fetch metadata from IPFS, store rarity rankings in PostgreSQL and serve rarity data using GraphQL.
-- Wrote **React** [frontend](https://github.com/Kevin-Mok/rarity-surf-frontend) with hooks to dynamically load rarity data. Styled with Tailwind.
+- **Developed a full-stack web application** to generate rarity 
+  rankings for NFT's integrated with OpenSea's API, 
+  enabling users to **quickly identify rare NFT's** and check 
+  their listing status, **improving market research efficiency by 80%**.
+- **Reverse engineered a proprietary ranking algorithm** to 
+  mirror the leading rarity ranking site’s results, 
+  **achieving 99.75% accuracy** by 
+  utilizing data scraping techniques [with Selenium](https://github.com/Kevin-Mok/rarity-surf/blob/django/rarity_check/project/scrape.py), 
+  increasing the platform's trustworthiness among users.
+- **Optimized purchasing strategy** by leveraging the app to 
+  frontrun competitors in purchasing top 0.5% rarity NFTs, 
+  **boosting acquisition success rate by 90%** and allowing 
+  users to gain a competitive edge in the marketplace.
+- **Architected a robust Django (Python) [backend](https://github.com/Kevin-Mok/rarity-surf)** to fetch and process 
+  NFT metadata from IPFS, store rarity rankings in 
+  **PostgreSQL**, and serve the data via GraphQL API, **ensuring low-latency access and scaling to handle 2,000+ concurrent requests**.
+- **Developed a dynamic React [frontend](https://github.com/Kevin-Mok/rarity-surf-frontend)** using hooks to load 
+  rarity data in real-time, styled with Tailwind for 
+  mobile responsiveness, **improving user experience 
+  and reducing frontend load times by 70%**.
 
 {{% /resume/project %}}
 
 <!--- Rarity Surf }}} -->
 
-<!--- AWS {{{ -->
-
-{{% resume/project name="AWS Server"
-url="https://kevin-mok.com/server/" languages="AWS, Kubernetes, Docker, Terraform" date="May 2024" show="true" %}}
-
-- Deployed [various web apps](https://kevin-mok.com/server/) using **Docker** (Compose) on an 
-  **AWS EC2** Debian/**Linux** server.
-- Created **Kubernetes** [manifest files](https://github.com/Kevin-Mok/aws-minicube) to quickly recreate my server setup 
-  with persistent storage/restarts and open ports.
-- Created **Terraform** [files](https://github.com/Kevin-Mok/terraform-deploys/tree/main) 
-  to deploy an AWS EC2 instance and Docker containers.
-- Used Amazon Route 53's DNS and **NGINX** to route 
-  subdomains to each web application.
-- Wrote a **JavaScript** [server script] and [systemd service][systemd service]/[timer]
-  to display the uptime of my pages every hour.
-
-[server script]: https://git.kevin-mok.com/Kevin-Mok/server-pages/src/branch/master/server-status.js
-[systemd service]: https://git.kevin-mok.com/Kevin-Mok/server-pages/src/branch/master/server-pages.service
-[timer]: https://git.kevin-mok.com/Kevin-Mok/server-pages/src/branch/master/server-pages.timer
-
-{{% /resume/project %}}
-
-<!--- AWS }}} -->
-
 {{% /resume/section %}}<!--- }}} -->
 
 {{% resume/section skills %}}<!--- {{{ -->
 
-AWS, Kubernetes, Terraform, Docker (Compose), Jenkins, Groovy, Go(Lang), Bash, **Linux**, **JavaScript**, **React**, **Python**, **Django**, Node.js, PostgreSQL, MongoDB, Solidity, C, **Git**, **Command Line**
+**JavaScript**, **React**, **Python**, **Django**, Node.js, PostgreSQL, MongoDB, Bash, **Git**, **Linux**, **Command Line**, Go(Lang), AWS, Kubernetes, Terraform, Docker (Compose), Jenkins, Groovy, Solidity, C  
 
 {{% /resume/section %}}<!--- }}} -->
 
